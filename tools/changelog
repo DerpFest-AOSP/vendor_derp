@@ -2,7 +2,7 @@
 
 # Exports
 
-. $ANDROID_BUILD_TOP/vendor/derp/tools/colors
+#. $ANDROID_BUILD_TOP/vendor/derp/tools/colors
 
 export Changelog=Changelog.txt
 
