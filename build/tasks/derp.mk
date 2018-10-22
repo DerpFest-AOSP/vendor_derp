@@ -6,6 +6,7 @@ MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
 derp: otapackage
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(DERP_TARGET_PACKAGE)
 	$(hide) $(MD5) $(DERP_TARGET_PACKAGE) | cut -d ' ' -f1 > $(DERP_TARGET_PACKAGE).md5sum
+	$(hide) ./vendor/derp/tools/generate_json_build_info.sh $(DERP_TARGET_PACKAGE)
 	@echo -e ""
 	@echo -e "${cya}Building ${bldcya}DerpFest ${txtrst}";
 	@echo -e ""
