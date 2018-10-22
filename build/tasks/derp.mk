@@ -6,6 +6,7 @@ SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 derp: otapackage
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(DERP_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(DERP_TARGET_PACKAGE) | cut -d ' ' -f1 > $(DERP_TARGET_PACKAGE).sha256sum
+	$(hide) ./vendor/derp/tools/generate_json_build_info.sh $(DERP_TARGET_PACKAGE)
 	$(hide) rm -rf $(call intermediates-dir-for,PACKAGING,target_files)
 	@echo -e ""
 	@echo -e "${cya}Building ${bldcya}DerpFest ${txtrst}";
