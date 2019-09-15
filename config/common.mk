@@ -33,8 +33,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 
 PRODUCT_COPY_FILES += \
-    vendor/derp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/derp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/derp/prebuilt/common/bin/backuptool.sh:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.sh \
+    vendor/derp/prebuilt/common/bin/backuptool.functions:$(TARGET_COPY_OUT_SYSTEM)/install/bin/backuptool.functions \
     vendor/derp/prebuilt/common/bin/50-base.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-base.sh
 
 ifneq ($(AB_OTA_PARTITIONS),)
@@ -59,7 +59,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
-    vendor/derp/config/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/derp/config/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
 # Fonts
 PRODUCT_COPY_FILES += \
