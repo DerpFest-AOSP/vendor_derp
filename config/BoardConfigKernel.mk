@@ -150,7 +150,7 @@ ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
   KERNEL_MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
 endif
 
-TOOLS_PATH_OVERRIDE := \
+TOOLS_PATH_OVERRIDE += \
     PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$$PATH \
     LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/lib:$$LD_LIBRARY_PATH \
     PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
