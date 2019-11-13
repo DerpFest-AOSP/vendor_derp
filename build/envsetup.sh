@@ -73,7 +73,7 @@ function gerrit()
 
 # Make using all available CPUs
 function mka() {
-    m -j "$@"
+    m -j$(nproc --all) "$@"
 }
 
 function cout()
