@@ -56,4 +56,39 @@
       <font weight="600" style="italic">ZillaSlab-SemiBoldItalic.ttf</font>
     </family>
     <alias name="zilla-slab-semi-bold" to="zilla-slab-medium" weight="600" />
+
+    <!-- Btlg fontage -->
+    <family customizationType="new-named-family" name="adamcg-pro">
+        <font weight="300" style="normal">AdamCGPro-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="bignoodle-italic">
+        <font weight="300" style="normal">BigNoodleTilting-Italic.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="bignoodle-regular">
+        <font weight="300" style="normal">BigNoodleTilting-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="biko">
+        <font weight="300" style="normal">Biko-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="exo2-regular">
+        <font weight="300" style="normal">Exo2-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="exo2-semibold">
+        <font weight="300" style="normal">Exo2-SemiBold.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ginora-sans">
+        <font weight="300" style="normal">GinoraSans-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="googlesans-sys">
+        <font weight="300" style="normal">GoogleSans-Medium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="hanken">
+        <font weight="300" style="normal">Hanken-Light.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="mittelschrift">
+        <font weight="300" style="normal">din1451alt.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="reemkufi">
+        <font weight="300" style="normal">ReemKufi-Regular.ttf</font>
+    </family>
 </fonts-modification>

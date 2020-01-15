@@ -77,7 +77,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
-    FontRubikRubikOverlay
+    FontRubikRubikOverlay \
+    FontAdamCGinora \
+    FontBigNoodle \
+    FontBikoHanken \
+    FontExo2 \
+    FontMittelschrift \
+    FontPissel \
+    FontReemKufi \
+    FontRoboto
 
 PRODUCT_COPY_FILES += \
     vendor/derp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml

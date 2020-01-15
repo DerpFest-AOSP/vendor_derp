@@ -61,6 +61,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/derp/config/backup.xml:system/etc/sysconfig/backup.xml
 
+# Fonts
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,vendor/derp/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
 # DerpFest-specific component overrides
 PRODUCT_COPY_FILES += \
     vendor/derp/config/component-overrides.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
