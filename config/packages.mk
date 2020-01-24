@@ -13,6 +13,11 @@ PRODUCT_PACKAGES += \
     Stk \
     TimeZoneUpdater
 
+# Offline charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
 # Extra tools in DerpFest
 PRODUCT_PACKAGES += \
     7z \
