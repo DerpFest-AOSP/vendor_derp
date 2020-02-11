@@ -14,5 +14,12 @@
 # limitations under the License.
 #
 
+# Enable Google Play system updates support
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/derp/apex
+
+PRODUCT_PACKAGES += \
+    ModuleMetadataGooglePrebuilt
+
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
