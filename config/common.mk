@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay
 
+# Inherit from audio config
+$(call inherit-product, vendor/derp/config/audio.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/derp/config/fonts.mk)
 
