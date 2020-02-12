@@ -21,5 +21,11 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     ModuleMetadataGooglePrebuilt
 
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/derp/overlay
+
+# Inherit from fonts config
+$(call inherit-product, vendor/derp/config/fonts.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
