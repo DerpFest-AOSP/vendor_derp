@@ -69,8 +69,5 @@ $(call inherit-product, vendor/derp/config/fonts.mk)
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
 
-# Inherit from our kernel/header generator
-$(call inherit-product, vendor/derp/config/BoardConfigDerpFest.mk)
-
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
