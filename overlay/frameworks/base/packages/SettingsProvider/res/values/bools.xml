@@ -17,19 +17,10 @@
 */
 -->
 <resources>
-    <!-- Default for Settings.Secure.AWARE_LOCK_ENABLED -->
-    <bool name="def_aware_lock_enabled">true</bool>
-
     <!-- Default value for whether or not to pulse the notification LED when there is a
          pending notification -->
     <bool name="def_notification_pulse">false</bool>
 
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
-
-    <!-- Default for Settings.Secure.SILENCE_GESTURE -->
-    <bool name="def_silence_gesture">true</bool>
-
-    <!-- Default for Settings.Secure.SKIP_GESTURE -->
-    <bool name="def_skip_gesture">true</bool>
 </resources>
