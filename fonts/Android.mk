@@ -38,7 +38,13 @@ font_src_files := \
     GoogleSans-Italic.ttf \
     GoogleSans-MediumItalic.ttf \
     GoogleSans-Medium.ttf \
-    GoogleSans-Regular.ttf
+    GoogleSans-Regular.ttf \
+    Inter-BoldItalic.ttf \
+    Inter-Bold.ttf \
+    Inter-Italic.ttf \
+    Inter-MediumItalic.ttf \
+    Inter-Medium.ttf \
+    Inter-Regular.ttf
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 

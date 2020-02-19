@@ -27,6 +27,15 @@ PRODUCT_PACKAGES += \
     GoogleSans-Medium.ttf \
     GoogleSans-Regular.ttf
 
+# Inter family
+PRODUCT_PACKAGES += \
+    Inter-BoldItalic.ttf \
+    Inter-Bold.ttf \
+    Inter-Italic.ttf \
+    Inter-MediumItalic.ttf \
+    Inter-Medium.ttf \
+    Inter-Regular.ttf
+
 # lato family
 PRODUCT_PACKAGES += \
     Lato-BoldItalic.ttf \
