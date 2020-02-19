@@ -17,7 +17,11 @@
 */
 -->
 <resources>
+    <!-- Email address for the homepage contextual cards feedback -->
+    <string name="config_contextual_card_feedback_email">contextual-settings-homepage-feedback@google.com</string>
+
     <!-- Google Packages -->
+    <string name="account_type">com.google</string>
     <string name="account_confirmation_class">com.google.android.gms.auth.uiflows.factoryreset.PreFactoryResetActivity</string>
     <string name="account_confirmation_package">com.google.android.gms</string>
     <string name="config_account_intent_uri">intent:#Intent;action=com.android.settings.action.VIEW_ACCOUNT;category=android.intent.category.DEFAULT;launchFlags=0x8000;S.extra.callingPackageName=com.android.settings;end</string>
