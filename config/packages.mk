@@ -1,5 +1,7 @@
-# ThemePicker
+# DerpFest required packages
 PRODUCT_PACKAGES += \
+    StitchImage \
+    StitchImageService \
     ThemePicker \
     Updater
 
