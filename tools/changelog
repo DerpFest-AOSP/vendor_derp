@@ -1,48 +1,58 @@
-#!/bin/bash
+#!/bin/sh
 
-# Exports
+export PATH=/bin:$BIN:$PATH
+set -e
 
-#. $ANDROID_BUILD_TOP/vendor/derp/tools/colors
+usage() {
+  cat <<EOM
+  Usage: $(basename $0) <Path to output directory, typically \$OUT variable>
+EOM
+  exit 1
+}
 
-OUT=$1
+[ $# -ne 1 ] && usage
+# set path to output directory, typical $OUT variable
+OUT="$1"
 
-export Changelog=Changelog.txt
-
-if [ -f $Changelog ];
-then
-	rm -f $Changelog
+if [ ! -d "$OUT" ];then
+  echo "specified OUT-directory: $OUT does not exist!"
+  exit 1
 fi
 
-touch $Changelog
+# Store the main manifest and changelog in $OUT.
+# Copy the main manifest to the target system/etc.
+changelog="$OUT/Changelog.txt"
+system_changelog="$OUT/system/etc/Changelog.txt"
 
 # Print something to build output
 echo ${bldppl}"Generating changelog..."${txtrst}
 
-for i in $(seq 5);
+rm -f "$changelog"
+touch "$changelog"
+for i in $(seq 1 10);
 do
-export After_Date=$(date --date="$i days ago" +%m-%d-%Y 2>&1)
-k=$(expr $i - 1)
-	export Until_Date=$(date --date="$k days ago" +%m-%d-%Y 2>&1)
+  after_date=`date --date="$i days ago" +%m-%d-%Y`
+  k=$((i - 1))
+  until_date=`date --date="$k days ago" +%m-%d-%Y`
 
-	# Line with after --- until was too long for a small ListView
-	echo '====================' >> $Changelog;
-	echo  "     "$Until_Date    >> $Changelog;
-	echo '====================' >> $Changelog;
-	# Cycle through every repo to find commits between 2 dates
-	while read path;
-		do
-	CLOG=$(git --git-dir ./${path}/.git log --oneline --after=$After_Date --until=$Until_Date 2>&1);
-	if [ -n "$CLOG" ]; then
-		echo project $path >> $Changelog
-		ret=$(git --git-dir ./${path}/.git log --oneline --after=$After_Date --until=$Until_Date 2>&1) >> $Changelog
-	fi
-	done < ./.repo/project.list
-	echo >> $Changelog;
-        echo >> $Changelog;
+  # Line with after --- until was too long for a small ListView
+  echo "====================" >> "$changelog"
+  echo "     $until_date"     >> "$changelog"
+  echo "====================" >> "$changelog"
+  echo >> "$changelog"
+
+  # Cycle through every repo to find commits between 2 dates
+  current_path="$(realpath `pwd`)"
+
+  repo forall -c "GIT_LOG=\`git log --oneline --after=$after_date --until=$until_date\` ; if [ ! -z \"\$GIT_LOG\" ]; then printf  '\n   * '; realpath \`pwd\` | sed 's|^$current_path/||' ; echo \"\$GIT_LOG\"; fi" >> "$changelog"
+  echo >> "$changelog"
 done
 
-sed -i 's/project/   */g' $Changelog
+sed -i 's/^project/   */g' "$changelog"
 
-cp $Changelog $OUT/system/etc/
-cp $Changelog $OUT
-rm $Changelog
+# Now that we have successfully generated the changelog, move the
+# manifest into position and copy the changelog to the target.
+mkdir -p $(dirname "$system_changelog")
+cp "$changelog" "$system_changelog"
+
+exit 0
