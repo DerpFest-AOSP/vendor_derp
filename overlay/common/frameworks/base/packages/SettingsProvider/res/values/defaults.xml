@@ -22,4 +22,8 @@
     <integer name="def_screen_off_timeout">30000</integer>
     <bool name="def_bluetooth_on">false</bool>
     <bool name="def_sound_effects_enabled">false</bool>
+    <bool name="def_dtmf_tones_enabled">false</bool>
+    <integer name="def_lockscreen_sounds_enabled">0</integer>
+    <bool name="def_vibrate_when_ringing">true</bool>
+    <bool name="def_charging_sounds_enabled">false</bool>
 </resources>
