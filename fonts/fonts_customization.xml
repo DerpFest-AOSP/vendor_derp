@@ -10,12 +10,20 @@
     <alias name="google-sans-medium" to="google-sans" weight="500" />
 
     <family customizationType="new-named-family" name="inter">
-        <font weight="400" style="normal">Inter-Regular.ttf</font>
-        <font weight="400" style="italic">Inter-Italic.ttf</font>
-        <font weight="500" style="normal">Inter-Medium.ttf</font>
-        <font weight="500" style="italic">Inter-MediumItalic.ttf</font>
-        <font weight="700" style="normal">Inter-Bold.ttf</font>
-        <font weight="700" style="italic">Inter-BoldItalic.ttf</font>
+        <font weight="100" style="normal">Inter-Thin.otf</font>
+        <font weight="100" style="italic">Inter-ThinItalic.otf</font>
+        <font weight="200" style="normal">Inter-ExtraLight.otf</font>
+        <font weight="200" style="italic">Inter-ExtraLightItalic.otf</font>
+        <font weight="300" style="normal">Inter-Light.otf</font>
+        <font weight="300" style="italic">Inter-LightItalic.otf</font>
+        <font weight="400" style="normal">Inter-Regular.otf</font>
+        <font weight="400" style="italic">Inter-Italic.otf</font>
+        <font weight="500" style="normal">Inter-Medium.otf</font>
+        <font weight="500" style="italic">Inter-MediumItalic.otf</font>
+        <font weight="700" style="normal">Inter-Bold.otf</font>
+        <font weight="700" style="italic">Inter-BoldItalic.otf</font>
+        <font weight="900" style="normal">Inter-Black.otf</font>
+        <font weight="900" style="italic">Inter-BlackItalic.otf</font>
     </family>
     <alias name="inter-medium" to="inter" weight="500" />
 
