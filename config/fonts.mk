@@ -29,12 +29,24 @@ PRODUCT_PACKAGES += \
 
 # Inter family
 PRODUCT_PACKAGES += \
-    Inter-BoldItalic.ttf \
-    Inter-Bold.ttf \
-    Inter-Italic.ttf \
-    Inter-MediumItalic.ttf \
-    Inter-Medium.ttf \
-    Inter-Regular.ttf
+    Inter-Black.otf \
+    Inter-ExtraBold.otf \
+    Inter-Italic.otf \
+    Inter-MediumItalic.otf \
+    Inter-Thin.otf \
+    Inter-BlackItalic.otf \
+    Inter-ExtraBoldItalic.otf \
+    Inter-Light.otf \
+    Inter-Regular.otf \
+    Inter-ThinItalic.otf \
+    Inter-Bold.otf \
+    Inter-ExtraLight.otf \
+    Inter-LightItalic.otf \
+    Inter-SemiBold.otf \
+    Inter-BoldItalic.otf \
+    Inter-ExtraLightItalic.otf \
+    Inter-Medium.otf \
+    Inter-SemiBoldItalic.otf
 
 # lato family
 PRODUCT_PACKAGES += \

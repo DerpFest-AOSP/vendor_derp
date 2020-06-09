@@ -39,12 +39,24 @@ font_src_files := \
     GoogleSans-MediumItalic.ttf \
     GoogleSans-Medium.ttf \
     GoogleSans-Regular.ttf \
-    Inter-BoldItalic.ttf \
-    Inter-Bold.ttf \
-    Inter-Italic.ttf \
-    Inter-MediumItalic.ttf \
-    Inter-Medium.ttf \
-    Inter-Regular.ttf
+    Inter-Black.otf \
+    Inter-ExtraBold.otf \
+    Inter-Italic.otf \
+    Inter-MediumItalic.otf \
+    Inter-Thin.otf \
+    Inter-BlackItalic.otf \
+    Inter-ExtraBoldItalic.otf \
+    Inter-Light.otf \
+    Inter-Regular.otf \
+    Inter-ThinItalic.otf \
+    Inter-Bold.otf \
+    Inter-ExtraLight.otf \
+    Inter-LightItalic.otf \
+    Inter-SemiBold.otf \
+    Inter-BoldItalic.otf \
+    Inter-ExtraLightItalic.otf \
+    Inter-Medium.otf \
+    Inter-SemiBoldItalic.otf
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
