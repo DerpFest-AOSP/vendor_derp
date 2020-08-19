@@ -54,6 +54,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 
+# Use gestures by default
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
 PRODUCT_PACKAGES += \
     ModuleMetadataGoogle
 
