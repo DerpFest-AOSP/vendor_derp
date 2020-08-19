@@ -55,7 +55,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 
 PRODUCT_PACKAGES += \
-    ModuleMetadataGooglePrebuilt
+    ModuleMetadataGoogle
 
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay
