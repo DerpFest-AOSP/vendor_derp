@@ -14,8 +14,17 @@
 # limitations under the License.
 #
 
-# Overlays
-PRODUCT_PACKAGES += \
-    AccentColorBlueOverlay \
-    FontGoogleSansOverlay \
-    PixelSetupWizardOverlayDerp
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_CERTIFICATE := platform
+
+LOCAL_PRODUCT_MODULE := true
+
+LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
+
+LOCAL_PACKAGE_NAME := PixelSetupWizardOverlayDerp
+LOCAL_SDK_VERSION := current
+
+include $(BUILD_RRO_PACKAGE)
+
