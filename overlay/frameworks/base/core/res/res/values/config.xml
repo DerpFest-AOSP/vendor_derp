@@ -76,6 +76,19 @@
         <item>com.google.android.gms</item>
     </string-array>
 
+     <!-- TODO - Update description when r is out -->
+    <string-array name="config_forceQueryablePackages">
+        <item>com.android.settings</item>
+        <item>com.google.android.gms</item>
+        <item>com.android.vending</item>
+    </string-array>
+
+     <!-- TODO - Update description when r is out -->
+    <string-array name="config_integrityRuleProviderPackages">
+        <item>com.android.vending</item>
+        <item>com.google.android.gms</item>
+    </string-array>
+
     <string-array name="config_locationExtraPackageNames">
         <item>com.google.android.gms.location.history</item>
     </string-array>

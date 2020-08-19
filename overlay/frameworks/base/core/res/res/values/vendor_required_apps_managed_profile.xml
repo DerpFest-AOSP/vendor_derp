@@ -24,6 +24,15 @@
         <item>com.google.android.gms</item>
         <item>com.google.android.contacts</item>
         <item>com.google.android.apps.wellbeing</item>
+        <item>com.google.android.googlequicksearchbox</item>
         <item>com.google.android.documentsui</item>
+        <item>com.google.android.apps.nbu.files</item>
+        <item>com.google.android.apps.internal.betterbug</item>
+        <item>com.google.android.apps.internal.nexusuploader</item>
+        <item>com.google.android.netgrapher</item>
+        <item>com.android.ramdump</item>
+        <item>com.google.android.volta</item>
+        <item>com.google.android.as</item>
+        <item>com.google.mds</item>
     </string-array>
 </resources>
