@@ -18,7 +18,6 @@
 -->
 <resources>
     <style name="TextAppearance.SearchBar" parent="@android:style/TextAppearance.Material.Widget.Toolbar.Subtitle">
-        <item name="android:textSize">@dimen/search_bar_text_size</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
