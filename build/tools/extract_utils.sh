@@ -403,6 +403,7 @@ function write_blueprint_packages() {
                 printf '\t\t},\n'
             fi
             printf '\t},\n'
+            printf '\tcheck_elf_files: false,\n' "$EXTRA"
             if [ "$EXTRA" != "none" ]; then
                 printf '\tcompile_multilib: "%s",\n' "$EXTRA"
             fi
