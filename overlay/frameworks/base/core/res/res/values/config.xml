@@ -143,11 +143,33 @@
      -->
     <string name="config_defaultNetworkRecommendationProviderPackage">com.google.android.gms</string>
 
+    <!-- Default SMS Application. This will be the default SMS application when
+         the phone first boots. The user can then change the default app to one
+         of their choosing.
+         This can be overridden for devices where a different default SMS
+         application is desired.
+         If this string is empty or the specified package does not exist, then
+         the platform will search for an SMS app and use that (if there is one)
+         Note: This config is deprecated, please use config_defaultSms instead. -->
+    <string name="config_defaultSms">com.google.android.apps.messaging</string>
+
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName">com.google.android.gms</string>
 
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
+
+    <!-- The package name for the OEM custom system textclassifier service.
+         This service must be trusted, as it can be activated without explicit consent of the user.
+         Example: "com.android.textclassifier"
+         If this is empty, the default textclassifier service (i.e. config_servicesExtensionPackage)
+         will be used.
+         See android.view.textclassifier.TextClassificationManager.
+    -->
+    <string name="config_servicesExtensionPackage">com.google.android.ext.services</string>
+
+    <!-- The name of the package that will hold the system gallery role. -->
+    <string name="config_systemGallery">com.google.android.apps.photos</string>
 
     <string name="harmful_app_warning_title">Play Protect warning</string>
 
