@@ -14,10 +14,6 @@
 # limitations under the License.
 #
 
-# Enable Google Play system updates support
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/derp/apex
-
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
@@ -58,11 +54,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
 
-PRODUCT_PACKAGES += \
-    ModuleMetadataGoogle
-
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay
+
+# Inherit from apex config
+$(call inherit-product, vendor/derp/config/apex.mk)
 
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
