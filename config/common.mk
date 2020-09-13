@@ -66,8 +66,8 @@ $(call inherit-product, vendor/derp/config/audio.mk)
 # Inherit from fonts config
 $(call inherit-product, vendor/derp/config/fonts.mk)
 
-# Inherit from packages config
-$(call inherit-product, vendor/derp/config/packages.mk)
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/derp/config/rro_overlays.mk)
 
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
