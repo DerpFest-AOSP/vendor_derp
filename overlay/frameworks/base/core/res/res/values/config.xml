@@ -120,6 +120,17 @@
         <item>com.google.android.gms</item>
     </string-array>
 
+    <!-- Array of values used in Gesture Navigation settings page to reduce/increase the back
+     gesture's inset size. These values will be multiplied into the default width, read from the
+     gesture navigation overlay package, in order to create 4 different sizes which are selectable
+     via a slider component. -->
+    <array name="config_backGestureInsetScales">
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.33</item>
+        <item>1.66</item>
+    </array>
+
     <string-array name="config_locationExtraPackageNames">
         <item>com.google.android.gms.location.history</item>
     </string-array>
@@ -140,6 +151,18 @@
     <string-array name="config_locationProviderPackageNames">
         <item>com.google.android.gms</item>
         <item>com.android.location.fused</item>
+    </string-array>
+
+    <string-array name="config_nightDisplayColorTemperatureCoefficients">
+        <!-- R a-coefficient --> <item>0.0</item>
+        <!-- R b-coefficient --> <item>0.0</item>
+        <!-- R y-intercept --> <item>1.0</item>
+        <!-- G a-coefficient --> <item>-0.000000014365268757</item>
+        <!-- G b-coefficient --> <item>0.000255092801250106</item>
+        <!-- G y-intercept --> <item>-0.064156942434907716</item>
+        <!-- B a-coefficient --> <item>-0.000000000910931179</item>
+        <!-- B b-coefficient --> <item>0.000207598323269139</item>
+        <!-- B y-intercept --> <item>-0.349361641294833436</item>
     </string-array>
 
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
@@ -254,6 +277,15 @@
 
     <!-- Component name for the default module metadata provider on this device -->
     <string name="config_defaultModuleMetadataProvider">com.google.android.modulemetadata</string>
+
+    <!-- Set this to true to enable the platform's auto-power-save modes like doze and
+         app standby.  These are not enabled by default because they require a standard
+         cloud-to-device messaging service for apps to interact correctly with the modes
+         (such as to be able to deliver an instant message to the device even when it is
+         dozing).  This should be enabled if you have such services and expect apps to
+         correctly use them when installed on your device.  Otherwise, keep this disabled
+         so that applications can still use their own mechanisms. -->
+    <bool name="config_enableAutoPowerModes">true</bool>
 
     <!-- This is the default launcher package with an activity to use on secondary displays that
          support system decorations.
@@ -409,7 +441,7 @@
     <bool name="config_buttonTextAllCaps">false</bool>
 
     <!-- Whether to send a custom package name with the PSD.-->
-    <bool name="config_sendPackageName">false</bool>
+    <bool name="config_sendPackageName">true</bool>
 
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
