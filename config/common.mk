@@ -48,6 +48,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# Boot Animation
+PRODUCT_COPY_FILES += \
+    vendor/derp/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/derp/config/backup.xml:system/etc/sysconfig/backup.xml
