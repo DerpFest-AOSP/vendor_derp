@@ -251,6 +251,9 @@
     -->
     <string name="config_defaultAugmentedAutofillService">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiAugmentedAutofillService</string>
 
+    <!-- The package name for the default bug report handler app from power menu short press. This app must be whitelisted. -->
+    <string name="config_defaultBugReportHandlerApp">com.google.android.apps.internal.betterbug</string>
+
     <!-- The package name for the system's content suggestions service.
          Provides suggestions for text and image selection regions in snapshots of apps and should
          be able to classify the type of entities in those selections.
@@ -436,6 +439,9 @@
          to false.
          -->
     <bool name="config_enableNetworkLocationOverlay">true</bool>
+
+    <!-- When true, enables the whitelisted app to handle bug reports from power menu short press. -->
+    <bool name="config_bugReportHandlerEnabled">true</bool>
 
     <!-- Controls whether system buttons use all caps for text -->
     <bool name="config_buttonTextAllCaps">false</bool>
