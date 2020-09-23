@@ -145,9 +145,11 @@ def add_to_manifest(repos, fallback_branch=None):
             repo_path = repo_name.split('/')[-1]
 
         if 'branch' in repo:
-            repo_branch=repo['branch']
+            repo_branch = repo['branch']
+        elif fallback_branch:
+            repo_branch = fallback_branch
         else:
-            repo_branch=custom_default_revision
+            repo_branch = custom_default_revision
 
         if 'remote' in repo:
             repo_remote=repo['remote']
@@ -216,8 +218,9 @@ def fetch_dependencies(repo_path, fallback_branch=None):
     for dependency in dependencies:
         if not is_in_manifest(dependency['target_path']):
             if not dependency.get('branch'):
-                dependency['branch'] = (get_revision() or
-                                        custom_default_revision)
+                dependency['branch'] = (
+                    fallback_branch or get_revision() or custom_default_revision
+                )
 
             fetch_list.append(dependency)
             syncable_repos.append(dependency['target_path'])
