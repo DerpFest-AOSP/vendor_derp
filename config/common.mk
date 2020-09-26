@@ -61,6 +61,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_COPY_FILES += \
     vendor/derp/config/backup.xml:system/etc/sysconfig/backup.xml
 
+# DerpFest-specific component overrides
+PRODUCT_COPY_FILES += \
+    vendor/derp/config/component-overrides.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
+
 # Configs
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/sysconfig/dialer_experience.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/dialer_experience.xml \
