@@ -17,9 +17,6 @@
 */
 -->
 <resources>
-    <!-- Class name for the default apn service -->
-    <string name="apn_source_service">com.google.android.carrier/.ApnSourceService</string>
-
     <!-- Class name for the default main Dialer activity -->
     <string name="dialer_default_class">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
 
