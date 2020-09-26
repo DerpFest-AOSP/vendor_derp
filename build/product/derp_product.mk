@@ -14,31 +14,119 @@
 # limitations under the License.
 #
 
-# Includes all AOSP product packages
-$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_product.mk)
-
-# All modules for telephony
+# This makefile is the basis of a generic system image for a handheld device.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
-PRODUCT_PACKAGES := \
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Inherit derp products.
+$(call inherit-product, vendor/derp/build/product/handheld_system.mk)
+$(call inherit-product, vendor/derp/config/common_telephony.mk)
+
+# Shared java libs
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras
+
+# Framework overlays
+PRODUCT_PACKAGES += \
+    frameworks-base-overlays
+
+# Debug framework overlays
+PRODUCT_PACKAGES_DEBUG += \
+    frameworks-base-overlays-debug
+
+# Applications
+PRODUCT_PACKAGES += \
+    LiveWallpapersPicker \
+    PartnerBookmarksProvider \
+    PresencePolling \
+    QuickAccessWallet \
+    RcsService \
+    SafetyRegulatoryInfo \
+    Stk \
+    TimeZoneUpdater
+
+# Binaries
+PRODUCT_PACKAGES += llkd
+
+# OTA support
+PRODUCT_PACKAGES += \
+    recovery-refresh \
+    update_engine \
+    update_verifier
+
+# Wrapped net utils for /vendor access.
+PRODUCT_PACKAGES += netutils-wrapper-1.0
+
+# Charger images
+PRODUCT_PACKAGES += charger_res_images
+
+# system_other support
+PRODUCT_PACKAGES += \
+    cppreopts.sh \
+    otapreopt_script
+
+# Bluetooth libraries
+PRODUCT_PACKAGES += \
     audio.a2dp.default \
-    libfwdlockengine \
-    netutils-wrapper-1.0 \
-    preinstalled-packages-platform-full-base.xml
+    audio.hearing_aid.default
 
-PRODUCT_VENDOR_PROPERTIES := \
-    keyguard.no_require_sim?=true \
-    ro.com.android.dataroaming?=true
+# For ringtones that rely on forward lock encryption
+PRODUCT_PACKAGES += libfwdlockengine
 
-PRODUCT_COPY_FILES := \
-    device/sample/etc/apns-full-conf.xml:system/etc/apns-conf.xml \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
+# System libraries commonly depended on by things on the system_ext or product partitions.
+# These lists will be pruned periodically.
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1 \
+    android.hardware.radio@1.0 \
+    android.hardware.radio@1.1 \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.3 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.0 \
+    android.hardware.wifi@1.0 \
+    libaudio-resampler \
+    libaudiohal \
+    libdrm \
+    liblogwrap \
+    liblz4 \
+    libminui \
+    libnl \
+    libprotobuf-cpp-full
+
+# These libraries are empty and have been combined into libhidlbase, but are still depended
+# on by things off /system.
+# TODO(b/135686713): remove these
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhwbinder
+
+PRODUCT_PACKAGES_DEBUG += \
+    avbctl \
+    bootctl \
+    tinyplay \
+    tinycap \
+    tinymix \
+    tinypcminfo \
+    update_engine_client
+
+PRODUCT_HOST_PACKAGES += \
+    tinyplay
+
+# Include all zygote init scripts. "ro.zygote" will select one of them.
+PRODUCT_COPY_FILES += \
+    system/core/rootdir/init.zygote32.rc:system/etc/init/hw/init.zygote32.rc \
+    system/core/rootdir/init.zygote64.rc:system/etc/init/hw/init.zygote64.rc \
+    system/core/rootdir/init.zygote32_64.rc:system/etc/init/hw/init.zygote32_64.rc \
+    system/core/rootdir/init.zygote64_32.rc:system/etc/init/hw/init.zygote64_32.rc
 
 # Put en_US first in the list, so make it default.
 PRODUCT_LOCALES := en_US
 
-# Get a list of languages.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+# Enforce RRO targetsd
+PRODUCT_ENFORCE_RRO_TARGETS := *
 
-# Get everything else from the parent package
-$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_no_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_default.mk)

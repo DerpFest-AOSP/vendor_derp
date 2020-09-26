@@ -57,8 +57,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := *
-
 # Inherit from apex config
 $(call inherit-product, vendor/derp/config/apex.mk)
 
@@ -67,9 +65,6 @@ $(call inherit-product, vendor/derp/config/audio.mk)
 
 # Inherit from fonts config
 $(call inherit-product, vendor/derp/config/fonts.mk)
-
-# Inherit from packages config
-$(call inherit-product, vendor/derp/config/packages.mk)
 
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/derp/config/rro_overlays.mk)
