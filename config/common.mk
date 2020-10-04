@@ -67,6 +67,7 @@ PRODUCT_COPY_FILES += \
 
 # Configs
 PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/sysconfig/derp-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/derp-power-whitelist.xml \
     vendor/derp/prebuilt/common/etc/sysconfig/dialer_experience.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/dialer_experience.xml \
     vendor/derp/prebuilt/common/etc/sysconfig/turbo.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/turbo.xml
 
@@ -81,6 +82,12 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Don't include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-derp-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-derp.xml \
+    vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-derp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-derp.xml \
+    vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml
 
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
