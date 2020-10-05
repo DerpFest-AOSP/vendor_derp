@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 The Proton AOSP Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources>
+    <!-- Template for showing mobile network operator name while WFC is active -->
+    <string-array name="wfcSpnFormats" translatable="false">
+        <item>@*android:string/wfcSpnFormat_spn</item>
+        <item>@*android:string/wfcSpnFormat_spn_wifi</item>
+        <item>@*android:string/wfcSpnFormat_wlan_call</item>
+        <item>@*android:string/wfcSpnFormat_spn_wlan_call</item>
+        <item>@*android:string/wfcSpnFormat_spn_wifi</item>
+        <item>@*android:string/wfcSpnFormat_spn_wifi</item>
+        <item>@*android:string/wfcSpnFormat_spn_vowifi</item>
+        <item>@*android:string/wfcSpnFormat_wifi_calling</item>
+        <item>@*android:string/wfcSpnFormat_wifi</item>
+        <item>@*android:string/wfcSpnFormat_wifi_calling_wo_hyphen</item>
+        <item>@*android:string/wfcSpnFormat_vowifi</item>
+        <item>@*android:string/wfcSpnFormat_spn_wifi_calling_vo_hyphen</item>
+    </string-array>
+</resources>
