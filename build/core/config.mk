@@ -1,5 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
+
+# Copyright (C) 2018 DerpFest
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,5 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# We modify several neverallows, so let the build proceed
+ifneq ($(TARGET_BUILD_VARIANT),user)
+SELINUX_IGNORE_NEVERALLOWS := true
+endif
+
 # Rules for QCOM targets
 include $(TOPDIR)vendor/derp/build/core/qcom_target.mk
+
+BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/derp/build/core/system_rro.mk

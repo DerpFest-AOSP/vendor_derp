@@ -52,7 +52,17 @@ else
 KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
-CLANG_PREBUILTS := $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/clang-r383902b
+ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
+    ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
+        CLANG_PREBUILTS_VERSION := $(shell ls -d $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/clang-r* | xargs -n 1 basename | tail -1)
+    else
+        CLANG_PREBUILTS_VERSION := $(shell find $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/ -name AndroidVersion.txt -exec grep -l $(TARGET_KERNEL_CLANG_VERSION) "{}" \; | sed -e 's|/AndroidVersion.txt$$||g;s|^.*/||g')
+    endif
+else
+    CLANG_PREBUILTS_VERSION := clang-r383902b
+endif
+
+CLANG_PREBUILTS := $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(CLANG_PREBUILTS_VERSION)
 GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
 # arm64 toolchain
 KERNEL_TOOLCHAIN_arm64 := $(GCC_PREBUILTS)/aarch64/aarch64-linux-android-4.9/bin
@@ -74,7 +84,7 @@ endif
 
 ifeq ($(KERNEL_TOOLCHAIN),)
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN_PREFIX)
-else ifneq ($(KERNEL_TOOLCHAIN_PREFIX),)
+else
 KERNEL_TOOLCHAIN_PATH := $(KERNEL_TOOLCHAIN)/$(KERNEL_TOOLCHAIN_PREFIX)
 endif
 
@@ -104,7 +114,7 @@ endif
 KERNEL_MAKE_FLAGS :=
 
 # Add back threads, ninja cuts this to $(nproc)/2
-KERNEL_MAKE_FLAGS += -j$(shell prebuilts/tools-derp/$(HOST_PREBUILT_TAG)/bin/nproc --all)
+KERNEL_MAKE_FLAGS += -j$(shell prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin/nproc --all)
 
 ifeq ($(KERNEL_ARCH),arm)
   # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
@@ -127,15 +137,13 @@ ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
 endif
 
 TOOLS_PATH_OVERRIDE := \
-    PATH=$(BUILD_TOP)/prebuilts/tools-derp/$(HOST_PREBUILT_TAG)/bin:$$PATH \
-    LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-derp/$(HOST_PREBUILT_TAG)/lib:$$LD_LIBRARY_PATH \
-    PERL5LIB=$(BUILD_TOP)/prebuilts/tools-derp/common/perl-base
+    PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$$PATH \
+    LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/lib:$$LD_LIBRARY_PATH \
+    PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
 
 # Set DTBO image locations so the build system knows to build them
-ifeq ($(TARGET_NEEDS_DTBOIMAGE),true)
-BOARD_PREBUILT_DTBOIMAGE ?= $(PRODUCT_OUT)/dtbo/arch/$(KERNEL_ARCH)/boot/dtbo.img
-else ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
-BOARD_PREBUILT_DTBOIMAGE ?= $(PRODUCT_OUT)/dtbo-pre.img
+ifeq (true,$(filter true, $(TARGET_NEEDS_DTBOIMAGE) $(BOARD_KERNEL_SEPARATED_DTBO)))
+BOARD_PREBUILT_DTBOIMAGE ?= $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ/arch/$(KERNEL_ARCH)/boot/dtbo.img
 endif
 
 # Set use the full path to the make command
