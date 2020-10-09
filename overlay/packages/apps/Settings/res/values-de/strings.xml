@@ -38,5 +38,4 @@ Hinweis: Dieses Gerät kann nicht per Fingerabdruck entsperrt werden. Weitere In
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
     <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
     <string name="setup_fingerprint_enroll_finish_message">Berühre einfach den Pixel Imprint-Sensor, um den Ruhemodus deines Smartphones zu beenden und es zu entsperren.</string>
-    <string name="suggested_fingerprint_lock_settings_summary">Zum Entsperren des Smartphones Pixel Imprint nutzen</string>
 </resources>

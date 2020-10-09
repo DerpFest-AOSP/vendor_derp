@@ -147,5 +147,4 @@ Note: You can’t use your fingerprint to unlock this device. For more informati
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
     <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
     <string name="setup_fingerprint_enroll_finish_message">Just touch the Pixel Imprint sensor to wake and unlock your phone.</string>
-    <string name="suggested_fingerprint_lock_settings_summary">Use Pixel Imprint to unlock your phone</string>
 </resources>
