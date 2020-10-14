@@ -78,6 +78,7 @@ PRODUCT_PACKAGES += \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
+    FontSlateForOnePlusOverlay \
     FontAdamCGinora \
     FontBigNoodle \
     FontBikoHanken \
