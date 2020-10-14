@@ -77,6 +77,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
+	FontComicSansOverlay \
     FontRubikRubikOverlay \
     FontSlateForOnePlusOverlay \
     FontAdamCGinora \
