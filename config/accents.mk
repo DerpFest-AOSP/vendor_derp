@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+# Copyright (C) 2018-2019 The Pixel3ROM Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,16 +14,18 @@
 # limitations under the License.
 #
 
-# Overlays
+# Customization overlays
 PRODUCT_PACKAGES += \
-    FontArbutusSourceOverlay \
-    FontArvoLatoOverlay \
-    FontGoogleSansOverlayOverlay \
-    FontRubikRubikOverlay \
-    IconPackCircularPixelLauncherOverlay \
-    IconPackCircularPixelThemePickerOverlay \
-    IconPackFilledPixelLauncherOverlay \
-    IconPackFilledPixelThemePickerOverlay \
-    IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay \
-    PixelSetupWizardOverlayDerp
+    AccentColorDodgerBlueOverlay \
+    AccentColorHadalZoneOverlay \
+    AccentColorLostInForestOverlay \
+    AccentColorMagentaOverlay \
+    AccentColorPixelBlueOverlay \
+    AccentColorPurpleHeatOverlay \
+    AccentColorRedOverlay \
+    AccentColorRoseOverlay \
+    AccentColorScooterOverlay \
+    AccentColorSlateOverlay \
+    AccentColorSuperNovaOverlay \
+    AccentColorTealOverlay \
+    AccentColorTorchRedOverlay

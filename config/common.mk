@@ -110,6 +110,9 @@ $(call inherit-product, vendor/derp/config/apex.mk)
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
 
+# Inherit from accents config
+$(call inherit-product, vendor/derp/config/accents.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/derp/config/fonts.mk)
 
