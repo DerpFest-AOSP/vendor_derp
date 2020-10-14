@@ -13,7 +13,12 @@
 # limitations under the License.
 
 # Versioning System
-BUILD_DATE := $(shell date +%Y%m%d)
+ifneq ($(filter eng userdebug,$(TARGET_BUILD_VARIANT)),)
+    BUILD_DATE := $(shell date +%Y%m%d-%H%M)
+else
+    BUILD_DATE := $(shell date +%Y%m%d)
+endif
+
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
 
 DERP_BUILDTYPE ?= Community
