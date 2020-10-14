@@ -1,12 +1,4 @@
 bootstrap_go_package {
-    name: "soong-derp",
-    pkgPath: "derp/soong/android",
-    srcs: [
-        "android/variable.go",
-    ],
-}
-
-bootstrap_go_package {
     name: "soong-derp-generator",
     pkgPath: "derp/soong/generator",
     deps: [
