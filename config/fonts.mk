@@ -88,7 +88,8 @@ PRODUCT_PACKAGES += \
     FontMittelschrift \
     FontPissel \
     FontReemKufi \
-    FontRoboto
+    FontRoboto \
+    FontTinkerbell
 
 PRODUCT_COPY_FILES += \
     vendor/derp/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml

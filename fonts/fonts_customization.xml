@@ -111,4 +111,7 @@
     <family customizationType="new-named-family" name="reemkufi">
         <font weight="300" style="normal">ReemKufi-Regular.ttf</font>
     </family>
+    <family customizationType="new-named-family" name="tinkerbell">
+        <font weight="300" style="normal">GearTinkerbell.ttf</font>
+    </family>
 </fonts-modification>
