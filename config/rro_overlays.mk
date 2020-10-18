@@ -27,3 +27,8 @@ PRODUCT_PACKAGES += \
     IconPackRoundedPixelLauncherOverlay \
     IconPackRoundedPixelThemePickerOverlay \
     PixelSetupWizardOverlayDerp
+
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium
