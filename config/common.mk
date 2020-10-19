@@ -52,10 +52,12 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/derp/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
-# Blur properties
+# Blur
+ifeq ($(TARGET_USES_BLUR), true)
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=1 \
     ro.surface_flinger.supports_background_blur=1
+endif
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
