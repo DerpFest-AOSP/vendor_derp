@@ -1,3 +1,7 @@
+# ThemePicker
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Applications
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
