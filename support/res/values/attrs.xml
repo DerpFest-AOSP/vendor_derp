@@ -41,11 +41,6 @@
         <attr name="android:horizontalSpacing" />
     </declare-styleable>
 
-    <declare-styleable name="ColorSelectPreference">
-        <attr name="ledPreview" format="boolean" />
-        <attr name="multiColor" format="boolean" />
-        <attr name="withAlpha" format="boolean" />
-
     <!-- Value to pass to callback when restore button is pressed -->
     <declare-styleable name="ColorPreference">
         <attr name="defaultColorValue" format="integer" />

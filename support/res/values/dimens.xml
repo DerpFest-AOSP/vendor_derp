@@ -18,8 +18,5 @@
 
     <!-- Color Picker -->
     <dimen name="oval_notification_size">26dp</dimen>
-    <dimen name="alert_dialog_padding_material">20dp</dimen>
-    <dimen name="color_preference_width">18dip</dimen>
-    <dimen name="color_preference_height">18dip</dimen>
 
 </resources>
