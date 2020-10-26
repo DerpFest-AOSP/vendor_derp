@@ -132,6 +132,9 @@ $(call inherit-product, vendor/derp/config/packages.mk)
 # Inherit from rro_overlays config
 $(call inherit-product, vendor/derp/config/rro_overlays.mk)
 
+# Inherit from sepolicy config
+$(call inherit-product, vendor/derp/config/sepolicy.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
 

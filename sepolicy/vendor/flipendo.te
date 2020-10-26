@@ -1,0 +1,38 @@
+#
+# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+type flipendo, domain;
+app_domain(flipendo)
+
+# HwBinder IPC from client to flipendo
+binder_call(hal_power_client, flipendo)
+
+# HwBinder IPC from flipendo to statsd
+binder_call(flipendo, statsd)
+
+# HwBinder IPC from flipendo to gpuservice, and callbacks
+binder_call(gpuservice, flipendo)
+binder_call(flipendo, gpuservice)
+
+# HwBinder IPC from stats_service_server to flipendo, and callbacks
+binder_call(stats_service_server, flipendo)
+binder_call(flipendo, stats_service_server)
+
+# Allow flipendo to find app_api_service
+allow flipendo app_api_service:service_manager find;
+
+# Allow flipendo to find fwk_stats_hwservice
+allow flipendo fwk_stats_hwservice:hwservice_manager find;
