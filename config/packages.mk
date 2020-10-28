@@ -1,6 +1,7 @@
 # DerpFest packages
 PRODUCT_PACKAGES += \
     DerpSetupWizard \
+    Flipendo \
     GameSpace
 
 # Updater
