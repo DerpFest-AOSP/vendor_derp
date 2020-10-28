@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-type flipendo, domain;
+type flipendo, domain, coredomain;
 app_domain(flipendo)
 
 # HwBinder IPC from client to flipendo
@@ -30,6 +30,12 @@ binder_call(flipendo, gpuservice)
 # HwBinder IPC from stats_service_server to flipendo, and callbacks
 binder_call(stats_service_server, flipendo)
 binder_call(flipendo, stats_service_server)
+
+# Allow flipendo to find hal_power_service
+allow flipendo hal_power_service:service_manager find;
+
+# Allow flipendo to find color_display_service
+allow flipendo color_display_service:service_manager find;
 
 # Allow flipendo to find app_api_service
 allow flipendo app_api_service:service_manager find;
