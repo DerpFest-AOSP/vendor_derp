@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     IconPackFilledPixelThemePickerOverlay \
     IconPackRoundedPixelLauncherOverlay \
     IconPackRoundedPixelThemePickerOverlay \
+    PixelLauncherOverlay \
     PixelSetupWizardOverlayDerp
 
 # Navbar
