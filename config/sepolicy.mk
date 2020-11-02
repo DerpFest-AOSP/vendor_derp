@@ -15,4 +15,5 @@
 #
 
 BOARD_SEPOLICY_DIRS += \
-	vendor/derp/sepolicy/vendor
+	hardware/google/pixel-sepolicy/flipendo \
+	hardware/google/pixel-sepolicy/turbo_adapter
