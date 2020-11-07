@@ -109,6 +109,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 
+# Disable RescueParty due to high risk of data loss
+PRODUCT_PRODUCT_PROPERTIES += \
+	persist.sys.disable_rescue=true
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/common
 
