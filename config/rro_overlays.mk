@@ -16,17 +16,6 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AccentColorBlueOverlay \
-    FontArbutusSourceOverlay \
-    FontArvoLatoOverlay \
-    FontGoogleSansOverlayOverlay \
-    FontRubikRubikOverlay \
-    IconPackCircularPixelLauncherOverlay \
-    IconPackCircularPixelThemePickerOverlay \
-    IconPackFilledPixelLauncherOverlay \
-    IconPackFilledPixelThemePickerOverlay \
-    IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay \
     PixelLauncherOverlay \
     PixelSetupWizardOverlayDerp
 

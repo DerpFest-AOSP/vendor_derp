@@ -63,10 +63,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/derp/config/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
-# Fonts
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/derp/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-
 # Configs
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/sysconfig/derp-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/derp-power-whitelist.xml \
@@ -117,12 +113,6 @@ $(call inherit-product, vendor/derp/config/apex.mk)
 
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
-
-# Inherit from accents config
-$(call inherit-product, vendor/derp/config/accents.mk)
-
-# Inherit from fonts config
-$(call inherit-product, vendor/derp/config/fonts.mk)
 
 # Inherit from packages config
 $(call inherit-product, vendor/derp/config/packages.mk)
