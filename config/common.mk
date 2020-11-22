@@ -222,6 +222,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay
 
+# Ignore overlays on RRO builds
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    packages/overlays/Shishufied/Overlays
+
 # Inherit from apex config
 $(call inherit-product, vendor/derp/config/apex.mk)
 
