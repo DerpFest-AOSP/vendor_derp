@@ -1,6 +1,7 @@
 # ThemePicker
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    WallpaperPicker2
 
 # Applications
 PRODUCT_PACKAGES += \
