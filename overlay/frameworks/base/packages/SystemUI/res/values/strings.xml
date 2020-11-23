@@ -28,9 +28,6 @@
          This name is in the ComponentName flattened format (package/class)  -->
     <string name="config_screenshotEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
 
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night</string>
-
     <!-- Launcher package name for overlaying icons. -->
     <string name="launcher_overlayable_package">com.google.android.apps.nexuslauncher</string>
 </resources>

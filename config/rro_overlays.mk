@@ -16,8 +16,22 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    PixelLauncherOverlay \
+    PixelLauncherOverlay
+
+# DerpFest Overlays
+PRODUCT_PACKAGES += \
+    DerpConfigOverlay \
     PixelSetupWizardOverlayDerp
+
+# Google Overlays
+PRODUCT_PACKAGES += \
+    GoogleConfigOverlay \
+    GooglePermissionControllerOverlay \
+    GoogleWebViewOverlay \
+    PixelConfigOverlay2018 \
+    PixelConfigOverlay2019 \
+    PixelConfigOverlay2019Midyear \
+    PixelConfigOverlayCommon
 
 # Navbar
 PRODUCT_PACKAGES += \

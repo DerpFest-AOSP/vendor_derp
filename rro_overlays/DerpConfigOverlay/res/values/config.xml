@@ -17,13 +17,12 @@
 */
 -->
 <resources>
-    <!-- Default user icon colors -->
-    <color name="user_icon_1">#ffbb1420</color>
-    <color name="user_icon_2">#ff5c6bc0</color>
-    <color name="user_icon_3">#ff26a69a</color>
-    <color name="user_icon_4">#ffec407a</color>
-    <color name="user_icon_5">#ff33ac71</color>
-    <color name="user_icon_6">#ff8bc34a</color>
-    <color name="user_icon_7">#ffff9800</color>
-    <color name="user_icon_8">#ffff7043</color>
+    <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
+    <string name="config_headlineFontFamily">googlesans-sys</string>
+
+    <!-- Name of the font family used for system surfaces where the font should use medium weight -->
+    <string name="config_headlineFontFamilyMedium">googlesans-medium</string>
+
+    <!-- Allows setting custom fontFeatureSettings on specific text. -->
+    <string name="config_headlineFontFeatureSettings">ss03</string>
 </resources>
