@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Versioning System
-BUILD_DATE := $(shell date +%Y%m%d)
+BUILD_DATE := $(shell date +"%Y%m%d-%H%M%S")
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
 
 DERP_BUILDTYPE ?= Community
