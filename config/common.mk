@@ -284,6 +284,11 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # leave less information available via JDWP.
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
+# Disable touch video heatmap to reduce latency, motion jitter, and CPU usage
+# on supported devices with Deep Press input classifier HALs and models
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.input.video_enabled=false
+
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
