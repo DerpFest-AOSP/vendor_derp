@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-derp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-derp.xml \
     vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-elgoog.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-elgoog.xml
 
+# Pixel APNs
+PRODUCT_COPY_FILES += \
+	vendor/derp/prebuilt/common/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # Fonts to copy
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/fonts_shishufied.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
