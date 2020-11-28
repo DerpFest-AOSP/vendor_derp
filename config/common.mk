@@ -133,6 +133,10 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/com.android.providers.weather.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.android.providers.weather.xml \
     vendor/derp/prebuilt/common/etc/default-permissions/com.android.providers.weather.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/com.android.providers.weather.xml
 
+# Pixel APNs
+PRODUCT_COPY_FILES += \
+	vendor/derp/prebuilt/common/etc/apns-full-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml
+
 # Fonts to copy
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/fonts_shishufied.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
