@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
 # DerpFest Overlays
 PRODUCT_PACKAGES += \
     DerpConfigOverlay \
-    PixelSetupWizardOverlayDerp
+    PixelSetupWizardOverlayDerp \
+    SettingsGoogleOverlayDerp
 
 # Google Overlays
 PRODUCT_PACKAGES += \
