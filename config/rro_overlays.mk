@@ -16,6 +16,7 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FilesOverlay \
     PixelLauncherOverlay
 
 # DerpFest Overlays
