@@ -16,7 +16,6 @@
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FilesOverlay \
     PixelLauncherOverlay
 
 # DerpFest Overlays
@@ -28,6 +27,7 @@ PRODUCT_PACKAGES += \
 # Google Overlays
 PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
+    FilesOverlay \
     GoogleConfigOverlay \
     GoogleWebViewOverlay \
     PixelConfigOverlay2018 \
