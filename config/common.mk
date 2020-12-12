@@ -261,6 +261,9 @@ include packages/overlays/Shishufied/shishu.mk
 # Inherit from sepolicy config
 $(call inherit-product, vendor/derp/config/sepolicy.mk)
 
+# Inherit from textclassifier config
+$(call inherit-product, vendor/derp/config/textclassifier.mk)
+
 # Inherit from our versioning
 $(call inherit-product, vendor/derp/config/versioning.mk)
 
