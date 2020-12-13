@@ -75,8 +75,8 @@ $(foreach f,$(wildcard vendor/derp/prebuilt/common/etc/init/*.rc),\
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI \
-    Launcher3QuickStep
+    NexusLauncherRelease \
+    SystemUI
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := false
