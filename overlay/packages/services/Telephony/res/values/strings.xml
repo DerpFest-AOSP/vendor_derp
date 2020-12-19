@@ -17,12 +17,14 @@
 */
 -->
 <resources>
-    <!-- Class name for the default main Dialer activity -->
-    <string name="dialer_default_class">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
+    <string-array name="enabled_networks_except_gsm_values">
+        <item>10</item>
+        <item>0</item>
+    </string-array>
 
-    <!-- The package name for the platform carrier config app, bundled with system image. -->
-    <string name="platform_carrier_config_package">com.google.android.carrier</string>
-
-    <!-- The package name for the platform number verification supplier app. -->
-    <string name="platform_number_verification_package">com.google.android.gms</string>
+    <string-array name="enabled_networks_values">
+        <item>10</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
 </resources>
