@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     QuickAccessWallet \
     RcsService \
     SafetyRegulatoryInfo \
+    SimpleDeviceConfig \
     Stk \
     TimeZoneUpdater
 
