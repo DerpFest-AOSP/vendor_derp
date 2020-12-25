@@ -18,7 +18,11 @@
 
 package com.derp.support.colorpicker;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.res.Configuration;
 import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
@@ -30,8 +34,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.preference.*;
 import android.util.AttributeSet;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
+import android.widget.Button;
+import android.widget.GridLayout;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -53,6 +60,7 @@ public class ColorPickerPreference extends Preference implements
     PreferenceViewHolder mView;
     LinearLayout mWidgetFrameView;
     ColorPickerDialog mDialog;
+    AlertDialog mSimpleDialog;
     private int mDefaultValue = Color.BLACK;
     private int mCurrentValue = mDefaultValue;
     private float mDensity = 0;
@@ -95,7 +103,7 @@ public class ColorPickerPreference extends Preference implements
     @Override
     protected void onSetInitialValue(boolean restorePersistedValue, Object defaultValue) {
         // when using PreferenceDataStore, restorePersistedValue is always true (see Preference class for reference)
-        // so we load the persistent value with getPersistedInt if available in the data store,
+        // so we load the persistent value with getPersistedInt if available in the data store, 
         // and use defaultValue as fallback (onGetDefaultValue has been already called and it loaded the android:defaultValue attr from our xml).
         if (defaultValue == null) {
             // if we forgot to add android:defaultValue, default to black color
@@ -106,16 +114,18 @@ public class ColorPickerPreference extends Preference implements
     }
 
     private void init(Context context, AttributeSet attrs) {
+        /*mIsCrappyLedDevice = getContext().getResources().getBoolean(com.android.internal.R.bool.config_isCrappyLedDevice);*/
         mDensity = getContext().getResources().getDisplayMetrics().density;
         setOnPreferenceClickListener(this);
         if (attrs != null) {
             mAlphaSliderEnabled = attrs.getAttributeBooleanValue(null, "alphaSlider", false);
             mDefaultValue = attrs.getAttributeIntValue(ANDROIDNS, "defaultValue", Color.BLACK);
+            mShowLedPreview = attrs.getAttributeBooleanValue(null, "ledPreview", false);
+            mIsLedColorPicker = attrs.getAttributeBooleanValue(null, "isledPicker", false);
             mShowReset = attrs.getAttributeBooleanValue(SETTINGS_NS, "showReset", true);
             mShowPreview = attrs.getAttributeBooleanValue(SETTINGS_NS, "showPreview", true);
             mDividerAbove = attrs.getAttributeBooleanValue(SETTINGS_NS, "dividerAbove", false);
             mDividerBelow = attrs.getAttributeBooleanValue(SETTINGS_NS, "dividerBelow", false);
-            mShowLedPreview = attrs.getAttributeBooleanValue(null, "ledPreview", false);
         }
     }
 
@@ -202,9 +212,7 @@ public class ColorPickerPreference extends Preference implements
                 mWidgetFrameView.removeView(preview);
             }
         }
-
         if (!isEnabled()) return;
-
         ImageView iView = new ImageView(getContext());
         mWidgetFrameView.addView(iView);
         final int size = (int) getContext().getResources().getDimension(R.dimen.oval_notification_size);
@@ -212,13 +220,6 @@ public class ColorPickerPreference extends Preference implements
                 (mCurrentValue - 0x101010) : mCurrentValue;
         iView.setImageDrawable(createOvalShape(size, 0xFF000000 + imageColor));
         iView.setTag("preview");
-    }
-
-    @Override
-    public void setEnabled (boolean enabled) {
-        super.setEnabled(enabled);
-        setPreviewColor();
-        setDefaultButton();
     }
 
     @Override
@@ -236,11 +237,20 @@ public class ColorPickerPreference extends Preference implements
         }
     }
 
+    private void onSimpleColorChanged(int color) {
+        onColorChanged(color);
+    }
+
     public boolean onPreferenceClick(Preference preference) {
         return false;
     }
 
     protected void showDialog(Bundle state) {
+        /*if (mIsCrappyLedDevice && (mShowLedPreview || mIsLedColorPicker)) {
+            showSimplePickerDialog();
+            return;
+        }*/
+
         mDialog = new ColorPickerDialog(getContext(), mCurrentValue, mShowLedPreview);
         mDialog.setOnColorChangedListener(this);
         if (mAlphaSliderEnabled) {
@@ -252,6 +262,125 @@ public class ColorPickerPreference extends Preference implements
         mDialog.show();
         mDialog.getWindow().setSoftInputMode(
                 android.view.WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+    }
+
+    private void showSimplePickerDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        View mView = LayoutInflater.from(getContext()).inflate(R.layout.color_picker_simple_dialog, null);
+        builder.setView(mView)
+                .setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            mSimpleDialog.dismiss();
+                        }
+                })
+                .setNeutralButton(R.string.color_default, new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            onSimpleColorChanged(mDefaultValue != 1 ? mDefaultValue : Color.WHITE);
+                        }
+                })
+                .setCancelable(false);
+
+        Button white;
+        white = mView.findViewById(R.id.white);
+        if (white != null) {
+            white.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.WHITE);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button red;
+        red = mView.findViewById(R.id.red);
+        if (red != null) {
+            red.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.RED);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button yellow;
+        yellow = mView.findViewById(R.id.yellow);
+        if (yellow != null) {
+            yellow.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.YELLOW);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button blue;
+        blue = mView.findViewById(R.id.blue);
+        if (blue != null) {
+            blue.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.BLUE);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button cyan;
+        cyan = mView.findViewById(R.id.cyan);
+        if (cyan != null) {
+            cyan.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.CYAN);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button magenta;
+        magenta = mView.findViewById(R.id.magenta);
+        if (magenta != null) {
+            magenta.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.MAGENTA);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button green;
+        green = mView.findViewById(R.id.green);
+        if (green != null) {
+            green.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.GREEN);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+        Button black;
+        black = mView.findViewById(R.id.black);
+        if (black != null) {
+            black.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onSimpleColorChanged(Color.BLACK);
+                    mSimpleDialog.dismiss();
+                }
+            });
+        }
+
+        GridLayout gridlayout;
+        int intOrientation = getContext().getResources().getConfiguration().orientation;
+        // Lets split this up instead of creating two different layouts
+        // just so we can change the columns
+        gridlayout = mView.findViewById(R.id.Gridlayout);
+        gridlayout.setColumnCount(intOrientation == Configuration.ORIENTATION_PORTRAIT ? 4 : 8);
+
+        mSimpleDialog = builder.create();
+        mSimpleDialog.show();
+
     }
 
     /**
@@ -342,13 +471,21 @@ public class ColorPickerPreference extends Preference implements
     @Override
     protected Parcelable onSaveInstanceState() {
         final Parcelable superState = super.onSaveInstanceState();
-        if (mDialog == null || !mDialog.isShowing()) {
-            return superState;
-        }
-
-        final SavedState myState = new SavedState(superState);
-        myState.dialogBundle = mDialog.onSaveInstanceState();
-        return myState;
+        /*if (mIsCrappyLedDevice && (mShowLedPreview || mIsLedColorPicker)) {
+            if (mSimpleDialog == null || !mSimpleDialog.isShowing()) {
+                return superState;
+            }
+            final SavedState myState = new SavedState(superState);
+            myState.dialogBundle = mSimpleDialog.onSaveInstanceState();
+            return myState;
+        } else {*/
+            if (mDialog == null || !mDialog.isShowing()) {
+                return superState;
+            }
+            final SavedState myState = new SavedState(superState);
+            myState.dialogBundle = mDialog.onSaveInstanceState();
+            return myState;
+        //}
     }
 
     @Override
@@ -401,5 +538,12 @@ public class ColorPickerPreference extends Preference implements
         shape.setIntrinsicWidth(size);
         shape.getPaint().setColor(color);
         return shape;
+    }
+
+    @Override
+    public void setEnabled (boolean enabled) {
+        super.setEnabled(enabled);
+        setPreviewColor();
+        setDefaultButton();
     }
 }
