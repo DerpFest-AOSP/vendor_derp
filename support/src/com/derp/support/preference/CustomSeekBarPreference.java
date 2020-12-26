@@ -36,45 +36,29 @@ import androidx.preference.*;
 import com.derp.support.R;
 
 public class CustomSeekBarPreference extends Preference implements SeekBar.OnSeekBarChangeListener {
-    protected final String TAG = getClass().getName();
-    protected static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
-    protected static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
-    protected static final int DEFAULT_VALUE = 50;
+    private final String TAG = getClass().getName();
+    private static final String SETTINGS_NS = "http://schemas.android.com/apk/res/com.android.settings";
+    private static final String ANDROIDNS = "http://schemas.android.com/apk/res/android";
+    private static final int DEFAULT_VALUE = 50;
 
-    protected Context mContext;
-    protected boolean mAllowEdit;
-    protected View mTextContainer;
-    protected int mMin = 0;
-    protected int mInterval = 1;
-    protected int mCurrentValue;
-    protected int mDefaultValue = -1;
-    protected int mMax = 100;
-    protected String mUnits = "";
-    protected SeekBar mSeekBar;
-    protected TextView mTitle;
-    protected TextView mStatusText;
-    protected AlertDialog mEditValueDialog;
+    private Context mContext;
+    private boolean mAllowEdit;
+    private View mTextContainer;
+    private int mMin = 0;
+    private int mInterval = 1;
+    private int mCurrentValue;
+    private int mDefaultValue = -1;
+    private int mMax = 100;
+    private String mUnits = "";
+    private SeekBar mSeekBar;
+    private TextView mTitle;
+    private TextView mStatusText;
+    private AlertDialog mEditValueDialog;
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr,
             int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        init(context, attrs, defStyleAttr, defStyleRes);
-    }
 
-    public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
-        this(context, attrs, defStyleAttr, 0);
-    }
-
-    public CustomSeekBarPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, 0);
-    }
-
-    public CustomSeekBarPreference(Context context) {
-        this(context, null);
-    }
-
-    protected void init(Context context, AttributeSet attrs, int defStyleAttr,
-            int defStyleRes) {
         mContext = context;
         final TypedArray a = context.obtainStyledAttributes(
                 attrs, R.styleable.CustomSeekBarPreference);
@@ -109,7 +93,19 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         setLayoutResource(R.layout.preference_custom_seekbar);
     }
 
-    protected String getAttributeStringValue(AttributeSet attrs, String namespace, String name,
+    public CustomSeekBarPreference(Context context, AttributeSet attrs, int defStyleAttr) {
+        this(context, attrs, defStyleAttr, 0);
+    }
+
+    public CustomSeekBarPreference(Context context, AttributeSet attrs) {
+        this(context, attrs, 0);
+    }
+
+    public CustomSeekBarPreference(Context context) {
+        this(context, null);
+    }
+
+    private String getAttributeStringValue(AttributeSet attrs, String namespace, String name,
             String defaultValue) {
         String value = attrs.getAttributeValue(namespace, name);
         if (value == null)
@@ -133,10 +129,6 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
     @Override
     public void onBindViewHolder(PreferenceViewHolder view) {
         super.onBindViewHolder(view);
-        handleBindViewHolder(view);
-    }
-
-    protected void handleBindViewHolder(PreferenceViewHolder view) {
         try
         {
             // move our seekbar to the new view we've been given
@@ -179,7 +171,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
         mSeekBar.setEnabled(isEnabled());
     }
 
-    protected void showEditDialog() {
+    private void showEditDialog() {
         LayoutInflater inflater = LayoutInflater.from(mContext);
         View editDialogView = inflater.inflate(R.layout.edit_dialog, null);
         EditText editText = editDialogView.findViewById(R.id.editText);
@@ -201,7 +193,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
                             refresh(valueToSet);
                         }
                 });
-                builder.setNeutralButton(android.R.string.cancel,
+                builder.setNeutralButton(R.string.cancel,
                     new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {

@@ -44,7 +44,7 @@ public class AppPicker extends ListActivity {
 
     protected PackageManager packageManager = null;
     protected List<ApplicationInfo> applist = null;
-    protected Adapter listadapter = null;
+    Adapter listadapter = null;
 
     protected List<ActivityInfo> mActivitiesList = null;
     protected boolean mIsActivitiesList = false;
@@ -74,9 +74,9 @@ public class AppPicker extends ListActivity {
     @Override
     public void onBackPressed() {
         if (mIsActivitiesList) {
+            // Reset the dialog again
             setListAdapter(listadapter);
             setTitle(R.string.active_edge_app_select_title);
-            // Reset the dialog again
             mIsActivitiesList = false;
         } else {
             finish();
@@ -285,4 +285,3 @@ public class AppPicker extends ListActivity {
         }
     }
 }
-
