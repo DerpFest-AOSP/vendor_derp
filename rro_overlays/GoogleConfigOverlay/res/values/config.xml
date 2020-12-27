@@ -18,7 +18,7 @@
 -->
 <resources>
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
-    <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
+    <string name="config_appsAuthorizedForSharedAccounts">com.android.vending:com.android.settings</string>
 
     <!-- The component name, flattened to a string, for the default accessibility service to be
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
