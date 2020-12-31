@@ -71,4 +71,6 @@
     </string-array>
 
     <string-array name="config_locationExtraPackageNames">com.google.android.gms.location.history</string-array>
+
+    <string name="config_wallpaperCropperPackage">com.google.android.apps.wallpaper</string>
 </resources>
