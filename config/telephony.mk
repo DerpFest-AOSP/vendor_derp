@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     bluegrass_us.pb \
     boost_us.pb \
     boosttmo_us.pb \
+    consumercellulartmo_us.pb \
     bouygues_fr.pb \
     btb_gb.pb \
     btc_gb.pb \
@@ -82,7 +83,9 @@ PRODUCT_PACKAGES += \
     rogers_ca.pb \
     sfr_fr.pb \
     shaw_ca.pb \
+    redpockettmo_us.pb \
     simple_us.pb \
+    tmomvno_us.pb \
     singtel_sg.pb \
     smarty_gb.pb \
     softbank_jp.pb \
