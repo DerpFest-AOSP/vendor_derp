@@ -1,6 +1,7 @@
 # ThemePicker
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    Updater
 
 # Applications
 PRODUCT_PACKAGES += \
