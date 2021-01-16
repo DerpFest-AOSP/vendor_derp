@@ -78,7 +78,7 @@
     <string name="widget_default_class_name">com.android.alarmclock.DigitalAppWidgetProvider</string>
 
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
-    <string name="widget_default_package_name">com.google.android.deskclock</string>
+    <string name="widget_default_package_name">com.android.deskclock</string>
 
     <!-- Additional non-platform defined system settings exposed to Instant Apps -->
     <string-array name="config_allowedSecureInstantAppSettings">

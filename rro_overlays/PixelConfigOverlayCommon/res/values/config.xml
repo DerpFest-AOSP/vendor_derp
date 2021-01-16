@@ -67,7 +67,7 @@
          rendered inoperative for safety reasons, like the phone dialer and
          SMS handler. -->
     <string-array name="config_nonBlockableNotificationPackages">
-        <item>com.google.android.deskclock:Firing</item>
+        <item>com.android.deskclock:Firing</item>
         <item>com.google.android.setupwizard</item>
         <item>com.google.android.apps.pixelmigrate</item>
         <item>com.google.android.dialer</item>
