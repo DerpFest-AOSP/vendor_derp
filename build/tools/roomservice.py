@@ -301,6 +301,10 @@ def main():
     print("Device {0} not found. Attempting to retrieve device repository from "
           "{1} Github (http://github.com/{1}).".format(device, org_display))
 
+    if os.getenv('IS_CIENV', "false") == "false":
+        print('Building in a non-CI environment, will not run roomservice. If you would like to run roomservice please "export IS_CIENV=true".')
+        return
+
     githubreq = urllib.request.Request(
         "https://api.github.com/search/repositories?"
         "q={0}+user:{1}+in:name+fork:true".format(device, org_display))
