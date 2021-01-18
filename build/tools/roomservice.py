@@ -38,6 +38,10 @@ custom_dependencies = "derp.dependencies"
 org_manifest = "derp-devices"  # leave empty if org is provided in manifest
 org_display = "DerpFest-Devices"  # needed for displaying
 
+default_manifest = ".repo/manifests/default.xml"
+derp_manifest = ".repo/manifests/snippets/derp.xml"
+lineage_manifest = ".repo/manifests/snippets/lineage.xml"
+
 github_auth = os.getenv('GITHUB_API_TOKEN', None)
 
 
@@ -67,6 +71,14 @@ def add_auth(g_req):
     if github_auth:
         g_req.add_header("Authorization", "token %s" % github_auth)
 
+def exists_in_tree(lm, repository):
+     for child in lm.getchildren():
+        try:
+            if child.attrib['path'].endswith(repository):
+                return child
+        except:
+            pass
+     return None
 
 def indent(elem, level=0):
     # in-place prettyprint formatter
@@ -131,6 +143,9 @@ def is_in_manifest(project_path):
 
 def add_to_manifest(repos, fallback_branch=None):
     lm = load_manifest(custom_local_manifest)
+    mlm = load_manifest(default_manifest)
+    derpm = load_manifest(derp_manifest)
+    lineagem = load_manifest(lineage_manifest)
 
     for repo in repos:
 
@@ -159,6 +174,21 @@ def add_to_manifest(repos, fallback_branch=None):
         if is_in_manifest(repo_path):
             print('%s already exists in the manifest' % repo_path)
             continue
+
+        existing_m_project = None
+        if exists_in_tree(mlm, repo_target) != None:
+           existing_m_project = exists_in_tree(mlm, repo_target)
+        elif exists_in_tree(derpm, repo_target) != None:
+             existing_m_project = exists_in_tree(derpm, repo_target)
+        elif exists_in_tree(lineagem, repo_target) != None:
+             existing_m_project = exists_in_tree(lineagem, repo_target)
+
+        if existing_m_project != None:
+            if existing_m_project.attrib['path'] == repo['target_path']:
+                print('%s already exists in main manifest, replacing with new dep' % repo_name)
+                lm.append(ElementTree.Element("remove-project", attrib = {
+                    "name": existing_m_project.attrib['name']
+                }))
 
         print('Adding dependency:\nRepository: %s\nBranch: %s\nRemote: %s\nPath: %s\n' % (repo_name, repo_branch,repo_remote, repo_path))
 
