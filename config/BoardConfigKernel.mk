@@ -53,6 +53,8 @@ else
 KERNEL_ARCH := $(TARGET_KERNEL_ARCH)
 endif
 
+TARGET_KERNEL_HEADERS ?= $(TARGET_KERNEL_SOURCE)
+
 ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
     ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
         CLANG_PREBUILTS_VERSION := $(shell ls -d $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/clang-r* | xargs -n 1 basename | tail -1)
