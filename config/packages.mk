@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     Launcher3QuickStep \
     OmniJaws \
     OmniStyle \
+    SoftAPManager \
     StitchImage \
     StitchImageService \
     ThemePicker \
