@@ -16,6 +16,7 @@
 
 runtime_resource_overlay {
     name: "GoogleWebViewOverlay",
+    theme: "GoogleWebViewOverlay",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true
