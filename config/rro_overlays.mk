@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     GoogleConfigOverlay \
-    GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \

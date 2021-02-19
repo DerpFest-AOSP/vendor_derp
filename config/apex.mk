@@ -28,7 +28,6 @@ PRODUCT_PACKAGES += \
     com.google.android.mediaprovider \
     com.google.android.neuralnetworks \
     com.google.android.os.statsd \
-    com.google.android.permission \
     com.google.android.resolv \
     com.google.android.sdkext \
     com.google.android.telephony \

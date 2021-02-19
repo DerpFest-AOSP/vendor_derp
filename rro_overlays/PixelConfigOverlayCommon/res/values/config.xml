@@ -238,7 +238,7 @@
         a bugreport or incident report with EXPLICT-level sharing flags is going to be
         shared, this app will be sent the PENDING_INCIDENT_REPORTS_CHANGED broadcast.
     -->
-    <string name="config_incidentReportApproverPackage">com.google.android.permissioncontroller</string>
+    <string name="config_incidentReportApproverPackage">com.android.permissioncontroller</string>
 
     <!-- Package name that will receive an explicit manifest broadcast for
          android.os.action.POWER_SAVE_MODE_CHANGED. -->
