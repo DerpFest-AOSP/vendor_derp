@@ -5,7 +5,7 @@ NC="\033[0m"
 if [ "$1" ]; then
     echo "Generating .json"
     file_path=$1
-    file_name=$(basename "$file_path")
+    file_name=$(basename $file_path)
     if [ -f $file_path ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
@@ -17,11 +17,11 @@ if [ "$1" ]; then
             echo "  \"response\": [" >> $file_path.json
             echo "    {" >> $file_path.json
             echo "     \"datetime\": ${datetime}," >> $file_path.json
-            echo "     \"filename\": \"${file_name}\"" >> $file_path.json
-            echo "     \"id\": \"${id}\"" >> $file_path.json
-            echo "     \"romtype\": \"Official\"" >> $file_path.json
+            echo "     \"filename\": \"${file_name}\"," >> $file_path.json
+            echo "     \"id\": \"${id}\"," >> $file_path.json
+            echo "     \"romtype\": \"Official\"," >> $file_path.json
             echo "     \"size\": ${file_size}," >> $file_path.json
-            echo "     \"url\": \"${link}\"" >> $file_path.json
+            echo "     \"url\": \"${link}\"," >> $file_path.json
             echo "     \"version\": \"11\"" >> $file_path.json
             echo "    }" >> $file_path.json
             echo "  ]" >> $file_path.json
