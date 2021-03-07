@@ -1,5 +1,6 @@
 # DerpFest required packages
 PRODUCT_PACKAGES += \
+    OmniJaws \
     OmniStyle \
     StitchImage \
     StitchImageService \
