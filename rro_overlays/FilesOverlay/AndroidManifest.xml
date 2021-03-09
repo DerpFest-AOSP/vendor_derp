@@ -16,9 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.files.theme.pixel"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.google.android.files.theme.pixel">
     <overlay android:priority="0" android:targetName="FilesCustomization" android:targetPackage="com.google.android.apps.nbu.files"/>
 
     <application android:hasCode="false"/>

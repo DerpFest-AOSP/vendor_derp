@@ -16,9 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.overlay.pixelconfig2019midyear"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.google.android.overlay.pixelconfig2019midyear">
     <overlay android:isStatic="true" android:priority="5" android:targetPackage="android"/>
 
     <application android:hasCode="false"/>

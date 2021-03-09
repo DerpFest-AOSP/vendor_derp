@@ -16,9 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.pixel.setupwizard.derp"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.google.android.pixel.setupwizard.derp">
     <overlay android:isStatic="true" android:priority="190" android:targetPackage="com.google.android.pixel.setupwizard"/>
 
     <application android:hasCode="false"/>

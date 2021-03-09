@@ -16,9 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.networkstack.tethering.overlay"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.google.android.networkstack.tethering.overlay">
     <overlay android:isStatic="true" android:targetName="TetheringConfig" android:targetPackage="com.google.android.networkstack.tethering"/>
 
     <application android:hasCode="false"/>

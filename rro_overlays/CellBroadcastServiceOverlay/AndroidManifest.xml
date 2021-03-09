@@ -16,9 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.cellbroadcastservice.overlay.pixel"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.android.cellbroadcastservice.overlay.pixel">
     <overlay android:isStatic="true" android:priority="0" android:targetName="CellBroadcastServiceCustomization" android:targetPackage="com.google.android.cellbroadcastservice"/>
 
     <application android:hasCode="false"/>
