@@ -31,8 +31,7 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
-    PixelConfigOverlayCommon \
-    PixelTetheringOverlay
+    PixelConfigOverlayCommon
 
 # Navbar
 PRODUCT_PACKAGES += \
