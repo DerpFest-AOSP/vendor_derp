@@ -17,6 +17,6 @@
 */
 -->
 <resources>
-    <bool name="enable_junk_card">false</bool>
-    <bool name="enable_share_tab">false</bool>
+    <bool name="enable_junk_card">true</bool>
+    <bool name="enable_share_tab">true</bool>
 </resources>
