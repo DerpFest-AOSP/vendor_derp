@@ -330,6 +330,3 @@ $(call inherit-product, vendor/derp/config/versioning.mk)
 
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
-
-# Inherit from telephony config
-$(call inherit-product, vendor/derp/config/telephony.mk)
