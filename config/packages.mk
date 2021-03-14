@@ -1,7 +1,6 @@
 # DerpFest required packages
 PRODUCT_PACKAGES += \
     OmniStyle \
-    ShishufiedHeaders \
     StitchImage \
     StitchImageService \
     ThemePicker \
