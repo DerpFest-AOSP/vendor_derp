@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    vendor/derp/sepolicy/private
+
 BOARD_SEPOLICY_DIRS += \
 	hardware/google/pixel-sepolicy/flipendo \
 	hardware/google/pixel-sepolicy/turbo_adapter
