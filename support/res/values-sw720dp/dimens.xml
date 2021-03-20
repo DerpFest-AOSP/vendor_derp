@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2018 The Dirty Unicorns Project
+<!-- Copyright (C) 2021 AOSiP
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -16,11 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Color Picker -->
-    <dimen name="oval_notification_size">26dp</dimen>
-
     <!-- App list preference -->
-    <dimen name="app_list_margin_start">72dp</dimen>
-    <dimen name="app_list_margin_end">16dp</dimen>
+    <dimen name="app_list_margin_start">80dp</dimen>
 
 </resources>
