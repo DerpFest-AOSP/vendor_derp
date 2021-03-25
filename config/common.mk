@@ -266,6 +266,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     iorapd.perfetto.enable=true \
     iorapd.readahead.enable=true \
+    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
+    persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
     ro.iorapd.enable=true
 
 # Strip the local variable table and the local variable type table to reduce
