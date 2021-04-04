@@ -11,7 +11,8 @@ if [ "$1" ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
             sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
-            datetime=$(date +%s)
+            currenttime=$(date +%s)
+            datetime=$(($currenttime - 86400))
             id=$(sha256sum $file_path | awk '{ print $1 }')
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
             echo "{" > $file_path.json
