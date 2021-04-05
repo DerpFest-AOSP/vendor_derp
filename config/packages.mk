@@ -1,6 +1,7 @@
 # DerpFest required packages
 PRODUCT_PACKAGES += \
     DerpWalls \
+    GamingMode \
     Launcher3 \
     Launcher3QuickStep \
     OmniJaws \
