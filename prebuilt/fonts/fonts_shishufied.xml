@@ -24,6 +24,9 @@
     <alias name="gobold-light-sys" to="gobold-sys" weight="300" />
 
     <!-- Lockscren Fonts -->
+    <family customizationType="new-named-family" name="anaheim">
+        <font weight="300" style="normal">Anaheim-Regular.ttf</font>
+    </family>
     <family customizationType="new-named-family" name="roadrage-sys">
         <font weight="300" style="normal">RoadRage-Regular.ttf</font>
     </family>

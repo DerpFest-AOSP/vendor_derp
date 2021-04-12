@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
 # Fonts to copy
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/fonts_shishufied.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml \
+    vendor/derp/prebuilt/fonts/anaheim/Anaheim-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Anaheim-Regular.ttf \
     vendor/derp/prebuilt/fonts/gobold/Gobold.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Gobold.ttf \
     vendor/derp/prebuilt/fonts/gobold/Gobold-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Gobold-Italic.ttf \
     vendor/derp/prebuilt/fonts/gobold/GoboldBold.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/GoboldBold.ttf \
