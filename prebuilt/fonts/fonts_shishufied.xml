@@ -356,5 +356,14 @@
     <family customizationType="new-named-family" name="volte-medium">
         <font weight="300" style="normal">Volte-Medium.ttf</font>
     </family>
-
+    <family customizationType="new-named-family" name="roboto-slab">
+        <font weight="400" style="normal"> RobotoSlab-Regular.ttf</font>
+        <font weight="500" style="normal"> RobotoSlab-Medium.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="arbutus-slab">
+        <font weight="400" style="normal">ArbutusSlab-Regular.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="noto-serif">
+        <font weight="400" style="normal">NotoSerif-Regular.ttf</font>
+    </family>
 </fonts-modification>

@@ -257,7 +257,11 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/fontagev3/VG5000-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/VG5000-Regular.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/Vladisvostok-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Vladisvostok-Regular.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/Volte-Bold.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Volte-Bold.ttf \
-    vendor/derp/prebuilt/fonts/fontagev3/Volte-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Volte-Medium.ttf
+    vendor/derp/prebuilt/fonts/fontagev3/Volte-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Volte-Medium.ttf \
+    vendor/derp/prebuilt/fonts/roboto-slab/RobotoSlab-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/RobotoSlab-Regular.ttf \
+    vendor/derp/prebuilt/fonts/roboto-slab/RobotoSlab-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/RobotoSlab-Medium.ttf \
+    vendor/derp/prebuilt/fonts/arbutus-slab/ArbutusSlab-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ArbutusSlab-Regular.ttf \
+    vendor/derp/prebuilt/fonts/noto-serif/NotoSerif-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/NotoSerif-Regular.ttf
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
