@@ -17,8 +17,8 @@
 */
 -->
 <resources>
-    <string name="exit_to_action_in_initial_setup">com.google.android.apps.tips/.action.GESTURAL_ONBOARDING_ALL_SET</string>
-    <string-array name="deferred_medium_priority_actions">
+    <string name="exit_to_action_in_initial_setup" translatable="false">com.google.android.apps.tips/.action.GESTURAL_ONBOARDING_ALL_SET</string>
+    <string-array name="deferred_medium_priority_actions" translatable="false">
         <item>intent:#Intent;action=com.google.android.setupwizard.OPA_OPT_IN;end</item>
         <item>lock_screen</item>
         <item>restore</item>

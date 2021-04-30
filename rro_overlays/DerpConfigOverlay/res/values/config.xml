@@ -20,11 +20,17 @@
     <!-- Flag indicating whether we should enable the adaptive sleep.-->
     <bool name="config_adaptive_sleep_available">false</bool>
 
+     <!-- Name of a font family to use for body text. -->
+    <string name="config_bodyFontFamily" translatable="false">googlesans-sys</string>
+
+    <!-- Name of a font family to use for medium body text. -->
+    <string name="config_bodyFontFamilyMedium" translatable="false">googlesans-medium</string>
+
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily">googlesans-sys</string>
+    <string name="config_headlineFontFamily" translatable="false">googlesans-sys</string>
 
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
-    <string name="config_headlineFontFamilyMedium">googlesans-medium</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">googlesans-medium</string>
 
     <!-- Allows setting custom fontFeatureSettings on specific text. -->
     <string name="config_headlineFontFeatureSettings">ss03</string>

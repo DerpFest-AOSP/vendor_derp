@@ -19,7 +19,7 @@
 <resources>
     <!-- A list of apps to be retained in the managed profile by a particular vendor.
             Takes precedence over the disallowed apps lists. -->
-    <string-array name="vendor_required_apps_managed_profile">
+    <string-array name="vendor_required_apps_managed_profile" translatable="false">
         <item>com.android.vending</item>
         <item>com.google.android.gms</item>
         <item>com.google.android.contacts</item>

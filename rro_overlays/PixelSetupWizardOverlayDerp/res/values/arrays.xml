@@ -18,7 +18,7 @@
 -->
 <resources>
     <array name="esim_activation_supported_countries" />
-    <string-array name="esim_activation_unsupported_countries">
+    <string-array name="esim_activation_unsupported_countries" translatable="false">
         <item>sg</item>
     </string-array>
 </resources>
