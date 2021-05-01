@@ -10,7 +10,7 @@ if [ "$1" ]; then
     if [ -f $file_path ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
-            md5=$(cat "$file_path.md5sum" | cut -d' ' -f1)
+            sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
             datetime=$(date +%s)
             id=$(sha256sum $file_path | awk '{ print $1 }')
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
