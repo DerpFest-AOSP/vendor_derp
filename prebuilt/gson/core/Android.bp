@@ -1,0 +1,6 @@
+java_import {
+    name: "gson-2.8.6",
+    host_supported: true,
+    installable: false,
+    jars: ["gson-2.8.6.jar"],
+}
