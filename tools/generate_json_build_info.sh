@@ -7,12 +7,12 @@ if [ "$1" ]; then
     file_path=$1
     file_name=$(basename $file_path)
     device_name=$(echo $file_name | cut -d "-" -f 5)
+    buildprop=out/target/product/$device_name/system/build.prop
     if [ -f $file_path ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
             sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
-            currenttime=$(date +%s)
-            datetime=$(($currenttime - 86400))
+            datetime=$(grep ro\.build\.date\.utc $buildprop | cut -d= -f2)
             id=$(sha256sum $file_path | awk '{ print $1 }')
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
             echo "{" > $file_path.json
