@@ -162,7 +162,7 @@
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer</string>
 
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
-    <string name="config_defaultListenerAccessPackages" translatable="false">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
+    <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
     <!-- Component name for the default module metadata provider on this device -->
     <string name="config_defaultModuleMetadataProvider" translatable="false">com.google.android.modulemetadata</string>
@@ -249,7 +249,7 @@
          configuration uses Launcehr3QuickStep as default launcher and points to the corresponding
          recents component. When using a different default launcher, change this appropriately or
          use the default systemui implementation: com.android.systemui/.recents.RecentsActivity -->
-    <string name="config_recentsComponentName" translatable="false">com.google.android.apps.nexuslauncher/com.android.quickstep.RecentsActivity</string>
+    <string name="config_recentsComponentName" translatable="false">com.android.launcher3/com.android.quickstep.RecentsActivity</string>
 
     <!-- The package name for the default retail demo app.
          This package must be trusted, as it has the permissions to query the usage stats on the
@@ -269,5 +269,5 @@
          This launcher package must have an activity that supports multiple instances and has
          corresponding launch mode set in AndroidManifest.
          {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
-    <string name="config_secondaryHomePackage" translatable="false">com.google.android.apps.nexuslauncher</string>
+    <string name="config_secondaryHomePackage" translatable="false">com.android.launcher3</string>
 </resources>
