@@ -1,6 +1,8 @@
 # DerpFest required packages
 PRODUCT_PACKAGES += \
     CameraRoll \
+    Launcher3 \
+    Launcher3QuickStep \
     OmniJaws \
     OmniStyle \
     StitchImage \
