@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
 
 # Carriers Databases
 PRODUCT_PACKAGES += \
+    a1_at.pb \
     airtel_in.pb \
     apt_tw.pb \
     att5g_us.pb \
@@ -61,11 +62,13 @@ PRODUCT_PACKAGES += \
     firstnetpacific2_us.pb \
     firstnetpacific_us.pb \
     fizz_ca.pb \
+    free_fr.pb \
     freedommobile_ca.pb \
     gamma_gb.pb \
     h3_at.pb \
     h3_gb.pb \
     h3_se.pb \
+    halebop_se.pb \
     homobile_it.pb \
     idea_in.pb \
     idmobile_gb.pb \
@@ -73,6 +76,7 @@ PRODUCT_PACKAGES += \
     kddimvno_jp.pb \
     kena_it.pb \
     koodo_ca.pb \
+    kpn_nl.pb \
     luckymobile_ca.pb \
     movistar_es.pb \
     o2_de.pb \
@@ -101,6 +105,7 @@ PRODUCT_PACKAGES += \
     sprintprepaid_us.pb \
     sprintwholesale_us.pb \
     starhub_sg.pb \
+    stc_sa.pb \
     sunrise_ch.pb \
     swisscom_ch.pb \
     swisscom_li.pb \
@@ -111,12 +116,14 @@ PRODUCT_PACKAGES += \
     telenor_dk.pb \
     telenor_no.pb \
     telenor_se.pb \
+    telia_dk.pb \
     telia_no.pb \
     telia_se.pb \
     telstra_au.pb \
     telus_ca.pb \
     three_dk.pb \
     tim_it.pb \
+    tmobile_at.pb \
     tmobile_cz.pb \
     tmobile_nl.pb \
     tmobile_us.pb \
