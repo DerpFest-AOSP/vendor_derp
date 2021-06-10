@@ -27,9 +27,7 @@ PRODUCT_PACKAGES += \
 # Extra tools in DerpFest
 PRODUCT_PACKAGES += \
     7z \
-    awk \
     bash \
-    bzip2 \
     curl \
     getcap \
     htop \
