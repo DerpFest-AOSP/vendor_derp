@@ -77,9 +77,6 @@ include vendor/derp/config/derp_audio.mk
 # Include extra packages
 include vendor/derp/config/packages.mk
 
-# Do not include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
 # Permissions for Google product apps
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
@@ -169,6 +166,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
+# Art
+include vendor/derp/config/art.mk
 
 # Versioning
 include vendor/derp/config/version.mk
