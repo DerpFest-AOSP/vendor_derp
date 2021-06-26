@@ -35,7 +35,8 @@ PRODUCT_PACKAGES += \
     DisplayCutoutEmulationNarrowOverlay \
     DisplayCutoutEmulationWideOverlay \
     NoCutoutOverlay \
-    NavigationBarMode2ButtonOverlay
+    NavigationBarMode2ButtonOverlay \
+    NavigationBarNoHintOverlay
 
 # Media
 PRODUCT_SYSTEM_PROPERTIES += \
