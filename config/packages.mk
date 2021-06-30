@@ -1,5 +1,6 @@
 # DerpFest required packages
 PRODUCT_PACKAGES += \
+    CameraRoll \
     OmniJaws \
     OmniStyle \
     StitchImage \
