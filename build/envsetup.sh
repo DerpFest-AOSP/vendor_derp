@@ -107,5 +107,6 @@ function fixup_common_out_dir() {
 # Disable ABI checking
 export SKIP_ABI_CHECKS=true
 
-# Override hostname to make builds more reproducible and avoid leaking info
+# Override host metadata to make builds more reproducible and avoid leaking info
 export BUILD_HOSTNAME=derpbox
+export BUILD_USERNAME=private
