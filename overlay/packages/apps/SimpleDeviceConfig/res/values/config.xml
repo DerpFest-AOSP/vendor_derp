@@ -33,10 +33,6 @@
         <!-- Cached app freezer on supported devices -->
         <item>activity_manager_native_boot/use_freezer=true</item>
 
-        <!-- Enable IORap features -->
-        <item>runtime_native_boot/iorap_perfetto_enable=true</item>
-        <item>runtime_native_boot/iorap_readahead_enable=true</item>
-
         <!-- Machine learning back gesture (requires TensorFlow model) -->
         <item>systemui/use_back_gesture_ml_model=true</item>
         <item>systemui/back_gesture_ml_model_name=backgesture</item>

@@ -271,14 +271,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
 
-# IORap app launch prefetching using Perfetto traces and madvise
-PRODUCT_PRODUCT_PROPERTIES += \
-    iorapd.perfetto.enable=true \
-    iorapd.readahead.enable=true \
-    persist.device_config.runtime_native_boot.iorap_perfetto_enable=true \
-    persist.device_config.runtime_native_boot.iorap_readahead_enable=true \
-    ro.iorapd.enable=true
-
 # Strip the local variable table and the local variable type table to reduce
 # the size of the system image. This has no bearing on stack traces, but will
 # leave less information available via JDWP.
