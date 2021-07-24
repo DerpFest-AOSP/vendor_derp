@@ -1,14 +1,16 @@
+# Overlays
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/derp/apex/overlay
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/derp/apex/overlay/common
+
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/derp/apex/NetworkStack
 
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/derp/apex
-
-# Overlay
-PRODUCT_PACKAGES += \
-    ApexOverlay \
-    ApexSettingsOverlay
 
 # ModuleMetadata
 PRODUCT_PACKAGES += \
