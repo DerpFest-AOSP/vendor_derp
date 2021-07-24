@@ -164,9 +164,6 @@
     <!-- Colon separated list of package names that should be granted Notification Listener access -->
     <string name="config_defaultListenerAccessPackages" translatable="false">com.android.launcher3:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
-    <!-- Component name for the default module metadata provider on this device -->
-    <string name="config_defaultModuleMetadataProvider" translatable="false">com.google.android.modulemetadata</string>
-
     <!-- The component name for the default profile supervisor, which can be set as a profile owner
     even after user setup is complete. The defined component should be used for supervision purposes
     only. The component must be part of a system app. -->
