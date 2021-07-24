@@ -297,7 +297,16 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     packages/overlays/Shishufied/Overlays
 
 # Apex
+ifeq ($(TARGET_FLATTEN_APEX),false)
 $(call inherit-product, vendor/derp/config/apex.mk)
+else
+# Hide "Google Play System Updates" if Apex disabled
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/derp/overlay_apex_disabled
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/derp/overlay_apex_disabled/common
+endif
 
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
