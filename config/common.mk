@@ -306,8 +306,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     packages/overlays/Shishufied/Overlays
 
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/derp/config/device_framework_matrix.xml
-
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
 
