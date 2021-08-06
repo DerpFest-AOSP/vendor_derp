@@ -366,4 +366,7 @@
     <family customizationType="new-named-family" name="noto-serif">
         <font weight="400" style="normal">NotoSerif-Regular.ttf</font>
     </family>
+    <family customizationType="new-named-family" name="comic-sans">
+        <font weight="300" style="normal">ComicSans-Regular.ttf</font>
+    </family>
 </fonts-modification>

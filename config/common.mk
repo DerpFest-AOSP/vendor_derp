@@ -257,7 +257,8 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/roboto-slab/RobotoSlab-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/RobotoSlab-Regular.ttf \
     vendor/derp/prebuilt/fonts/roboto-slab/RobotoSlab-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/RobotoSlab-Medium.ttf \
     vendor/derp/prebuilt/fonts/arbutus-slab/ArbutusSlab-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ArbutusSlab-Regular.ttf \
-    vendor/derp/prebuilt/fonts/noto-serif/NotoSerif-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/NotoSerif-Regular.ttf
+    vendor/derp/prebuilt/fonts/noto-serif/NotoSerif-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/NotoSerif-Regular.ttf \
+    vendor/derp/prebuilt/fonts/comic-sans/ComicSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ComicSans-Regular.ttf
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
