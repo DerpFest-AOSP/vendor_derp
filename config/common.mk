@@ -258,7 +258,20 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/roboto-slab/RobotoSlab-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/RobotoSlab-Medium.ttf \
     vendor/derp/prebuilt/fonts/arbutus-slab/ArbutusSlab-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ArbutusSlab-Regular.ttf \
     vendor/derp/prebuilt/fonts/noto-serif/NotoSerif-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/NotoSerif-Regular.ttf \
-    vendor/derp/prebuilt/fonts/comic-sans/ComicSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ComicSans-Regular.ttf
+    vendor/derp/prebuilt/fonts/comic-sans/ComicSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/ComicSans-Regular.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Black.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Black.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-BlackItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-BlackItalic.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Bold.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Bold.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-BoldItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-BoldItalic.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Italic.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Light.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Light.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-LightItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-LightItalic.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Medium.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-MediumItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-MediumItalic.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Regular.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Thin.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Thin.ttf \
+    vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-ThinItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-ThinItalic.ttf
+    
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
