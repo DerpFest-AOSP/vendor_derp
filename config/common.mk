@@ -218,6 +218,8 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/fontagev3/Gravity-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Gravity-Regular.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/IgnazioText-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/IgnazioText-Regular.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/Inter-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-Regular.ttf \
+    vendor/derp/prebuilt/fonts/fontagev3/Inter-Italic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-Italic.ttf \
+    vendor/derp/prebuilt/fonts/fontagev3/Inter-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-Medium.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/Inter-MediumItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/Inter-MediumItalic.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/JakartaPlus-Medium.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/JakartaPlus-Medium.ttf \
     vendor/derp/prebuilt/fonts/fontagev3/JakartaPlus-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/JakartaPlus-Regular.ttf \
@@ -271,7 +273,7 @@ PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Regular.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Regular.ttf \
     vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-Thin.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-Thin.ttf \
     vendor/derp/prebuilt/fonts/op-sans/OnePlusSans-ThinItalic.ttf:$(TARGET_COPY_OUT_PRODUCT)/fonts/OnePlusSans-ThinItalic.ttf
-    
+
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \

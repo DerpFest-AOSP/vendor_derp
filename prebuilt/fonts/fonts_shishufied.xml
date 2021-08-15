@@ -207,12 +207,14 @@
     <family customizationType="new-named-family" name="gravity-regular">
         <font weight="300" style="normal">Gravity-Regular.ttf</font>
     </family>
-    <family customizationType="new-named-family" name="inter-regular">
-        <font weight="300" style="normal">Inter-Regular.ttf</font>
+    <family customizationType="new-named-family" name="inter">
+        <font weight="400" style="normal">Inter-Regular.ttf</font>
+        <font weight="400" style="italic">Inter-Italic.ttf</font>
+        <font weight="500" style="normal">Inter-Medium.ttf</font>
+        <font weight="500" style="italic">Inter-MediumItalic.ttf</font>
     </family>
-    <family customizationType="new-named-family" name="inter-medium-italic">
-        <font weight="300" style="normal">Inter-MediumItalic.ttf</font>
-    </family>
+    <alias name="inter-regular" to="inter" weight="400" />
+    <alias name="inter-medium" to="inter" weight="500" />
     <family customizationType="new-named-family" name="league-mono-n-regular">
         <font weight="300" style="normal">LeagueMono-RegularNarrow.ttf</font>
     </family>
