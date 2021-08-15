@@ -31,7 +31,7 @@
     <bool name="vvm3_enabled">true</bool>
 
     <!-- The package name for the platform carrier config app, bundled with system image. -->
-    <string name="platform_carrier_config_package">com.android.carrierconfig</string>
+    <string name="platform_carrier_config_package">com.google.android.carrier</string>
 
     <!-- The package name for the platform number verification supplier app. -->
     <string name="platform_number_verification_package">com.google.android.gms</string>
