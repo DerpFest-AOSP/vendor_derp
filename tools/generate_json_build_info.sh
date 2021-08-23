@@ -6,7 +6,7 @@ if [ "$1" ]; then
     echo "Generating .json"
     file_path=$1
     file_name=$(basename $file_path)
-    device_name=$(echo $file_name | cut -d "-" -f 5)
+    device_name=$(echo $file_name | cut -d "-" -f 4)
     buildprop=out/target/product/$device_name/system/build.prop
     if [ -f $file_path ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
