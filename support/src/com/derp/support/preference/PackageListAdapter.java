@@ -42,7 +42,12 @@ import com.derp.support.R;
 public class PackageListAdapter extends BaseAdapter implements Runnable {
     private PackageManager mPm;
     private LayoutInflater mInflater;
+    private PackageListFilter mFilter;
     private final List<PackageItem> mInstalledPackages = new LinkedList<PackageItem>();
+
+    public interface PackageListFilter {
+        boolean onPackageListed(ApplicationInfo info);
+    }
 
     private final Handler mHandler = new Handler() {
         @Override
@@ -77,6 +82,13 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
     public PackageListAdapter(Context context) {
         mPm = context.getPackageManager();
         mInflater = LayoutInflater.from(context);
+        reloadList();
+    }
+
+    public PackageListAdapter(Context context, PackageListFilter filter) {
+        mPm = context.getPackageManager();
+        mInflater = LayoutInflater.from(context);
+        mFilter = filter;
         reloadList();
     }
 
@@ -131,6 +143,9 @@ public class PackageListAdapter extends BaseAdapter implements Runnable {
     public void run() {
         List<ApplicationInfo> installedAppsInfo = mPm.getInstalledApplications(PackageManager.GET_META_DATA);
         for (ApplicationInfo appInfo : installedAppsInfo) {
+            if (mFilter != null && !mFilter.onPackageListed(appInfo))
+                continue;
+
             if (appInfo.icon != 0) {
                 final PackageItem item = new PackageItem(appInfo.packageName,
                         appInfo.loadLabel(mPm), appInfo.loadIcon(mPm));
