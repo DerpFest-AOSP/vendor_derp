@@ -63,8 +63,7 @@ SOONG_CONFIG_derpQcomVars += \
     uses_no_mtu_ipacm \
     uses_pre_uplink_features_netmgrd \
     uses_qcom_bsp_legacy \
-    uses_qti_camera_device \
-    needs_camera_boottime_timestamp
+    uses_qti_camera_device
 
 # Only create display_headers_namespace var if dealing with UM platforms to avoid breaking build for all other platforms
 ifneq ($(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
@@ -90,7 +89,6 @@ SOONG_CONFIG_derpQcomVars_uses_no_mtu_ipacm := $(TARGET_USES_NO_MTU_IPACM)
 SOONG_CONFIG_derpQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD)
 SOONG_CONFIG_derpQcomVars_uses_qcom_bsp_legacy := $(TARGET_USES_QCOM_BSP_LEGACY)
 SOONG_CONFIG_derpQcomVars_uses_qti_camera_device := $(TARGET_USES_QTI_CAMERA_DEVICE)
-SOONG_CONFIG_derpQcomVars_needs_camera_boottime_timestamp := $(TARGET_CAMERA_BOOTTIME_TIMESTAMP)
 
 # Set default values
 BOOTLOADER_MESSAGE_OFFSET ?= 0
