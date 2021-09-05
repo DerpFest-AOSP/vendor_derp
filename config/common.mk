@@ -122,9 +122,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
-# Don't include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-derp-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-derp.xml \
@@ -310,6 +307,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 
 # Inherit from audio config
 $(call inherit-product, vendor/derp/config/audio.mk)
+
+# Inherit art options
+include vendor/derp/config/art.mk
 
 # Inherit from packages config
 $(call inherit-product, vendor/derp/config/packages.mk)
