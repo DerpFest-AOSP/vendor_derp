@@ -26,4 +26,7 @@
     <!-- Corner radius of system progress bars -->
     <dimen name="config_progressBarCornerRadius">1000dp</dimen>
 
+    <!-- Remove power menu shadow -->
+    <dimen name="global_actions_translate">0dp</dimen>
+
 </resources>
