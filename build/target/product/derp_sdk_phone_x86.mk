@@ -1,6 +1,5 @@
-# Copyright (C) 2015 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
-#           (C) 2021 DerpFest
+# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2021 DerpFest
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,5 +13,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Rules for QCOM targets
-include $(TOPDIR)vendor/derp/build/core/qcom_target.mk
+$(call inherit-product, build/target/product/sdk_phone_x86.mk)
+
+include vendor/derp/build/target/product/derp_generic_target.mk
+
+# Overrides
+PRODUCT_NAME := derp_sdk_phone_x86
+PRODUCT_MODEL := LineageOS Android SDK built for x86

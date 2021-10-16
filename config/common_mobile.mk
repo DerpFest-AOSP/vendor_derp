@@ -1,5 +1,5 @@
-# Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+# Inherit common mobile DerpFest stuff
+$(call inherit-product, vendor/derp/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -8,31 +8,20 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Backgrounds \
-    Eleven \
-    Etar \
-    ExactCalculator \
-    Jelly \
-    Profiles \
-    Seedvault
-
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
+    Eleven
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStepGo
+    DerpLauncherQuickStepGo
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStepGo
+    DerpLauncherQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    TrebuchetQuickStep
+    DerpLauncherQuickStep
 
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    TrebuchetQuickStep
+    DerpLauncherQuickStep
 endif
 
 # Charger
@@ -46,7 +35,6 @@ endif
 
 # Customizations
 PRODUCT_PACKAGES += \
-    LineageNavigationBarNoHint \
     NavigationBarMode2ButtonOverlay
 
 # Media

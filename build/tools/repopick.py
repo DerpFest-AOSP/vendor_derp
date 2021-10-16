@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
 # Copyright (C) 2013-15 The CyanogenMod Project
 #           (C) 2017    The LineageOS Project
+#           (C) 2021    DerpFest
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -35,17 +36,8 @@ from xml.etree import ElementTree
 try:
     import requests
 except ImportError:
-    try:
-        # For python3
-        import urllib.error
-        import urllib.request
-    except ImportError:
-        # For python2
-        import imp
-        import urllib2
-        urllib = imp.new_module('urllib')
-        urllib.error = urllib2
-        urllib.request = urllib2
+    import urllib.error
+    import urllib.request
 
 
 # cmp() is not available in Python 3, define it manually
@@ -75,6 +67,7 @@ def fetch_query_via_ssh(remote_url, query):
     else:
         raise Exception('Malformed URI: Expecting ssh://[user@]host[:port]')
 
+
     out = subprocess.check_output(['ssh', '-x', '-p{0}'.format(port), userhost, 'gerrit', 'query', '--format=JSON --patch-sets --current-patch-set', query])
     if not hasattr(out, 'encode'):
         out = out.decode()
@@ -87,18 +80,16 @@ def fetch_query_via_ssh(remote_url, query):
                 'branch': data['branch'],
                 'change_id': data['id'],
                 'current_revision': data['currentPatchSet']['revision'],
+                'current_patch_set': data['currentPatchSet']['number'],
                 'number': int(data['number']),
                 'revisions': {patch_set['revision']: {
-                    '_number': int(patch_set['number']),
+                    'number': int(patch_set['number']),
                     'fetch': {
                         'ssh': {
                             'ref': patch_set['ref'],
                             'url': 'ssh://{0}:{1}/{2}'.format(userhost, port, data['project'])
                         }
-                    },
-                    'commit': {
-                        'parents': [{'commit': parent} for parent in patch_set['parents']]
-                    },
+                    }
                 } for patch_set in data['patchSets']},
                 'subject': data['subject'],
                 'project': data['project'],
@@ -120,12 +111,12 @@ def fetch_query_via_http(remote_url, query):
                 parts = line.rstrip().split("|")
                 if parts[0] in remote_url:
                     auth = requests.auth.HTTPBasicAuth(username=parts[1], password=parts[2])
-        status_code = '-1'
+        statusCode = '-1'
         if auth:
             url = '{0}/a/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'.format(remote_url, query)
             data = requests.get(url, auth=auth)
-            status_code = str(data.status_code)
-        if status_code != '200':
+            statusCode = str(data.status_code)
+        if statusCode != '200':
             #They didn't get good authorization or data, Let's try the old way
             url = '{0}/changes/?q={1}&o=CURRENT_REVISION&o=ALL_REVISIONS&o=ALL_COMMITS'.format(remote_url, query)
             data = requests.get(url)
@@ -151,14 +142,13 @@ def fetch_query(remote_url, query):
     else:
         raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
 
-
 if __name__ == '__main__':
-    # Default to LineageOS Gerrit
-    default_gerrit = 'https://review.lineageos.org'
+    # Default to DerpFest Gerrit
+    default_gerrit = 'https://review.derpfest.org'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from LineageOS's Gerrit instance (or any gerrit instance of your choosing)
+        patches from DerpFest's Gerrit instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
@@ -188,7 +178,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
-    parser.add_argument('-t', '--topic', metavar='', help='pick all commits from a specified topic')
+    parser.add_argument('-t', '--topic', metavar='', nargs='*', help='pick all commits from a specified topic')
     parser.add_argument('-Q', '--query', metavar='', help='pick all commits using the specified query')
     parser.add_argument('-g', '--gerrit', default=default_gerrit,
                         metavar='', help='Gerrit Instance to use. Form proto://[user@]host[:port]')
@@ -255,22 +245,23 @@ if __name__ == '__main__':
     remotes = xml_root.findall('remote')
     default_revision = xml_root.findall('default')[0].get('revision')
 
-    # dump project data into the a list of dicts with the following data:
-    # {project: {path, revision}}
+    #dump project data into the a list of dicts with the following data:
+    #{project: {path, revision}}
 
     for project in projects:
         name = project.get('name')
-        # when name and path are equal, "repo manifest" doesn't return a path at all, so fall back to name
-        path = project.get('path', name)
-        revision = project.get('upstream')
+        path = project.get('path')
+        if path is None:
+            path=name
+        revision = project.get('revision')
         if revision is None:
             for remote in remotes:
                 if remote.get('name') == project.get('remote'):
                     revision = remote.get('revision')
             if revision is None:
-                revision = project.get('revision', default_revision)
+                revision = default_revision
 
-        if name not in project_name_to_data:
+        if not name in project_name_to_data:
             project_name_to_data[name] = {}
         revision = revision.split('refs/heads/')[-1]
         project_name_to_data[name][revision] = path
@@ -280,20 +271,35 @@ if __name__ == '__main__':
     change_numbers = []
 
     def cmp_reviews(review_a, review_b):
-        current_a = review_a['current_revision']
-        parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
-        current_b = review_b['current_revision']
-        parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
-        if current_a in parents_b:
+        if args.gerrit[0:3] == 'ssh':
             return -1
-        elif current_b in parents_a:
-            return 1
         else:
-            return cmp(review_a['number'], review_b['number'])
+            current_a = review_a['current_revision']
+            parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
+            current_b = review_b['current_revision']
+            parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
+            if current_a in parents_b:
+                return -1
+            elif current_b in parents_a:
+                return 1
+            else:
+                return cmp(review_a['number'], review_b['number'])
 
+    if not args.force:
+        if args.gerrit[0:3] == 'ssh':
+            query="status:open topic:{}"
+        else:
+            query="status:open+topic:{}"
+    else:
+        query="topic:{}"
     if args.topic:
-        reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
-        change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
+        for t in args.topic:
+            # Store current topic to process for change_numbers
+            topic = fetch_query(args.gerrit, query.format(t))
+            # Append topic to reviews, for later reference
+            reviews += topic
+            # Cycle through the current topic to get the change numbers
+            change_numbers += sorted([str(r['number']) for r in topic], key=int)
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
@@ -309,7 +315,10 @@ if __name__ == '__main__':
                     change_numbers.append(str(i))
             else:
                 change_numbers.append(c)
-        reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        try:
+            reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        except urllib2.HTTPError:
+            reviews = fetch_query(args.gerrit[0:-1], ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
 
     # make list of things to actually merge
     mergables = []
@@ -337,22 +346,30 @@ if __name__ == '__main__':
             print('Change %d not found, skipping' % change)
             continue
 
+        try:
+            current_patchset = review['revisions'][review['current_revision']]['_number']
+        except KeyError:
+            current_patchset = review['current_patch_set']
+
         mergables.append({
             'subject': review['subject'],
-            'project': review['project'],
+            'project': review['project'].split('/')[1],
             'branch': review['branch'],
             'change_id': review['change_id'],
             'change_number': review['number'],
             'status': review['status'],
             'fetch': None,
-            'patchset': review['revisions'][review['current_revision']]['_number'],
+            'patchset': current_patchset,
         })
 
         mergables[-1]['fetch'] = review['revisions'][review['current_revision']]['fetch']
         mergables[-1]['id'] = change
         if patchset:
             try:
-                mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
+                try:
+                    mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
+                except KeyError:
+                    mergables[-1]['fetch'] = [review['revisions'][current_patchset]['fetch']][0]
                 mergables[-1]['id'] = '{0}/{1}'.format(change, patchset)
                 mergables[-1]['patchset'] = patchset
             except (IndexError, ValueError):
@@ -372,7 +389,9 @@ if __name__ == '__main__':
         #   - check that the project path exists
         project_path = None
 
-        if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
+        if item['project'] == 'platform_manifest':
+            project_path = '.repo/manifests'
+        elif item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
             project_path = project_name_to_data[item['project']][item['branch']]
         elif args.path:
             project_path = args.path
@@ -409,7 +428,7 @@ if __name__ == '__main__':
             output = output.split()
             if 'Change-Id:' in output:
                 head_change_id = ''
-                for j, t in enumerate(reversed(output)):
+                for j,t in enumerate(reversed(output)):
                     if t == 'Change-Id:':
                         head_change_id = output[len(output) - j]
                         break
@@ -437,13 +456,13 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit github', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit derp', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch github', item['fetch'][method]['ref']]
+                cmd = ['git fetch derp', item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
             else:
-                print(cmd)
+                print("executing: {}".format(" ".join(cmd)))
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             FETCH_HEAD = '{0}/.git/FETCH_HEAD'.format(project_path)
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
