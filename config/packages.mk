@@ -10,6 +10,7 @@ endif
 # Themes
 PRODUCT_PACKAGES += \
     DerpThemesStub \
+    DerpWalls \
     ThemePicker
 
 # Config
