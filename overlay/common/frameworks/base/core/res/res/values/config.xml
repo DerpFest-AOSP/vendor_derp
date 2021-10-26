@@ -193,4 +193,11 @@
      space -->
     <bool name="config_showBatteryEstimateQSBH">true</bool>
 
+    <!-- Google Sans -->
+    <string name="config_bodyFontFamily">google-sans-text</string>
+    <string name="config_bodyFontFamilyMedium">google-sans-text-medium</string>
+    <string name="config_headlineFontFamily">google-sans</string>
+    <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
+    <string name="config_headlineFontFeatureSettings">ss03</string>
+
 </resources>
