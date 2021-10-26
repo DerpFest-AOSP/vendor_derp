@@ -122,6 +122,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.kb_pad_port_b=0 \
     ro.com.google.ime.kb_pad_land_b=0
 
+# Blur
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.launcher.blur.appLaunch=false
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/common
 
