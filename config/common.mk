@@ -113,7 +113,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
--include vendor/derp/config/partner_gms.mk
 
 # Versioning
 include vendor/derp/config/version.mk
+
+# GApps
+WITH_GMS := true
+$(call inherit-product, vendor/gms/products/gms.mk)
