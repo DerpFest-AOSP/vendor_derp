@@ -26,4 +26,5 @@
     <integer name="def_lockscreen_sounds_enabled">0</integer>
     <bool name="def_vibrate_when_ringing">true</bool>
     <bool name="def_charging_sounds_enabled">false</bool>
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
 </resources>
