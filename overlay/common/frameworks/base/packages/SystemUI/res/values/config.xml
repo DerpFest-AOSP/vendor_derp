@@ -32,4 +32,9 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+    <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
+         Blank sends the user to the Chooser first.
+         This name is in the ComponentName flattened format (package/class)  -->
+    <string name="config_screenshotEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
 </resources>
