@@ -17,6 +17,9 @@ $(call inherit-product, build/target/product/sdk_phone_x86.mk)
 
 include vendor/derp/build/target/product/derp_generic_target.mk
 
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
 # Overrides
 PRODUCT_NAME := derp_sdk_phone_x86
 PRODUCT_MODEL := LineageOS Android SDK built for x86

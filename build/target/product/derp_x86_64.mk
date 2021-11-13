@@ -18,4 +18,7 @@ $(call inherit-product, build/target/product/gsi_release.mk)
 
 include vendor/derp/build/target/product/derp_generic_target.mk
 
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
 PRODUCT_NAME := derp_x86_64
