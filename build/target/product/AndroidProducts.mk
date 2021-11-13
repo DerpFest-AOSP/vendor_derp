@@ -19,10 +19,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_arm64.mk \
     $(LOCAL_DIR)/derp_x86.mk \
     $(LOCAL_DIR)/derp_x86_64.mk \
-    $(LOCAL_DIR)/derp_arm_ab.mk \
-    $(LOCAL_DIR)/derp_arm64_ab.mk \
-    $(LOCAL_DIR)/derp_x86_ab.mk \
-    $(LOCAL_DIR)/derp_x86_64_ab.mk \
     $(LOCAL_DIR)/derp_tv_arm.mk \
     $(LOCAL_DIR)/derp_tv_arm64.mk \
     $(LOCAL_DIR)/derp_tv_x86.mk \
@@ -37,10 +33,6 @@ COMMON_LUNCH_CHOICES := \
     derp_arm64-userdebug \
     derp_x86-userdebug \
     derp_x86_64-userdebug \
-    derp_arm_ab-userdebug \
-    derp_arm64_ab-userdebug \
-    derp_x86_ab-userdebug \
-    derp_x86_64_ab-userdebug \
     derp_tv_arm-userdebug \
     derp_tv_arm64-userdebug \
     derp_tv_x86-userdebug \
