@@ -13,14 +13,8 @@ PRODUCT_PACKAGES += \
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
     DerpLauncherQuickStepGo
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
-    DerpLauncherQuickStepGo
 else
 PRODUCT_PACKAGES += \
-    DerpLauncherQuickStep
-
-PRODUCT_DEXPREOPT_SPEED_APPS += \
     DerpLauncherQuickStep
 endif
 
