@@ -15,6 +15,6 @@
 
 include vendor/derp/build/target/product/derp_generic_car_target.mk
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_x86_64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_x86_64.mk)
 
 PRODUCT_NAME := derp_car_x86_64
