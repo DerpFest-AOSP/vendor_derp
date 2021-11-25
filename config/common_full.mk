@@ -7,5 +7,9 @@ PRODUCT_SIZE := full
 PRODUCT_PACKAGES += \
     fonts_customization.xml
 
+# RRO Overlays
+PRODUCT_PACKAGES += \
+    NavigationBarModeGesturalOverlayFS
+
 # Overlays
 include vendor/overlay/overlays.mk
