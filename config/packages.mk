@@ -1,6 +1,7 @@
 # DerpFest packages
 PRODUCT_PACKAGES += \
-    DerpSetupWizard
+    DerpSetupWizard \
+    GameSpace
 
 ifeq ($(DERP_BUILDTYPE), Official CI)
     PRODUCT_PACKAGES += \
