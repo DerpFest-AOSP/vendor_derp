@@ -82,6 +82,10 @@ include vendor/derp/config/packages.mk
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
+# Permissions for Google product apps
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
+
 # Livedisplay
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/permissions/privapp-permissions-lineagehw.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-lineagehw.xml
