@@ -45,9 +45,9 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/derp/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
 
-# Copy all DerpFest-specific init rc files
-$(foreach f,$(wildcard vendor/derp/prebuilt/common/etc/init/*.rc),\
-	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
+# DerpFest-specific init rc file
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/init/init.derp-system.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.derp-system.rc
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
@@ -96,6 +96,12 @@ TARGET_SCREEN_HEIGHT ?= 1920
 # Boot Animation
 PRODUCT_COPY_FILES += \
     vendor/derp/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
+
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/init/init.derp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.derp-updater.rc
+
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
