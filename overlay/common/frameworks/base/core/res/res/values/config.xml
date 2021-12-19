@@ -189,6 +189,9 @@
     <!-- Suppress Intent Filter Verification Service crashes and System UI ANRs (both AOSP bugs) -->
     <string translatable="false" name="config_appsNotReportingCrashes">com.android.statementservice,com.android.systemui</string>
 
+    <!-- Android Auto role -->
+    <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
+
     <!-- Whether or not to add a "people" notifications section -->
     <bool name="config_usePeopleFiltering">true</bool>
 
