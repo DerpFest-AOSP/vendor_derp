@@ -3,6 +3,7 @@ PRODUCT_PACKAGES += \
     DerpSetupWizard \
     GameSpace
 
+# Updater
 ifeq ($(DERP_BUILDTYPE), Official CI)
     PRODUCT_PACKAGES += \
         Updater
@@ -13,6 +14,12 @@ PRODUCT_PACKAGES += \
     DerpThemesStub \
     DerpWalls \
     ThemePicker
+
+# Udfps
+ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
+PRODUCT_PACKAGES += \
+    UdfpsResources
+endif
 
 # Config
 PRODUCT_PACKAGES += \
