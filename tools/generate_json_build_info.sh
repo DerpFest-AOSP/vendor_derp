@@ -7,7 +7,7 @@ if [ "$1" ]; then
     file_path=$1
     file_name=$(basename $file_path)
     device_name=$(echo $file_name | cut -d "-" -f 5)
-    buildprop=out/target/product/$device_name/system/build.prop
+    buildprop=${OUT_DIR:-out}/target/product/$device_name/system/build.prop
     if [ -f $file_path ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
@@ -28,7 +28,7 @@ if [ "$1" ]; then
             echo "    }" >> $file_path.json
             echo "  ]" >> $file_path.json
             echo "}" >> $file_path.json
-            mv "${file_path}.json" "out/target/product/${device_name}/${device_name}.json"
+            mv "${file_path}.json" "${OUT_DIR:-out}/target/product/${device_name}/${device_name}.json"
             echo -e "${GREEN}Done generating ${YELLOW}${device_name}.json${NC}"
         else
             echo -e "${YELLOW}Skipped generating json for a non-official build${NC}"

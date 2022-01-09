@@ -36,6 +36,6 @@ done
 
 sed -i 's/project/   */g' $Changelog
 
-cp $Changelog ./out/target/product/$DEVICE/system/etc/
-cp $Changelog ./out/target/product/$DEVICE/
+cp $Changelog ${OUT_DIR:-./out}/target/product/$DEVICE/system/etc/
+cp $Changelog ${OUT_DIR:-./out}/target/product/$DEVICE/
 rm $Changelog
