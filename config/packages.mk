@@ -2,13 +2,8 @@
 PRODUCT_PACKAGES += \
     DerpSetupWizard \
     Flipendo \
-    GameSpace
-
-# Updater
-ifeq ($(DERP_BUILDTYPE), Official CI)
-    PRODUCT_PACKAGES += \
-        Updater
-endif
+    GameSpace \
+    Updater
 
 # Themes
 PRODUCT_PACKAGES += \
