@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2022 DerpFest
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/redskul_starwars_0" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_1" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_2" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_3" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_4" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_5" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_6" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_7" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_8" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_9" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_10" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_11" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_12" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_13" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_14" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_15" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_16" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_17" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_18" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_19" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_20" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_21" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_22" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_23" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_24" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_25" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_26" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_27" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_28" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_29" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_30" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_31" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_32" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_33" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_34" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_35" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_36" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_37" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_38" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_39" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_40" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_41" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_42" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_43" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_44" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_45" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_46" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_47" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_48" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_49" android:duration="6" />
+    <item android:drawable="@drawable/redskul_starwars_50" android:duration="6" />
+</animation-list>
