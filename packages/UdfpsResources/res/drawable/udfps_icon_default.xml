@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
     Copyright (C) 2020 The Android Open Source Project
 
@@ -17,7 +18,6 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
         android:width="72dp"
         android:height="72dp"
-        android:tint="?android:attr/colorAccent"
         android:viewportWidth="72"
         android:viewportHeight="72">
     <path
@@ -34,6 +34,6 @@
             M44.9713,54.6267C42.5513,56.7167 39.2879,58.0001 35.5846,58.0001C32.2296,
             58.0001 29.2229,56.9551 26.8945,55.195"
         android:strokeWidth="3"
-        android:strokeColor="?android:attr/textColorPrimary"
+        android:strokeColor="#3A5572"
         android:strokeLineCap="round"/>
 </vector>
