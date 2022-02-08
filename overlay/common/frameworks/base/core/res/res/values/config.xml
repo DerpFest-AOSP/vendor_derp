@@ -228,6 +228,10 @@
     <string name="config_bodyFontFamilyMedium">google-sans-text-medium</string>
     <string name="config_headlineFontFamily">google-sans</string>
     <string name="config_headlineFontFamilyMedium">google-sans-medium</string>
+    <!-- Name of a font family to use as light font. For theming purpose. -->
+    <string name="config_lightFontFamily" translatable="false">google-sans-light</string>
+    <!-- Name of a font family to use as regular font. For theming purpose. -->
+    <string name="config_regularFontFamily" translatable="false">google-sans-regular</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
 
     <!-- Package name that will receive an explicit manifest broadcast for
