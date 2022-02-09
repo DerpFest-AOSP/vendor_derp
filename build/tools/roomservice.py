@@ -35,7 +35,7 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/derp_manifest.xml"
 custom_default_revision = "12"
 custom_dependencies = "derp.dependencies"
-org_manifest = "devices"  # leave empty if org is provided in manifest
+org_manifest = "derp-devices"  # leave empty if org is provided in manifest
 org_display = "DerpFest-Devices"  # needed for displaying
 
 github_auth = None
