@@ -19,4 +19,4 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/sdk_arm64.mk)
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := derp_car_arm64
+PRODUCT_NAME := derp_sdk_car_arm64

@@ -23,8 +23,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/derp_tv_arm64.mk \
     $(LOCAL_DIR)/derp_tv_x86.mk \
     $(LOCAL_DIR)/derp_tv_x86_64.mk \
-    $(LOCAL_DIR)/derp_car_arm64.mk \
-    $(LOCAL_DIR)/derp_car_x86_64.mk \
+    $(LOCAL_DIR)/derp_sdk_car_arm64.mk \
+    $(LOCAL_DIR)/derp_sdk_car_x86_64.mk \
     $(LOCAL_DIR)/derp_sdk_phone_x86.mk \
     $(LOCAL_DIR)/derp_sdk_phone_x86_64.mk
 
@@ -37,7 +37,7 @@ COMMON_LUNCH_CHOICES := \
     derp_tv_arm64-userdebug \
     derp_tv_x86-userdebug \
     derp_tv_x86_64-userdebug \
-    derp_car_arm64-userdebug \
-    derp_car_x86_64-userdebug \
+    derp_sdk_car_arm64-userdebug \
+    derp_sdk_car_x86_64-userdebug \
     derp_sdk_phone_x86-userdebug \
     derp_sdk_phone_x86_64-userdebug
