@@ -70,6 +70,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
+# Quick Tap
+ifeq ($(TARGET_SUPPORTS_QUICK_TAP), true)
+PRODUCT_COPY_FILES += \
+    vendor/derp/prebuilt/common/etc/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+endif
+
 # Include AOSP audio files
 include vendor/derp/config/aosp_audio.mk
 
