@@ -34,6 +34,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DisplayCutoutEmulationNarrowOverlay \
     DisplayCutoutEmulationWideOverlay \
+    Launcher3NoHintOverlay \
     NoCutoutOverlay \
     NavigationBarMode2ButtonOverlay \
     NavigationBarNoHintOverlay

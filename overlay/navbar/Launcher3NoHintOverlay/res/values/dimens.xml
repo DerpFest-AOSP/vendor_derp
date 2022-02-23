@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="overview_task_extra_bottom_margin">46dp</dimen>
+</resources>
