@@ -3,6 +3,7 @@ PRODUCT_PACKAGES += \
     DerpSetupWizard \
     Flipendo \
     GameSpace \
+    GrapheneCamera \
     Updater
 
 # Themes
