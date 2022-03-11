@@ -3,6 +3,7 @@ $(call inherit-product, vendor/derp/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
+    androidx.window.extensions \
     LatinIME
 
 # Include DerpFest LatinIME dictionaries
