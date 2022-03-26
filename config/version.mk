@@ -1,5 +1,5 @@
 # Copyright (C) 2016-2017 AOSiP
-# Copyright (C) 2021 DerpFest
+# Copyright (C) 2022 DerpFest
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ endif
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
 
 DERP_BUILDTYPE ?= Community
-DERP_CODENAME := Shion
+DERP_CODENAME := Shinju
 DERP_BUILD_VERSION := $(PLATFORM_VERSION)
 DERP_VERSION := $(DERP_BUILD_VERSION)-$(DERP_BUILDTYPE)-$(DERP_CODENAME)-$(DERP_BUILD)-$(BUILD_DATE)
 ROM_FINGERPRINT := DerpFest/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%H%M)
