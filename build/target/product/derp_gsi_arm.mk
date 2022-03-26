@@ -13,14 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_arm64.mk)
-$(call inherit-product, build/target/product/gsi_release.mk)
+$(call inherit-product, device/generic/common/gsi_arm.mk)
 
 include vendor/derp/build/target/product/derp_generic_target.mk
 
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
+
 TARGET_NO_KERNEL_OVERRIDE := true
 
-# Enable mainline checking
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
-
-PRODUCT_NAME := derp_arm64
+PRODUCT_NAME := derp_gsi_arm
