@@ -3,6 +3,7 @@ cat <<EOF
 Invoke ". build/envsetup.sh" from your shell to add the following functions to your environment:
 - lunch:     lunch <product_name>-<build_variant>
 - gerrit:    Adds a remote for DerpFest Gerrit
+- merge_aosp : Merge AOSP changes into DerpFest github. use merge_aosp -h
 
 
 Look at the source to view more functions. The complete list is:

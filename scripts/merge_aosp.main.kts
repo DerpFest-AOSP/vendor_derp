@@ -65,7 +65,7 @@ if (bump) {
  */
 fun help() {
     println(
-        "- merge_aosp: Fetch and merge the given tag from aosp source for the repos forked from aosp in krypton.xml\n" +
+        "- merge_aosp: Fetch and merge the given tag from aosp source for the repos forked from aosp in derp.xml\n" +
                 "      Usage: merge_aosp [-t] <tag> [-p] [-b]\n" +
                 "             -t for aosp tag to merge\n" +
                 "             -p to push to github for all repos\n" +
@@ -398,16 +398,16 @@ private object ManifestAttrs {
 
     const val MANIFEST_REPO_NAME = "manifest"
     const val MANIFEST_REPO_PATH = ".repo/manifests"
-    const val KRYPTON_MANIFEST = "$MANIFEST_REPO_PATH/snippets/krypton.xml"
+    const val KRYPTON_MANIFEST = "$MANIFEST_REPO_PATH/derp/derp.xml"
     const val AOSP_MANIFEST = "$MANIFEST_REPO_PATH/default.xml"
 }
 
 private object Constants {
-    const val REMOTE_BASE_URL = "git@github.com:AOSP-Krypton"
-    const val REMOTE_BRANCH = "A12"
+    const val REMOTE_BASE_URL = "git@github.com:Derpfest-11"
+    const val REMOTE_BRANCH = "11"
 
-    const val VENDOR_PATH = "vendor/krypton"
-    const val VENDOR_REPO = "vendor_krypton"
+    const val VENDOR_PATH = "vendor/derp"
+    const val VENDOR_REPO = "vendor_derp"
 
     const val PROP_FILE = "$VENDOR_PATH/config/version.mk"
     val MAJOR_VERSION_STRING_PATTERN = Regex("KRYPTON_VERSION_MAJOR := \\d+")
