@@ -104,6 +104,10 @@ function fixup_common_out_dir() {
     fi
 }
 
+function merge_aosp() {
+    "$ANDROID_BUILD_TOP"/vendor/derp/scripts/merge_aosp.main.kts "$@"
+}
+
 # Disable ABI checking
 export SKIP_ABI_CHECKS=true
 
