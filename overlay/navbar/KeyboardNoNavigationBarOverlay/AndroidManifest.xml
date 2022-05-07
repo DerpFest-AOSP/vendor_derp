@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.derpfest.overlay.customization.navbar.keyboard.nonavbar"
+    android:versionCode="1"
+    android:versionName="1.0">
+    <overlay android:targetPackage="android" android:priority="1" />
+
+    <application android:label="KeyboardNoNavigationBarOverlay" android:hasCode="false"/>
+</manifest>

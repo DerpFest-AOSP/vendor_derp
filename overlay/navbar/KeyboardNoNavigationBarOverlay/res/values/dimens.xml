@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Height of the bottom navigation / system bar. -->
+    <dimen name="navigation_bar_frame_height">0.0dip</dimen>
+    <!-- Height of the bottom navigation bar frame in landscape -->
+    <dimen name="navigation_bar_frame_height_landscape">0.0dip</dimen>
+</resources>
