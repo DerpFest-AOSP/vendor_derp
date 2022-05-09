@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Versioning System
-ifneq ($(filter eng userdebug,$(TARGET_BUILD_VARIANT)),)
+ifneq ($(DERP_RELEASE),true)
     BUILD_DATE := $(shell date +%Y%m%d-%H%M)
 else
     BUILD_DATE := $(shell date +%Y%m%d)
