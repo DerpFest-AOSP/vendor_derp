@@ -12,7 +12,7 @@ if [ "$1" ]; then
         if [[ $file_name == *"Official"* ]]; then # only generate for official builds
             file_size=$(stat -c%s $file_path)
             sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
-            datetime=$(grep ro\.build\.date\.utc $buildprop | cut -d= -f2)
+            datetime=$(grep -w ro\\.build\\.date\\.utc $buildprop | cut -d= -f2)
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
             echo "{" > $file_path.json
             echo "  \"response\": [" >> $file_path.json
