@@ -32,7 +32,7 @@ ifeq ($(DERP_BUILDTYPE), CI)
     BUILD_KEYS := release-keys
 endif
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_SYSTEM_PROPERTIES += \
   ro.derp.build.version=$(DERP_BUILD_VERSION) \
   ro.derp.build.date=$(BUILD_DATE) \
   ro.derp.buildtype=$(DERP_BUILDTYPE) \
