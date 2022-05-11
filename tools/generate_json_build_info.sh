@@ -13,14 +13,13 @@ if [ "$1" ]; then
             file_size=$(stat -c%s $file_path)
             sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
             datetime=$(grep ro\.build\.date\.utc $buildprop | cut -d= -f2)
-            id=$(sha256sum $file_path | awk '{ print $1 }')
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
             echo "{" > $file_path.json
             echo "  \"response\": [" >> $file_path.json
             echo "    {" >> $file_path.json
             echo "     \"datetime\": ${datetime}," >> $file_path.json
             echo "     \"filename\": \"${file_name}\"," >> $file_path.json
-            echo "     \"id\": \"${id}\"," >> $file_path.json
+            echo "     \"id\": \"${sha256}\"," >> $file_path.json
             echo "     \"romtype\": \"Official\"," >> $file_path.json
             echo "     \"size\": ${file_size}," >> $file_path.json
             echo "     \"url\": \"${link}\"," >> $file_path.json
