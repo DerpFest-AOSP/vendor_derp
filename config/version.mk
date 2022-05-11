@@ -41,6 +41,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
   ro.modversion=$(DERP_VERSION)
 
 ifneq ($(OVERRIDE_OTA_CHANNEL),)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        derp.updater.uri=$(OVERRIDE_OTA_CHANNEL)
+PRODUCT_SYSTEM_PROPERTIES += \
+    derp.updater.uri=$(OVERRIDE_OTA_CHANNEL)
 endif
