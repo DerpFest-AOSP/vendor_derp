@@ -14,19 +14,21 @@ if [ "$1" ]; then
             sha256=$(cat "$file_path.sha256sum" | cut -d' ' -f1)
             datetime=$(grep -w ro\\.build\\.date\\.utc $buildprop | cut -d= -f2)
             link="https://sourceforge.net/projects/derpfest/files/${device_name}/${file_name}/download"
-            echo "{" > $file_path.json
-            echo "  \"response\": [" >> $file_path.json
-            echo "    {" >> $file_path.json
-            echo "     \"datetime\": ${datetime}," >> $file_path.json
-            echo "     \"filename\": \"${file_name}\"," >> $file_path.json
-            echo "     \"id\": \"${sha256}\"," >> $file_path.json
-            echo "     \"romtype\": \"Official\"," >> $file_path.json
-            echo "     \"size\": ${file_size}," >> $file_path.json
-            echo "     \"url\": \"${link}\"," >> $file_path.json
-            echo "     \"version\": \"12\"" >> $file_path.json
-            echo "    }" >> $file_path.json
-            echo "  ]" >> $file_path.json
-            echo "}" >> $file_path.json
+            cat > $file_path.json << JSON
+{
+  "response": [
+    {
+      "datetime": ${datetime},
+      "filename": "${file_name}",
+      "id": "${sha256}",
+      "romtype": "Official",
+      "size": ${file_size},
+      "url": "${link}",
+      "version": "12"
+    }
+  ]
+}
+JSON
             mv "${file_path}.json" "${OUT_DIR:-out}/target/product/${device_name}/${device_name}.json"
             echo -e "${GREEN}Done generating ${YELLOW}${device_name}.json${NC}"
         else
