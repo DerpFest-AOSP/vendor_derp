@@ -10,7 +10,7 @@ android_app_import {
     apk: "GrapheneCamera/GrapheneCamera.apk",
     default_dev_cert: true,
     product_specific: true,
-    overrides: ["Camera2", "Snap"],
+    overrides: ["Camera2"],
     optional_uses_libs: ["androidx.camera.extensions.impl"],
     dex_preopt: {
         enabled: false,
