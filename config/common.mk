@@ -100,6 +100,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Disable iorapd
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.iorapd.enable=false
+
 # Blur properties
 TARGET_USES_BLUR ?= false
 ifeq ($(TARGET_USES_BLUR), true)
