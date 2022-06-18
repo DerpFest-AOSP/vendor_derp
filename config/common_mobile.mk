@@ -30,9 +30,6 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay \
     NavigationBarMode2ButtonOverlay
 
-# Lawnicons
-include vendor/lawnicons/overlay.mk
-
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true
