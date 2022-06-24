@@ -37,6 +37,12 @@ PRODUCT_PACKAGES += \
     vim \
     zip
 
+# Filesystems tools
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+
 # Openssh
 PRODUCT_PACKAGES += \
     scp \
