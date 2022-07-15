@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     Flipendo \
     GameSpace \
     GrapheneCamera \
+    NetworkStackOverlay \
     Updater
 
 # Themes
