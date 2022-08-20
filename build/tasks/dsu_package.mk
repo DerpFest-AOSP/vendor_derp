@@ -38,7 +38,7 @@ dsu_package: $(INSTALLED_SYSTEMIMAGE_TARGET) $(INSTALLED_VBMETAIMAGE_TARGET) $(S
 	@echo -e ${CL_CYN}" ░ ░  ░    ░     ░░   ░ ░░        ░ ░       ░   ░  ░  ░    ░      "
 	@echo -e ${CL_CYN}".................................................................."
 	@echo -e ${CL_CYN}"............................DerpFest.............................."
-	@echo -e ${CL_CYN}"......................Based on Android 12L........................"
+	@echo -e ${CL_CYN}"......................Based on Android 13........................."
 	@echo -e ${CL_RST}".................................................................."
 	@echo -e ${CL_YLW}"..................Its Done........Getcha Some....................."
 	@echo -e ${CL_YLW}"...................Steady Fucking Derped Shit....................."
