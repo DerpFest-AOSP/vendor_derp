@@ -34,7 +34,6 @@ SOONG_CONFIG_derpGlobalVars += \
     needs_camera_boottime \
     target_init_vendor_lib \
     target_ld_shim_libs \
-    target_process_sdk_version_override \
     target_surfaceflinger_udfps_lib
 
 SOONG_CONFIG_NAMESPACES += derpNvidiaVars
@@ -72,7 +71,6 @@ SOONG_CONFIG_derpGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIO
 SOONG_CONFIG_derpGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_derpGlobalVars_target_init_vendor_lib := $(TARGET_INIT_VENDOR_LIB)
 SOONG_CONFIG_derpGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
-SOONG_CONFIG_derpGlobalVars_target_process_sdk_version_override := $(TARGET_PROCESS_SDK_VERSION_OVERRIDE)
 SOONG_CONFIG_derpGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
 ifneq ($(filter $(QSSI_SUPPORTED_PLATFORMS),$(TARGET_BOARD_PLATFORM)),)
 SOONG_CONFIG_derpQcomVars_qcom_display_headers_namespace := vendor/qcom/opensource/commonsys-intf/display
