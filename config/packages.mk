@@ -26,18 +26,13 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in DerpFest
 PRODUCT_PACKAGES += \
-    7z \
     bash \
     curl \
     getcap \
     htop \
-    lib7z \
     nano \
-    pigz \
     setcap \
-    unrar \
-    vim \
-    zip
+    vim
 
 # Filesystems tools
 PRODUCT_PACKAGES += \
@@ -61,7 +56,3 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
-
-# rsync
-PRODUCT_PACKAGES += \
-    rsync
