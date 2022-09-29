@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.android.systemui">
+        <permission name="android.permission.MANAGE_PARALLEL_SPACES"/>
+
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
+        <permission name="android.permission.MANAGE_PARALLEL_SPACES"/>
+
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.MANAGE_PARALLEL_SPACES"/>
     </privapp-permissions>
 </permissions>
