@@ -26,7 +26,7 @@ if [[ -f $file_path ]]; then
       "romtype": "Official",
       "size": $file_size,
       "url": "$link",
-      "version": "12"
+      "version": "13"
     }
   ]
 }
