@@ -281,4 +281,7 @@
         <!-- Youtube -->
         <item>com.google.android.youtube</item>
     </string-array>
+
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent">org.lineageos.aperture/.QrScannerActivity</string>
 </resources>
