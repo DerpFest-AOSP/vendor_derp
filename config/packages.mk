@@ -1,5 +1,6 @@
 # DerpFest packages
 PRODUCT_PACKAGES += \
+    BatteryStatsViewer \
     DerpSetupWizard \
     Prospect \
     GameSpace \
