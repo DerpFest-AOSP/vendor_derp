@@ -54,6 +54,8 @@
         <!-- Contribute app shortcuts to centralized AppSearch index -->
         <item>systemui/shortcut_appsearch_integration=true</item>
 
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
 
@@ -115,10 +117,5 @@
         <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
-    </string-array>
-
-    <string-array name="configs_base_soft">
-        <!-- Use new privacy indicators for location -->
-        <item>privacy/location_indicators_enabled=true</item>
     </string-array>
 </resources>
