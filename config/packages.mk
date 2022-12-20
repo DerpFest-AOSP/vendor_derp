@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     GameSpace \
     NetworkStackOverlay \
     NoCombinedIconsOverlay \
+    ParallelSpace \
     RepainterServicePriv \
     Updater
 
