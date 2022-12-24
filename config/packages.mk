@@ -4,7 +4,6 @@ PRODUCT_PACKAGES += \
     Flipendo \
     GameSpace \
     NetworkStackOverlay \
-    NoCombinedIconsOverlay \
     ParallelSpace \
     RepainterServicePriv \
     Updater
