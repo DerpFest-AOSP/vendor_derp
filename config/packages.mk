@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     ParallelSpace \
     RepainterServicePriv \
+    Ripple\
     Updater
 
 # Themes
