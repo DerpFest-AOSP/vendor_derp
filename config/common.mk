@@ -68,6 +68,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
+# Support many users/work profiles
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.max_profiles=16 \
+    fw.max_users=32
+
 # Include AOSP audio files
 include vendor/derp/config/aosp_audio.mk
 
