@@ -2,6 +2,7 @@
 PRODUCT_PACKAGES += \
     DerpSetupWizard \
     Flipendo \
+    Miniature \
     GameSpace \
     NetworkStackOverlay \
     NoCombinedIconsOverlay \
