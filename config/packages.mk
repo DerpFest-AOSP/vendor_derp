@@ -9,6 +9,7 @@ PRODUCT_PACKAGES += \
     ParallelSpace \
     RepainterServicePriv \
     Ripple\
+    TouchGestures \
     Updater
 
 # Themes
