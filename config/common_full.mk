@@ -5,3 +5,6 @@ PRODUCT_SIZE := full
 
 # Overlays
 include vendor/overlay/overlays.mk
+
+# Fonts
+include vendor/fontage/config.mk
