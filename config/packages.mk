@@ -1,7 +1,6 @@
 # DerpFest packages
 PRODUCT_PACKAGES += \
     DerpSetupWizard \
-    Flipendo \
     Prospect \
     GameSpace \
     NetworkStackOverlay \

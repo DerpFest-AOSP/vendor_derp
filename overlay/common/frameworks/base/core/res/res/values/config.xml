@@ -237,10 +237,6 @@
     <string name="config_regularFontFamily" translatable="false">google-sans-regular</string>
     <string name="config_headlineFontFeatureSettings">ss03</string>
 
-    <!-- Package name that will receive an explicit manifest broadcast for
-         android.os.action.POWER_SAVE_MODE_CHANGED. -->
-    <string name="config_powerSaveModeChangedListenerPackage">com.google.android.flipendo</string>
-
     <!-- List of system apps that are allowed to be locked with app lock.
          Use with extreme caution. -->
     <string-array name="config_appLockAllowedSystemApps" translatable="false">
