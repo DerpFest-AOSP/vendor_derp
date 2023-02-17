@@ -60,6 +60,9 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.ActiveReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
     </string-array>
 
     <!-- Enable lockscreen rotation by default -->
