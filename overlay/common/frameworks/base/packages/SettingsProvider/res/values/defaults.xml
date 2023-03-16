@@ -28,4 +28,10 @@
     <bool name="def_vibrate_when_ringing">true</bool>
     <bool name="def_charging_sounds_enabled">false</bool>
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Initial value for the Settings.Secure.IMMERSIVE_MODE_CONFIRMATIONS setting,
+         which is a comma separated list of packages that no longer need confirmation
+         for immersive mode.
+         Override to disable immersive mode confirmation for certain packages. -->
+    <string name="def_immersive_mode_confirmations" translatable="false">confirmed</string>
 </resources>
