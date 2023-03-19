@@ -157,6 +157,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sysui.disableBlur=1
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Root
 PRODUCT_PACKAGES += \
     adb_root
