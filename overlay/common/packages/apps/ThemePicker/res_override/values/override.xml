@@ -18,7 +18,7 @@
 -->
 <resources>
     <!-- Package of the stub apk containing the themes descriptions -->
-    <string name="themes_stub_package" translatable="false">org.derpfest.stub</string>
+    <string name="themes_stub_package" translatable="false">com.android.customization.themes</string>
     <!-- Package of the stub apk containing the clock content -->
-    <string name="clocks_stub_package" translatable="false">org.derpfest.stub</string>
+    <string name="clocks_stub_package" translatable="false">com.android.customization.themes</string>
 </resources>
