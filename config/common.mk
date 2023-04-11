@@ -184,8 +184,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     sys.fflag.override.settings_volume_panel_in_systemui=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/no-rro
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/derp/overlay/common \
+    vendor/derp/overlay/no-rro
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
