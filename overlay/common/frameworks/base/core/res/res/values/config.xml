@@ -271,9 +271,6 @@
         <item>com.google.android.youtube</item>
     </string-array>
 
-    <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent" translatable="false">org.derpfest.flash/.QrScannerActivity</string>
-
     <!-- Name of the font family to use in the default lockscreen clock -->
     <string name="config_clockFontFamily" translatable="false">@font/google_sans_clock</string>
 </resources>
