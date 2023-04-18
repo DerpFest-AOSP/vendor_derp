@@ -3,6 +3,7 @@ PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     Datura \
     DerpFestSetupWizard \
+    DocumentsUIOverlay \
     GameSpace \
     LMOFreeform \
     LMOFreeformSidebar \
