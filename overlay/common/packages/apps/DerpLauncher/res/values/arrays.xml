@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2021-2023 Miku UI
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <string-array name="random_msg_after_shake">
+      <item>Background applications cleared!</item>
+      <item>Stop shaking! It makes me dizzy! (((φ(◎ロ◎;)φ)))</item>
+      <item>Didn\'t forget anything, right? (≧﹏≦)</item>
+      <item>Hold me steady! o(≧口≦)o</item>
+      <item>Don\'t throw the phone out~! (/ω＼*)</item>
+      <item>Ha... why so intense all of a sudden...! （つ﹏⊂）</item>
+      <item>Awwwwwwwww... (￣┰￣*)</item>
+      <item>What are you doing! Σ(っ °Д °;)っ</item>
+      <item>(Down)</item>
+      <item>I also want you to experience this feeling... (╯‵□′)╯︵┻━┻</item>
+      <item>Yay~! Here we go... or what? （〒▽〒）</item>
+      <item>Rumor has it that if you give your phone 100 shakes, boom! It\'ll explode. ¯\_(ツ)_/¯</item>
+      <item>(Dizzy)</item>
+      <item>Report! There are no more tasks running in the background! (^^ゞ</item>
+      <item>Hold me tight... o(*////▽////*)q</item>
+      <item>Boom! All background applications closed! (*￣▽￣*)</item>
+      <item>Shake it! ヽ（≧□≦）ノ</item>
+      <item>Trembling treeeeeeeeeeeeembling ヽ(゜▽゜ )－</item>
+</string-array>
+
+</resources>

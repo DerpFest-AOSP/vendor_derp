@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*
+**
+** Copyright 2021-2023 Miku UI
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+  <string-array name="random_msg_after_shake">
+      <item>后台清理完毕！</item>
+      <item>别摇啦！脑子晕掉了！(((φ(◎ロ◎;)φ)))</item>
+      <item>没有忘记什么叭？(≧﹏≦)</item>
+      <item>可要抓稳我呀！o(≧口≦)o</item>
+      <item>不要把手机给甩出去了哦~？(/ω＼*)</item>
+      <item>突然这么激烈的话...！（つ﹏⊂）</item>
+      <item>啊巴啊巴啊巴...(￣┰￣*)</item>
+      <item>突然之间是在干什么啦！Σ(っ °Д °;)っ</item>
+      <item>（倒地）</item>
+      <item>我也想让你也体验一下这个感觉...(╯‵□′)╯︵┻━┻</item>
+      <item>好耶~！飞咯！...还没呀？（〒▽〒）</item>
+      <item>据说手机摇100下就会爆炸哦¯\_(ツ)_/¯</item>
+      <item>（头晕目眩）</item>
+      <item>报告！后台没有任务存活了！(^^ゞ</item>
+      <item>要...握紧我哦？o(*////▽////*)q</item>
+      <item>咻——后台全部不见啦！(*￣▽￣*)</item>
+      <item>Shake it！ヽ（≧□≦）ノ</item>
+      <item>抖抖抖抖抖ヽ(゜▽゜　)－</item>
+  </string-array>
+
+</resources>
