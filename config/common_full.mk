@@ -6,5 +6,9 @@ PRODUCT_SIZE := full
 # Overlays
 include vendor/overlay/overlays.mk
 
+# Extra cmdline tools
+PRODUCT_PACKAGES += \
+    zstd
+
 # Fonts
 include vendor/fontage/config.mk
