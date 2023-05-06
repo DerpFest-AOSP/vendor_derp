@@ -8,6 +8,7 @@ include vendor/overlay/overlays.mk
 
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
+    unrar \
     zstd
 
 # Fonts
