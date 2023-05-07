@@ -59,3 +59,7 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
