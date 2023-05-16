@@ -30,6 +30,7 @@ SOONG_CONFIG_NAMESPACES += derpGlobalVars
 SOONG_CONFIG_derpGlobalVars += \
     aapt_version_code \
     additional_gralloc_10_usage_bits \
+    gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     target_init_vendor_lib \
     target_ld_shim_libs \
@@ -56,6 +57,7 @@ SOONG_CONFIG_derpQcomVars += \
 endif
 
 # Soong bool variables
+SOONG_CONFIG_derpGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
 SOONG_CONFIG_derpGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
 SOONG_CONFIG_derpGlobalVars_uses_oplus_camera := $(TARGET_USES_OPLUS_CAMERA)
 SOONG_CONFIG_derpGlobalVars_uses_nothing_camera := $(TARGET_USES_NOTHING_CAMERA)
@@ -65,6 +67,7 @@ SOONG_CONFIG_derpQcomVars_uses_pre_uplink_features_netmgrd := $(TARGET_USES_PRE_
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
+TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_INIT_VENDOR_LIB ?= vendor_init
 TARGET_SURFACEFLINGER_UDFPS_LIB ?= surfaceflinger_udfps_lib
