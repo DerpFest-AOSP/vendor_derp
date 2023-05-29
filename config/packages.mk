@@ -8,6 +8,7 @@ PRODUCT_PACKAGES += \
     ParallelSpace \
     RepainterServicePriv \
     Ripple\
+    Symphonica \
     TouchGestures \
     Updater
 
