@@ -293,3 +293,19 @@ uses_nothing_camera {
         },
     },
 }
+
+soong_config_module_type {
+    name: "include_miui_camera",
+    module_type: "cc_defaults",
+    config_namespace: "customGlobalVars",
+    bool_variables: ["include_miui_camera"],
+    properties: ["cppflags"],
+}
+include_miui_camera {
+    name: "includes_miui_camera",
+    soong_config_variables: {
+        include_miui_camera: {
+            cppflags: ["-DINCLUDES_MIUI_CAMERA"],
+        },
+    },
+}
