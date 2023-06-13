@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     GameSpace \
     NetworkStackOverlay \
     NoCombinedIconsOverlay \
+    Panic \
     ParallelSpace \
     RepainterServicePriv \
     Ripple \
