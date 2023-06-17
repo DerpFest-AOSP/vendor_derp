@@ -184,10 +184,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.launcher.blur.appLaunch=false
 
-# Enable SystemUIDialog volume panel
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    sys.fflag.override.settings_volume_panel_in_systemui=true
-
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay/common \
