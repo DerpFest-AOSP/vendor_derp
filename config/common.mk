@@ -118,10 +118,6 @@ PRODUCT_COPY_FILES += \
     vendor/derp/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 endif
 
-# Build Manifest
-PRODUCT_PACKAGES += \
-    build-manifest
-
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/init/init.derp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.derp-updater.rc
 
