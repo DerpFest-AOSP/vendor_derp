@@ -5,8 +5,12 @@ PRODUCT_SIZE := full
 
 # Apps
 PRODUCT_PACKAGES += \
-    Symphonica \
+    Symphonica
+
+ifneq ($(PRODUCT_NO_CAMERA),true)
+PRODUCT_PACKAGES += \
     Flash
+endif
 
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
