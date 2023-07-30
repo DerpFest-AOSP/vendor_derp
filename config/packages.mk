@@ -7,8 +7,7 @@ PRODUCT_PACKAGES += \
     NoCombinedIconsOverlay \
     ParallelSpace \
     RepainterServicePriv \
-    Ripple\
-    Symphonica \
+    Ripple \
     TouchGestures \
     Updater
 

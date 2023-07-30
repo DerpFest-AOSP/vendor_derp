@@ -8,7 +8,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Eleven \
+    Symphonica \
     Flash
 
 ifeq ($(PRODUCT_TYPE), go)
