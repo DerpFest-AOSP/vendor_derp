@@ -102,9 +102,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.iorapd.enable=false
 
-PRODUCT_COPY_FILES += \
-    vendor/derp/prebuilt/common/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
-
 # Screen Resolution
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
