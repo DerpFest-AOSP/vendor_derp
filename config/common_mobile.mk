@@ -8,8 +8,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Apps
 PRODUCT_PACKAGES += \
-    Aperture \
-    Eleven
+    Eleven \
+    Flash
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
