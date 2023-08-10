@@ -274,9 +274,6 @@
     <!-- Name of the font family to use in the default lockscreen clock -->
     <string name="config_clockFontFamily" translatable="false">@font/google_sans_clock</string>
 
-    <!-- Default value for performant auth feature. -->
-    <bool name="config_performantAuthDefault">true</bool>
-
     <!-- Define device configs on boot -->
     <string-array name="global_device_configs_override">
  
