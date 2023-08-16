@@ -164,7 +164,9 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUIGoogle
+    SettingsGoogle \
+    SystemUIGoogle \
+    DerpLauncher
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
