@@ -25,6 +25,7 @@
     <!-- SystemUI Plugins that can be loaded on user builds. -->
     <string-array name="config_pluginAllowlist" translatable="false">
         <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>org.lineageos.settings.device</item>
     </string-array>
 
     <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
