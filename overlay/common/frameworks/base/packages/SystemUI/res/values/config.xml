@@ -22,6 +22,7 @@
     <string-array name="config_pluginAllowlist" translatable="false">
         <item>com.android.systemui</item>
         <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>com.derp.device.DeviceSettings</item>
         <item>org.lineageos.settings.device</item>
         <item>com.android.systemui.clocks.bignum</item>
         <item>com.android.systemui.clocks.calligraphy</item>
