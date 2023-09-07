@@ -1,6 +1,7 @@
 # DerpFest packages
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
+    Datura \
     DerpSetupWizard \
     GameSpace \
     Glimpse \
