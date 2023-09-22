@@ -5,12 +5,13 @@ PRODUCT_PACKAGES += \
     GameSpace \
     NetworkStackOverlay \
     NoCombinedIconsOverlay \
+    Panic \
     ParallelSpace \
     RepainterServicePriv \
-    Ripple\
-    Symphonica \
+    Ripple \
     TouchGestures \
-    Updater
+    Updater \
+    WarpShare
 
 # Themes
 PRODUCT_PACKAGES += \
@@ -23,10 +24,6 @@ ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
 PRODUCT_PACKAGES += \
     UdfpsResources
 endif
-
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Extra tools in DerpFest
 PRODUCT_PACKAGES += \

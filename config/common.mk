@@ -56,6 +56,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/init/init.derp-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.derp-system_ext.rc
 
+# Enable Android Beam on all targets
+PRODUCT_COPY_FILES += \
+    vendor/derp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
@@ -101,9 +105,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Disable iorapd
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.iorapd.enable=false
-
-PRODUCT_COPY_FILES += \
-    vendor/derp/prebuilt/common/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
 
 # Screen Resolution
 TARGET_SCREEN_WIDTH ?= 1080
@@ -165,9 +166,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     adb_root
 
+# TextClassifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_annotator_en_model \
+    libtextclassifier_annotator_universal_model \
+    libtextclassifier_actions_suggestions_universal_model \
+    libtextclassifier_lang_id_model
+
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SystemUI
+    SettingsGoogle \
+    SystemUIGoogle \
+    DerpLauncher
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.systemuicompilerfilter=speed
@@ -175,10 +185,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.disable_rescue=true
-
-# Blur
-PRODUCT_SYSTEM_PROPERTIES += \
-    ro.launcher.blur.appLaunch=false
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
@@ -196,6 +202,15 @@ include vendor/derp/config/version.mk
 # GApps
 WITH_GMS := true
 $(call inherit-product, vendor/gms/products/gms.mk)
+
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
+# Pixel customization
+TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
+TARGET_INCLUDE_STOCK_ARCORE ?= true
+TARGET_SUPPORTS_QUICK_TAP ?= true
+TARGET_SUPPORTS_CALL_RECORDING ?= true
 
 # Lawnicons
 $(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
