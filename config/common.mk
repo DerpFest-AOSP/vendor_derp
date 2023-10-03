@@ -191,9 +191,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay/common \
     vendor/derp/overlay/no-rro
 
-PRODUCT_PACKAGES += \
-    DerpLauncherOverlay
-
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 # Art

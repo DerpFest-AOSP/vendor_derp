@@ -20,6 +20,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     DerpLauncherQuickStep
 endif
 
+PRODUCT_PACKAGES += \
+    DerpLauncherOverlay
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images \
