@@ -6,7 +6,6 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     NoCombinedIconsOverlay \
     Panic \
-    ParallelSpace \
     RepainterServicePriv \
     Ripple \
     TouchGestures \
