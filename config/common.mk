@@ -175,8 +175,8 @@ PRODUCT_PACKAGES += \
 
 # SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
-    SettingsGoogle \
-    SystemUIGoogle \
+    Settings \
+    SystemUI \
     DerpLauncher
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
