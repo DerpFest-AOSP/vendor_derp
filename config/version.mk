@@ -14,10 +14,10 @@
 # limitations under the License.
 
 # Versioning System
-ifneq ($(DERP_RELEASE),true)
-    BUILD_DATE := $(shell date +%Y%m%d-%H%M)
+ifeq ($(DERP_VERSION_APPEND_TIME_OF_DAY),true)
+    BUILD_DATE := $(shell date -u +%Y%m%d-%H%M%S)
 else
-    BUILD_DATE := $(shell date +%Y%m%d)
+    BUILD_DATE := $(shell date -u +%Y%m%d)
 endif
 
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
