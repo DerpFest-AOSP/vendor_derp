@@ -202,6 +202,3 @@ include vendor/derp/config/version.mk
 # GApps
 WITH_GMS := true
 $(call inherit-product, vendor/gms/products/gms.mk)
-
-# Lawnicons
-$(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
