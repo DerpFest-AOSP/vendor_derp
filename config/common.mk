@@ -106,15 +106,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 TARGET_SCREEN_WIDTH ?= 1080
 TARGET_SCREEN_HEIGHT ?= 1920
 
-# Boot Animation
-ifeq ($(USE_LEGACY_BOOTANIMATION), true)
-PRODUCT_COPY_FILES += \
-    vendor/derp/bootanimation/bootanimation_legacy.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-else
-PRODUCT_COPY_FILES += \
-    vendor/derp/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
-endif
-
 PRODUCT_COPY_FILES += \
     vendor/derp/prebuilt/common/etc/init/init.derp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.derp-updater.rc
 
