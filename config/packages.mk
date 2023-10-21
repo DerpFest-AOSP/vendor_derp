@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     UdfpsResources
 endif
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Extra tools in DerpFest
 PRODUCT_PACKAGES += \
     bash \
