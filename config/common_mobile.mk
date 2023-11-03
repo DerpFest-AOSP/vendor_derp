@@ -36,7 +36,6 @@ PRODUCT_PACKAGES += \
     KeyboardNoNavigationBarOverlay \
     Launcher3NoHintOverlay \
     NoCutoutOverlay \
-    NavigationBarMode2ButtonOverlay \
     NavigationBarNoHintOverlay
 
 # Media
