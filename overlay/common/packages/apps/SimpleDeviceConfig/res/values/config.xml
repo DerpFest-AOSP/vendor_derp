@@ -125,6 +125,10 @@
         <item>device_personalization_services/Captions__enable_clearcut_logging=true</item>
         <item>device_personalization_services/Captions__enable_language_detection=true</item>
         <item>device_personalization_services/Captions__enable_punctuations=true</item>
+        <item>device_personalization_services/Captions__enable_new_model_version_advanced_2023=true</item>
+        <item>device_personalization_services/Captions__new_model_version_advanced_2023=20230808</item>
+        <item>device_personalization_services/Captions__allow_use_public_speech_recognition=true</item>
+
         <!-- Smartspace -->
         <item>device_personalization_services/Cell__enable_cell=true</item>
         <item>device_personalization_services/Cell__enable_smartspace_events=true</item>
