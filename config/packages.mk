@@ -13,7 +13,6 @@ PRODUCT_PACKAGES += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    BlackTheme \
     DerpThemesStub \
     DerpWalls \
     ThemePicker
