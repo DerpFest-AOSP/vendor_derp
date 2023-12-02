@@ -14,6 +14,7 @@ PRODUCT_PACKAGES += \
 # Themes
 PRODUCT_PACKAGES += \
     DerpThemesStub \
+    DerpThemePicker \
     DerpWalls \
     ThemePicker
 
