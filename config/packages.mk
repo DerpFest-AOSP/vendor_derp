@@ -4,7 +4,6 @@ PRODUCT_PACKAGES += \
     Prospect \
     GameSpace \
     NetworkStackOverlay \
-    NoCombinedIconsOverlay \
     Panic \
     Ripple \
     TouchGestures \
