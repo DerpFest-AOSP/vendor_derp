@@ -193,4 +193,5 @@ include vendor/derp/config/version.mk
 
 # GApps
 WITH_GMS := true
-$(call inherit-product, vendor/gms/products/gms.mk)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
