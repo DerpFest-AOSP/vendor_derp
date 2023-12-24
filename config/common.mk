@@ -195,3 +195,6 @@ include vendor/derp/config/version.mk
 WITH_GMS := true
 $(call inherit-product-if-exists, vendor/google/gms/config.mk)
 $(call inherit-product-if-exists, vendor/google/pixel/config.mk)
+
+# Pixel Framework
+$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
