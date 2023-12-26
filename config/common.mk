@@ -211,6 +211,3 @@ TARGET_SUPPORTS_GOOGLE_RECORDER ?= true
 TARGET_INCLUDE_STOCK_ARCORE ?= true
 TARGET_SUPPORTS_QUICK_TAP ?= true
 TARGET_SUPPORTS_CALL_RECORDING ?= true
-
-# Lawnicons
-$(call inherit-product-if-exists, vendor/lawnicons/overlay.mk)
