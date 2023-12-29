@@ -52,13 +52,14 @@
         <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
+        <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.control.NotificationControl</item>
+        <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
-        <item>com.google.android.gms/com.google.android.gms.update.control.NotificationControl</item>
-        <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
         <!-- Disable Now Playing -->
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
@@ -66,7 +67,7 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.AddShortcutActivity</item>
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
-        <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
     </string-array>
 
     <!-- Enable lockscreen rotation by default -->
