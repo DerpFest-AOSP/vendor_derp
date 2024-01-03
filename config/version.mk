@@ -15,9 +15,9 @@
 
 # Versioning System
 ifeq ($(DERP_VERSION_APPEND_TIME_OF_DAY),true)
-    BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+    BUILD_DATE := $(shell date +%Y%m%d-%H%M)
 else
-    BUILD_DATE := $(shell date -u +%Y%m%d)
+    BUILD_DATE := $(shell date +%Y%m%d)
 endif
 
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
@@ -26,7 +26,7 @@ DERP_BUILDTYPE ?= Community
 DERP_STATUS := Beta
 DERP_BUILD_VERSION := $(PLATFORM_VERSION)
 DERP_VERSION := $(DERP_BUILD_VERSION)-$(DERP_BUILDTYPE)-$(DERP_STATUS)-$(DERP_BUILD)-$(BUILD_DATE)
-ROM_FINGERPRINT := DerpFest/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date -u +%H%M)
+ROM_FINGERPRINT := DerpFest/$(PLATFORM_VERSION)/$(TARGET_PRODUCT_SHORT)/$(shell date +%H%M)
 
 ifeq ($(DERP_BUILDTYPE), CI)
     BUILD_KEYS := release-keys
