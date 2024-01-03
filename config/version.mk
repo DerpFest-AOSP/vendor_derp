@@ -15,9 +15,9 @@
 
 # Versioning System
 ifeq ($(DERP_VERSION_APPEND_TIME_OF_DAY),true)
-    BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
+    BUILD_DATE := $(shell date +%Y%m%d-%H%M)
 else
-    BUILD_DATE := $(shell date -u +%Y%m%d)
+    BUILD_DATE := $(shell date +%Y%m%d)
 endif
 
 TARGET_PRODUCT_SHORT := $(subst derp_,,$(DERP_BUILDTYPE))
