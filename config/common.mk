@@ -82,7 +82,7 @@ endif
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.control_privapp_permissions=enforce
+    ro.control_privapp_permissions?=enforce
 
 # Support many users/work profiles
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
