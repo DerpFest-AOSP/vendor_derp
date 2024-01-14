@@ -194,11 +194,3 @@ include vendor/derp/config/art.mk
 
 # Versioning
 include vendor/derp/config/version.mk
-
-# GApps
-WITH_GMS := true
-$(call inherit-product-if-exists, vendor/google/gms/config.mk)
-$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
-
-# Pixel Framework
-$(call inherit-product-if-exists, vendor/pixel-framework/config.mk)
