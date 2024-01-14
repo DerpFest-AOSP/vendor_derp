@@ -194,3 +194,16 @@ include vendor/derp/config/art.mk
 
 # Versioning
 include vendor/derp/config/version.mk
+
+# Pixel customization
+TARGET_IS_PIXEL ?= false
+TARGET_IS_PIXEL_6 ?= false
+TARGET_IS_PIXEL_7 ?= false
+TARGET_IS_PIXEL_7A ?= false
+TARGET_IS_PIXEL_8 ?= false
+TARGET_IS_PIXEL_FOLD ?= false
+TARGET_IS_PIXEL_TABLET ?= false
+TARGET_PIXEL_STAND_SUPPORTED ?= false
+TARGET_SUPPORTS_QUICK_TAP ?= true
+TARGET_USES_MINI_GAPPS ?= false
+TARGET_USES_PICO_GAPPS ?= false
