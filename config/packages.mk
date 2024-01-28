@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     GameSpace \
     NetworkStackOverlay \
     Panic \
+    ParallelSpace \
     Ripple \
     TouchGestures \
     Updater
