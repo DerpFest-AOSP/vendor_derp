@@ -4,6 +4,7 @@ PRODUCT_PACKAGES += \
     DerpSetupWizard \
     Prospect \
     GameSpace \
+    Glimpse \
     NetworkStackOverlay \
     Panic \
     ParallelSpace \
