@@ -87,12 +87,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.max_profiles=16 \
     fw.max_users=32
 
-# Include AOSP audio files
-include vendor/derp/config/aosp_audio.mk
-
-# Include DerpFest audio files
-include vendor/derp/config/derp_audio.mk
-
 # Include extra packages
 include vendor/derp/config/packages.mk
 

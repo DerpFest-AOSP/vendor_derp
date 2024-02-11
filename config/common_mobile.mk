@@ -1,6 +1,12 @@
 # Inherit common mobile DerpFest stuff
 $(call inherit-product, vendor/derp/config/common.mk)
 
+# Include AOSP audio files
+include vendor/derp/config/aosp_audio.mk
+
+# Include DerpFest audio files
+include vendor/derp/config/derp_audio.mk
+
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.notification_sound=Argon.ogg \
