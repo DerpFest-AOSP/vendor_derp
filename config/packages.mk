@@ -2,12 +2,12 @@
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     DerpSetupWizard \
-    Prospect \
     GameSpace \
     Glimpse \
     NetworkStackOverlay \
     Panic \
     ParallelSpace \
+    Prospect \
     Ripple \
     TouchGestures \
     Updater
@@ -17,12 +17,6 @@ PRODUCT_PACKAGES += \
     DerpThemesStub \
     DerpWalls \
     ThemePicker
-
-# Udfps
-ifeq ($(EXTRA_UDFPS_ANIMATIONS),true)
-PRODUCT_PACKAGES += \
-    UdfpsResources
-endif
 
 # Config
 PRODUCT_PACKAGES += \
