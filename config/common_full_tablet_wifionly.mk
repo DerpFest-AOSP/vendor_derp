@@ -14,3 +14,5 @@ PRODUCT_PACKAGES += \
 
 # Include DerpFest LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
+
+$(call inherit-product, vendor/derp/config/wifionly.mk)
