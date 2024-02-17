@@ -174,7 +174,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.disable_rescue=true
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/no-rro
+# Ignore overlays on RRO builds
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    vendor/derp/overlay/no-rro \
+    vendor/shishufied/overlays
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay/common \
     vendor/derp/overlay/no-rro
@@ -183,6 +187,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 
 # Art
 include vendor/derp/config/art.mk
+
+# Call the shishufied vendor to build all the personalization part
+include vendor/shishufied/config.mk
 
 # Versioning
 include vendor/derp/config/version.mk
