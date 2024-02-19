@@ -5,6 +5,7 @@ PRODUCT_PACKAGES += \
     GameSpace \
     Glimpse \
     NetworkStackOverlay \
+    OmniStyle \
     Panic \
     ParallelSpace \
     Prospect \
