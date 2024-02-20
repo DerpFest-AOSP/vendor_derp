@@ -15,4 +15,7 @@ PRODUCT_PACKAGES += \
 # Include DerpFest LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
 
+# Pixel Framework
+$(call inherit-product, vendor/pixel-framework/config.mk)
+
 $(call inherit-product, vendor/derp/config/wifionly.mk)
