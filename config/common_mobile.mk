@@ -2,6 +2,7 @@
 $(call inherit-product, vendor/derp/config/common.mk)
 
 # Include AOSP audio files
+$(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
 include vendor/derp/config/aosp_audio.mk
 
 # Include DerpFest audio files
