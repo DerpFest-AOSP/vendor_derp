@@ -15,16 +15,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # GApps
 WITH_GMS := true
 # Inherit from GMS product config
-ifeq ($(TARGET_USES_MINI_GAPPS),true)
-$(call inherit-product, vendor/gms/gms_mini.mk)
-else ifeq ($(TARGET_USES_PICO_GAPPS),true)
-$(call inherit-product, vendor/gms/gms_pico.mk)
-else
-$(call inherit-product, vendor/gms/gms_full.mk)
-endif
-
-# Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+$(call inherit-product-if-exists, vendor/google/gms/config.mk)
+$(call inherit-product-if-exists, vendor/google/pixel/config.mk)
 
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
