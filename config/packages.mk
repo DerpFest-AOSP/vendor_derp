@@ -7,6 +7,7 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     NetworkStackMainlineOverlay \
     OmniStyle \
+    OmniJaws \
     Panic \
     ParallelSpace \
     Prospect \
