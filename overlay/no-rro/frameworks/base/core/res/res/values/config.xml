@@ -29,5 +29,5 @@
     <string name="config_displayLightSensorType" translatable="false">android.sensor.light</string>
 
     <!-- Default component for QR code scanner -->
-    <string name="config_defaultQrCodeComponent" translatable="false">org.derpfest.flash/.QrScannerActivity</string>
+    <string name="config_defaultQrCodeComponent" translatable="false">org.lineageos.aperture/.QrScannerActivity</string>
 </resources>
