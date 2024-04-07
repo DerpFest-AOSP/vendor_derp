@@ -5,7 +5,7 @@ PRODUCT_SIZE := full
 
 # Apps
 PRODUCT_PACKAGES += \
-    Gramophone
+    Accord
 
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
