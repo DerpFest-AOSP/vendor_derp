@@ -3612,7 +3612,7 @@
     <icon drawable="@drawable/matlog" package="com.pluscubed.matlog" />
     <icon drawable="@drawable/matlog" package="com.pluscubed.matlog.debug" />
     <icon drawable="@drawable/matlog" package="com.pluscubed.matloglibre" />
-    <icon drawable="@drawable/matlog" package="org.omnirom.logcat" />
+    <icon drawable="@drawable/matlog" package="org.derp.logcat" />
     <icon drawable="@drawable/matpriskollen" package="se.easyapp.matpriskollen" />
     <icon drawable="@drawable/mattermost" package="com.mattermost.rn" />
     <icon drawable="@drawable/mattermost" package="com.mattermost.rnbeta" />
@@ -6827,7 +6827,7 @@
     <icon drawable="@drawable/weather" package="com.miui.weather2" />
     <icon drawable="@drawable/weather" package="com.rlk.weathers" />
     <icon drawable="@drawable/weather" package="net.oneplus.weather" />
-    <icon drawable="@drawable/weather" package="org.omnirom.omnijaws" />
+    <icon drawable="@drawable/weather" package="org.derp.omnijaws" />
     <icon drawable="@drawable/weather" package="org.secuso.privacyfriendlyweather" />
     <icon drawable="@drawable/weather_and_radar" package="de.wetteronline.wetterapp" />
     <icon drawable="@drawable/weather_and_radar" package="de.wetteronline.wetterapppro" />
