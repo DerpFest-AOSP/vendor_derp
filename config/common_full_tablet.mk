@@ -22,7 +22,7 @@ $(call inherit-product, vendor/gms/gms_full.mk)
 endif
 
 # Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
+#$(call inherit-product, vendor/pixel-framework/config.mk)
 
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
