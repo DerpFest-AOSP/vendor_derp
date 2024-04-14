@@ -3,7 +3,7 @@ DERP_TARGET_PACKAGE := $(PRODUCT_OUT)/DerpFest-$(DERP_VERSION).zip
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: derp
-derp: $(INTERNAL_OTA_PACKAGE_TARGET)
+derp: $(DEFAULT_GOAL) $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(DERP_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(DERP_TARGET_PACKAGE) | cut -d ' ' -f1 > $(DERP_TARGET_PACKAGE).sha256sum
 	$(hide) ./vendor/derp/tools/generate_json_build_info.sh $(DERP_TARGET_PACKAGE)
