@@ -24,5 +24,9 @@ endif
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
+# Settings
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.settings.large_screen_opt.enabled=true
+
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
