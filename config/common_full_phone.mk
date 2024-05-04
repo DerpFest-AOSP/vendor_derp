@@ -5,6 +5,10 @@ $(call inherit-product, vendor/derp/config/common_full.mk)
 PRODUCT_PACKAGES += \
     LatinIME
 
+# UDFPS Animation effects
+PRODUCT_PACKAGES += \
+    UdfpsAnimations
+
 # Include DerpFest LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
 
