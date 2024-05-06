@@ -174,6 +174,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
 	persist.sys.disable_rescue=true
 
+# Don't compile SystemUITests
+EXCLUDE_SYSTEMUI_TESTS := true
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/no-rro
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/derp/overlay/common \
