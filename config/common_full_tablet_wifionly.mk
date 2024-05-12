@@ -3,10 +3,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 # Inherit full common DerpFest stuff
 $(call inherit-product, vendor/derp/config/common_full.mk)
 
-# GApps
+# GMS
 WITH_GMS := true
-# Inherit from GMS product config
-$(call inherit-product, vendor/gms/gms_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/gms/products/gms.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
