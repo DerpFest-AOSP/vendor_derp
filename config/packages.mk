@@ -21,10 +21,8 @@ PRODUCT_PACKAGES += \
     ThemePicker
 
 # Udfps icons
-ifeq ($(EXTRA_UDFPS_ICONS),true)
 PRODUCT_PACKAGES += \
     UdfpsIcons
-endif
 
 # Config
 PRODUCT_PACKAGES += \
