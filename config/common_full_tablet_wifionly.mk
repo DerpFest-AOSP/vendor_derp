@@ -5,7 +5,8 @@ $(call inherit-product, vendor/derp/config/common_full.mk)
 
 # GMS
 WITH_GMS := true
-$(call inherit-product, vendor/gms/products/gms.mk)
+# Inherit from GMS product config
+$(call inherit-product, vendor/gms/gms_full_tablet_wifionly.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \

@@ -12,7 +12,14 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
 
 # GMS
 WITH_GMS := true
-$(call inherit-product, vendor/gms/products/gms.mk)
+# Inherit from GMS product config
+ifeq ($(TARGET_USES_MINI_GAPPS),true)
+$(call inherit-product, vendor/gms/gms_mini.mk)
+else ifeq ($(TARGET_USES_PICO_GAPPS),true)
+$(call inherit-product, vendor/gms/gms_pico.mk)
+else
+$(call inherit-product, vendor/gms/gms_full.mk)
+endif
 
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
