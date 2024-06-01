@@ -158,7 +158,7 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.sf.blurs_are_expensive=$(USES_BLUR) \
     ro.surface_flinger.supports_background_blur=$(USES_BLUR) \
-    persist.sysui.disableBlur=$(1 - USES_BLUR)
+    persist.sysui.disableBlur=$(shell echo $$((1 - $(USES_BLUR))))
 
 # BtHelper
 PRODUCT_PACKAGES += \
