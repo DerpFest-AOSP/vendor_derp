@@ -3,10 +3,14 @@ $(call inherit-product, vendor/derp/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
-# Apps
+# Accord
+TARGET_INCLUDE_ACCORD ?= true
+ifeq ($(TARGET_INCLUDE_ACCORD),true)
 PRODUCT_PACKAGES += \
     Accord
+endif
 
+# Flash
 ifneq ($(PRODUCT_NO_CAMERA),true)
 PRODUCT_PACKAGES += \
     Flash
