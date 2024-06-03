@@ -1,6 +1,10 @@
 # Inherit common mobile DerpFest stuff
 $(call inherit-product, vendor/derp/config/common.mk)
 
+# Apps
+PRODUCT_PACKAGES += \
+    FossifyGallery
+
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
     DerpLauncherQuickStepGo

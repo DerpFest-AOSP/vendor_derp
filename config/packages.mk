@@ -4,7 +4,6 @@ PRODUCT_PACKAGES += \
     Datura \
     DerpSetupWizard \
     GameSpace \
-    Glimpse \
     NetworkStackOverlay \
     NetworkStackMainlineOverlay \
     OmniStyle \
