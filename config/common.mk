@@ -71,20 +71,6 @@ TARGET_SUPPORTS_QUICK_TAP ?= true
 TARGET_USES_MINI_GAPPS ?= false
 TARGET_USES_PICO_GAPPS ?= false
 
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED ?= $(TARGET_SUPPORTS_64_BIT_APPS)
-ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
-    PRODUCT_PACKAGES += \
-        ParanoidSense
-    PRODUCT_SYSTEM_EXT_PROPERTIES += \
-        ro.face.sense_service=true
-    PRODUCT_COPY_FILES += \
-        frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
-else
-    PRODUCT_PACKAGES += \
-        SettingsGoogleFutureFaceEnroll
-endif
-
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.control_privapp_permissions?=enforce
