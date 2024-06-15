@@ -191,5 +191,8 @@ PRODUCT_PACKAGE_OVERLAYS += \
 # Art
 include vendor/derp/config/art.mk
 
+# FaceUnlock
+$(call inherit-product-if-exists, vendor/google/faceunlock/device.mk)
+
 # Versioning
 include vendor/derp/config/version.mk
