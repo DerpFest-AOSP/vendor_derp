@@ -8,7 +8,7 @@ WITH_GMS := true
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full_tablet_wifionly.mk)
 
-# Inherit full tablet common DerpFest stuff
-$(call inherit-product, vendor/derp/config/full_tablet.mk)
+# Inherit tablet common DerpFest stuff
+$(call inherit-product, vendor/derp/config/tablet.mk)
 
 $(call inherit-product, vendor/derp/config/wifionly.mk)
