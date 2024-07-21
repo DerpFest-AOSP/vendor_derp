@@ -1,16 +1,9 @@
 # Inherit mobile full common DerpFest stuff
 $(call inherit-product, vendor/derp/config/common_mobile_full.mk)
 
-# Required packages
-PRODUCT_PACKAGES += \
-    LatinIME
-
 # UDFPS Animation effects
 PRODUCT_PACKAGES += \
     UdfpsAnimations
-
-# Include DerpFest LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \

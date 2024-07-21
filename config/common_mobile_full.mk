@@ -26,3 +26,7 @@ include vendor/overlay/overlays.mk
 
 # Fonts
 include vendor/fontage/config.mk
+
+# Include DerpFest LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/derp/overlay/dictionaries
