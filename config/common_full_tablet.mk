@@ -1,5 +1,3 @@
-$(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
-
 # Inherit mobile full common DerpFest stuff
 $(call inherit-product, vendor/derp/config/common_mobile_full.mk)
 
@@ -17,9 +15,8 @@ endif
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
-# Settings
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.settings.large_screen_opt.enabled=true
+# Inherit full tablet common DerpFest stuff
+$(call inherit-product, vendor/derp/config/full_tablet.mk)
 
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
