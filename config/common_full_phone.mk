@@ -1,5 +1,5 @@
-# Inherit full common DerpFest stuff
-$(call inherit-product, vendor/derp/config/common_full.mk)
+# Inherit mobile full common DerpFest stuff
+$(call inherit-product, vendor/derp/config/common_mobile_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \

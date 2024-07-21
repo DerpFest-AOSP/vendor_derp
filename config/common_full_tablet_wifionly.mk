@@ -1,7 +1,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
-# Inherit full common DerpFest stuff
-$(call inherit-product, vendor/derp/config/common_full.mk)
+# Inherit mobile full common DerpFest stuff
+$(call inherit-product, vendor/derp/config/common_mobile_full.mk)
 
 # GMS
 WITH_GMS := true
