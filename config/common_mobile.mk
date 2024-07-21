@@ -3,7 +3,8 @@ $(call inherit-product, vendor/derp/config/common.mk)
 
 # Apps
 PRODUCT_PACKAGES += \
-    FossifyGallery
+    FossifyGallery \
+    LatinIME
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
