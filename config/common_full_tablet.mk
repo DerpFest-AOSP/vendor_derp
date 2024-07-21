@@ -15,8 +15,8 @@ endif
 # Pixel Framework
 $(call inherit-product, vendor/pixel-framework/config.mk)
 
-# Inherit full tablet common DerpFest stuff
-$(call inherit-product, vendor/derp/config/full_tablet.mk)
+# Inherit tablet common DerpFest stuff
+$(call inherit-product, vendor/derp/config/tablet.mk)
 
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
