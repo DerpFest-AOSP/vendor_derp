@@ -11,4 +11,30 @@
     <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
     <!-- Action name for the styles & wallpaper picker activity. -->
     <string name="config_styles_and_wallpaper_picker_action" translatable="false">android.intent.action.SET_WALLPAPER</string>
+
+    <!-- User avatar dialog result broadcast explicit package -->
+    <string name="config_avatar_picker_package" translatable="false">
+        com.google.android.avatarpicker
+    </string>
+
+    <!-- Package Installer package name -->
+    <string name="config_package_installer_package_name" translatable="false">
+        com.google.android.packageinstaller
+    </string>
+    <!-- Sound picker package name -->
+    <string name="config_sound_picker_package_name" translatable="false">
+        com.google.android.soundpicker
+    </string>
+    <!-- Contacts package name -->
+    <string name="config_contacts_package_name" translatable="false">
+        com.google.android.contacts
+    </string>
+    <!-- Emergency app package name -->
+    <string name="config_emergency_package_name" translatable="false">
+        com.google.android.apps.safetyhub
+    </string>
+    <!-- Emergency app intent action -->
+    <string name="config_emergency_intent_action" translatable="false">
+        com.google.android.safetyhub.SAFETY_HUB
+    </string>
 </resources>
