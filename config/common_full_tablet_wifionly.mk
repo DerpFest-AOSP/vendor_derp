@@ -15,9 +15,6 @@ PRODUCT_PACKAGES += \
 # Include DerpFest LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/derp/overlay/dictionaries
 
-# Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
-
 # Settings
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.settings.large_screen_opt.enabled=true

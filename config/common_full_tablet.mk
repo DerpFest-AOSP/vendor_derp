@@ -21,9 +21,6 @@ else
 $(call inherit-product, vendor/gms/gms_full.mk)
 endif
 
-# Pixel Framework
-$(call inherit-product, vendor/pixel-framework/config.mk)
-
 # Settings
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.settings.large_screen_opt.enabled=true
