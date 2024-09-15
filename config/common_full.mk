@@ -25,4 +25,4 @@ PRODUCT_PACKAGES += \
 include vendor/overlay/overlays.mk
 
 # Fonts
-include vendor/fontage/config.mk
+#include vendor/fontage/config.mk
