@@ -20,6 +20,10 @@ PRODUCT_PACKAGES += \
     DerpWalls \
     ThemePicker
 
+# Build changelog
+PRODUCT_PACKAGES += \
+    Changelog.txt
+
 # Udfps icons
 ifeq ($(EXTRA_UDFPS_ICONS),true)
 PRODUCT_PACKAGES += \

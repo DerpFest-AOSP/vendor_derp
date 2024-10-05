@@ -4,32 +4,28 @@
 
 #. $ANDROID_BUILD_TOP/vendor/derp/tools/colors
 
-export Changelog=$1/Changelog.txt
-
-if [ -f $Changelog ];
+if [ -f $1 ];
 then
-	rm -f $Changelog
+    rm -f $1
 fi
-
-touch $Changelog
 
 for i in $(seq 5);
 do
 export After_Date=`/bin/date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
 export Until_Date=`/bin/date --date="$k days ago" +%m-%d-%Y`
-echo "====================" >> $Changelog;
-echo "    $Until_Date     " >> $Changelog;
-echo "====================" >> $Changelog;
+echo "====================" >> $1;
+echo "    $Until_Date     " >> $1;
+echo "====================" >> $1;
 # Cycle through every repo to find commits between 2 dates
 while read path;
 do
 	CLOG=$(git --git-dir ./${path}/.git log --oneline --after=$After_Date --until=$Until_Date --pretty=tformat:"%h  %s  [%an]" --abbrev-commit --abbrev=7);
 	if [ -n "$CLOG" ]; then
-		echo "\n* ${path}\n${CLOG}\n" >> $Changelog;
+		echo "\n* ${path}\n${CLOG}\n" >> $1;
 	fi
 done < ./.repo/project.list
-echo "" >> $Changelog;
+echo "" >> $1;
 done
 
-sed -i 's/project/   */g' $Changelog
+sed -i 's/project/   */g' $1
