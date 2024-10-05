@@ -4,9 +4,7 @@
 
 #. $ANDROID_BUILD_TOP/vendor/derp/tools/colors
 
-export Changelog=Changelog.txt
-
-DEVICE=$(echo $TARGET_PRODUCT | sed -e 's/derp_//g')
+export Changelog=$1/Changelog.txt
 
 if [ -f $Changelog ];
 then
@@ -35,7 +33,3 @@ echo "" >> $Changelog;
 done
 
 sed -i 's/project/   */g' $Changelog
-
-cp $Changelog ${OUT_DIR:-./out}/target/product/$DEVICE/system/etc/
-cp $Changelog ${OUT_DIR:-./out}/target/product/$DEVICE/
-rm $Changelog
