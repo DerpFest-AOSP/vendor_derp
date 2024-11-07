@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Panic \
     ParallelSpace \
+    PermissionControllerOverlay \
     Prospect \
     Ripple \
     TouchGestures \
