@@ -21,5 +21,6 @@ aconfig_value_set {
         "aconfig-values-ap4a-com.android.settings.flags-all",
         "aconfig-values-ap4a-com.android.systemui.flags-all",
         "aconfig-values-ap4a-android.app-all",
+        "aconfig-values-ap4a-android.app.flags-all",
     ],
 }
