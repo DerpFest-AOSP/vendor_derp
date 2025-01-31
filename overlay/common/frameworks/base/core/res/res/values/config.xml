@@ -336,10 +336,8 @@
         <item>mediaprovider/allowed_cloud_providers=com.google.android.apps.photos.cloudpicker</item>
         <item>mediaprovider/cloud_media_feature_enabled=true</item>
         <item>mediaprovider/enable_modern_picker=true</item>
-
         <!-- Autofill compatibility apps -->
         <item>autofill/compat_mode_allowed_packages=com.android.chrome[url_bar]:com.brave.browser[url_bar]:com.brave.browser_beta[url_bar]:com.brave.browser_nightly[url_bar]:com.chrome.beta[url_bar]:com.chrome.dev[url_bar]:com.chrome.canary[url_bar]:com.microsoft.emmx[url_bar]:com.microsoft.emmx.beta[url_bar]:com.microsoft.emmx.canary[url_bar]:com.microsoft.emmx.dev[url_bar]:com.opera.browser[url_field]:com.opera.browser.beta[url_bar]:com.opera.mini.native[url_bar]:com.opera.mini.native.beta[url_bar]:com.sec.android.app.sbrowser[location_bar_edit_text]:com.sec.android.app.sbrowser.beta[location_bar_edit_text]:org.mozilla.fennec_aurora[url_bar]:org.mozilla.firefox[url_bar]:org.mozilla.firefox_beta[url_bar]:org.chromium.chrome[url_bar]</item>
-
         <!-- Privacy -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
         <item>privacy/permissions_hub_2_enabled=true</item>
@@ -355,6 +353,51 @@
         <item>runtime_native/usap_pool_size_max=10</item>
         <item>runtime_native/usap_pool_size_min=1</item>
         <item>runtime_native/usap_refill_threshold=5</item>
+
+        <!-- Intelligence Bubbles -->
+        <item>intelligence_bubbles/intelligence_bubbles_webref_superpacks_manifest_url_template=https://gstatic.com/matchmaker/demo/bubbles/20051000/2/en-us/superpacks_manifest.zip</item>
+        <item>intelligence_bubbles/intelligence_bubbles_webref_superpacks_manifest_version=20051000</item>
+
+        <!-- Text classifier -->
+        <item>textclassifier/generate_links_max_text_length=10000</item>
+        <item>textclassifier/manifest_download_max_attempts=3</item>
+        <item>textclassifier/manifest_download_required_network_type=UNMETERED</item>
+        <item>textclassifier/manifest_url_actions_suggestions_de-ch=https://www.gstatic.com/android/text_classifier/actions/q/v103/de_CH.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_de-li=https://www.gstatic.com/android/text_classifier/actions/q/v103/de_CH.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_de=https://www.gstatic.com/android/text_classifier/actions/q/v103/de.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_en=https://www.gstatic.com/android/text_classifier/actions/q/v104/en.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_es=https://www.gstatic.com/android/text_classifier/actions/q/v103/es.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_fr=https://www.gstatic.com/android/text_classifier/actions/q/v103/fr.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_it=https://www.gstatic.com/android/text_classifier/actions/q/v103/it.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_ja=https://www.gstatic.com/android/text_classifier/actions/q/v103/ja.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_ko=https://www.gstatic.com/android/text_classifier/actions/q/v103/ko.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_pt-br=https://www.gstatic.com/android/text_classifier/actions/q/v103/pt_BR.model.manifest</item>
+        <item>textclassifier/manifest_url_actions_suggestions_universal=https://www.gstatic.com/android/text_classifier/actions/q/v103/default.model.manifest</item>
+        <item>textclassifier/manifest_url_annotator_ar=https://www.gstatic.com/android/text_classifier/v904/ar.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_da=https://www.gstatic.com/android/text_classifier/v904/da.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_de=https://www.gstatic.com/android/text_classifier/v904/de.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_en=https://www.gstatic.com/android/text_classifier/v904/en.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_es=https://www.gstatic.com/android/text_classifier/v904/es.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_fr=https://www.gstatic.com/android/text_classifier/v904/fr.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_it=https://www.gstatic.com/android/text_classifier/v904/it.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_ja=https://www.gstatic.com/android/text_classifier/v904/ja.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_ko=https://www.gstatic.com/android/text_classifier/v904/ko.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_nb=https://www.gstatic.com/android/text_classifier/v904/no.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_nl=https://www.gstatic.com/android/text_classifier/v904/nl.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_nn=https://www.gstatic.com/android/text_classifier/v904/no.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_no=https://www.gstatic.com/android/text_classifier/v904/no.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_pl=https://www.gstatic.com/android/text_classifier/v904/pl.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_pt=https://www.gstatic.com/android/text_classifier/v904/pt.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_ru=https://www.gstatic.com/android/text_classifier/v904/ru.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_sv=https://www.gstatic.com/android/text_classifier/v904/sv.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_th=https://www.gstatic.com/android/text_classifier/v904/th.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_tr=https://www.gstatic.com/android/text_classifier/v904/tr.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_universal=https://www.gstatic.com/android/text_classifier/v904/universal.fb.manifest</item>
+        <item>textclassifier/manifest_url_annotator_zh=https://www.gstatic.com/android/text_classifier/v904/zh.fb.manifest</item>
+        <item>textclassifier/manifest_url_lang_id_universal=https://www.gstatic.com/android/text_classifier/langid/q/v1/model.smfb.manifest</item>
+        <item>textclassifier/model_download_backoff_delay_in_millis=3600000</item>
+        <item>textclassifier/model_download_manager_enabled=true</item>
+        <item>textclassifier/model_download_worker_max_attempts=5</item>
 
         <!--
             Device Personalization Services (AiAi)
@@ -387,14 +430,14 @@
         <item>device_personalization_services/Captions__allow_voip_call_without_audio_recording=true</item>
         <item>device_personalization_services/Captions__available_for_download=en-US;en-GB;en-CA;en-IE;en-AU;en-SG;en-IN;fr-FR;fr-CA;fr-BE;fr-CH;it-IT;it-CH;de-DE;de-AT;de-BE;de-CH;ja-JP;es-ES;es-US;cmn-Hant-TW;hi-IN;pt-BR;tr-TR;pl-PL;cmn-Hans-CN;ko-KR;ru-RU;vi-VN</item>
         <item>device_personalization_services/Captions__disable_prod=false</item>
-        <!-- <item>device_personalization_services/Captions__enable=false</item> -->
+        <item>device_personalization_services/Captions__enable=false</item>
         <item>device_personalization_services/Captions__enable_activation_boost=true</item>
         <item>device_personalization_services/Captions__enable_adaptive_box_width=true</item>
         <item>device_personalization_services/Captions__enable_augmented_modality=true</item>
         <item>device_personalization_services/Captions__enable_augmented_modality_input=true</item>
         <item>device_personalization_services/Captions__enable_augmented_modality_language_detection=true</item>
         <item>device_personalization_services/Captions__enable_augmented_music=true</item>
-        <!-- <item>device_personalization_services/Captions__enable_clearcut_logging=true</item> -->
+        <item>device_personalization_services/Captions__enable_clearcut_logging=false</item>
         <item>device_personalization_services/Captions__enable_drag_and_double_tap_to_resize=true</item>
         <item>device_personalization_services/Captions__enable_ec_integration=false</item>
         <item>device_personalization_services/Captions__enable_language_detection=true</item>
