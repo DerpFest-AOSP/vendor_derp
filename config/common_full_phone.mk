@@ -14,8 +14,7 @@ DONT_DEXPREOPT_PREBUILTS := true
 
 # GMS
 WITH_GMS := true
-$(call inherit-product, vendor/google/gms/config.mk)
-$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 
 # Inherit from telephony config
 $(call inherit-product, vendor/derp/config/telephony.mk)
