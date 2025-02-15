@@ -25,6 +25,7 @@
         <item>com.derp.device.DeviceSettings</item>
         <item>org.lineageos.settings.device</item>
         <item>com.android.systemui.clocks.bignum</item>
+        <item>com.android.systemui.clocks.bignum2</item>
         <item>com.android.systemui.clocks.calligraphy</item>
         <item>com.android.systemui.clocks.flex</item>
         <item>com.android.systemui.clocks.growth</item>
