@@ -1,18 +1,35 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M22 83h15.5M53 83H37.5v31M170 83h-19v14m18.08 14H151V97h12.565M108 29v15.538M108 61V44.538M86 29v15.538m0 15.538V44.538h22m0 91.875V161h-0.527l-17.945 -25H89v24.793"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M170 22L22 170m0 -148l148 148"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M22,83h15.5M53,83H37.5v31M170,83h-19v14m18.08,14H151V97h12.565M108,29v15.538M108,61V44.538M86,29v15.538m0,15.538V44.538h22m0,91.875V161h-0.527l-17.945,-25H89v24.793"
+      android:strokeLineJoin="round"
+      android:strokeWidth="8"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M170,22 L22,170m0,-148 l148,148"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

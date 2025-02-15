@@ -1,18 +1,36 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M60 61v94a14.999 14.999 0 0 1 -30 0V38"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M58.124 130.019l81.407 -47a14.999 14.999 0 0 1 15 25.981L53.206 167.5"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
-    <path
-        android:pathData="M118.876 96.98l-81.407 -47a15 15 0 1 1 15 -25.98l101.325 58.5"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M63,61v94a15.001,15.001 0,0 1,-25.607 10.607A15,15 0,0 1,33 155V38"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="m61.124,130.019 l81.407,-47a15,15 0,1 1,15 25.981L56.206,167.5"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="m121.876,96.98 l-81.407,-47a15,15 0,1 1,15 -25.98l101.325,58.5"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>

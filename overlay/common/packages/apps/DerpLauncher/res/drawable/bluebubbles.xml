@@ -1,26 +1,45 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M111 91A15 15 0 0 1 81 91A15 15 0 0 1 111 91Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="10"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M81 91A15 15 0 0 1 51 91A15 15 0 0 1 81 91Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="10"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M141 91A15 15 0 0 1 111 91A15 15 0 0 1 141 91Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="10"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M22 92.008C22 56.656 55.13 28 96 28c40.862 0 74 28.656 74 64.008s-33.138 64.008 -74 64.008c-7.286 0 -14.33 -0.913 -20.978 -2.614 -14.89 10.537 -29.194 11.54 -29.194 11.54s9.49 -9.105 11.635 -18.281C36.192 135.417 22 115.15 22 92.008Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M96,91m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="10"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M66,91m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="10"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M126,91m-15,0a15,15 0,1 1,30 0a15,15 0,1 1,-30 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="10"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M22,92.008C22,56.656 55.13,28 96,28c40.862,0 74,28.656 74,64.008s-33.138,64.008 -74,64.008c-7.286,0 -14.33,-0.913 -20.978,-2.614 -14.89,10.537 -29.194,11.54 -29.194,11.54s9.49,-9.105 11.635,-18.281C36.192,135.417 22,115.15 22,92.008Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>

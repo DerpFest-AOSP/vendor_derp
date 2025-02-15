@@ -1,15 +1,32 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M61.518 38.625H44a6 6 0 0 0 -6 6V164a6 6 0 0 0 6 6h103.156a6 6 0 0 0 6 -6V44.625a6 6 0 0 0 -6 -6h-17.518m-68.12 0V67.63a1 1 0 0 0 1 1h66.12a1 1 0 0 0 1 -1V38.625m-68.12 0h16.219m51.901 0h-16.219"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M110.987 37.206A15.206 15.206 0 0 1 80.575 37.206A15.206 15.206 0 0 1 110.987 37.206Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M61.518,38.625H44a6,6 0,0 0,-6 6V164a6,6 0,0 0,6 6h103.156a6,6 0,0 0,6 -6V44.625a6,6 0,0 0,-6 -6h-17.518m-68.12,0V67.63a1,1 0,0 0,1 1h66.12a1,1 0,0 0,1 -1V38.625m-68.12,0h16.219m51.901,0h-16.219"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M95.781,37.206m-15.206,0a15.206,15.206 0,1 1,30.412 0a15.206,15.206 0,1 1,-30.412 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>

@@ -1,28 +1,33 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="50.8"
-    android:viewportHeight="50.8"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <group
-        android:scaleX="0.43385"
-        android:scaleY="0.4508"
-        android:translateX="-23.805"
-        android:translateY="-18.17">
-        <path
-            android:pathData="M159.224 96.65a20 19.3 0 0 1 -40 0 20 19.3 0 0 1 40 0z"
-            android:strokeColor="#000000"
-            android:strokeWidth="7.179" />
-    </group>
-    <group
-        android:scaleX="0.31337"
-        android:scaleY="0.31343"
-        android:translateX="64.181"
-        android:translateY="-28.972">
-        <path
-            android:pathData="M-156.425 173.475h25.45c0 12.536 -8.432 23.528 -20.603 26.859 -12.172 3.33 -25.084 -1.821 -31.552 -12.587 -6.467 -10.766 -4.897 -24.496 3.838 -33.547 8.735 -9.052 22.482 -11.196 33.591 -5.239"
-            android:strokeColor="#000000"
-            android:strokeWidth="10.131"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round" />
-    </group>
+    android:height="192dp"
+    android:viewportWidth="50.8"
+    android:viewportHeight="50.8">
+  <path
+      android:pathData="M45.2743,25.3998a8.7004,8.677 89.9992,0 1,-17.354 0,8.7004 8.677,89.9992 0,1 17.354,0z"
+      android:strokeWidth="3.174868"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M15.1621,25.4003l7.9753,0c0,3.9292 -2.6423,7.3744 -6.4564,8.4184 -3.8143,1.0437 -7.8606,-0.5708 -9.8875,-3.9451 -2.0266,-3.3744 -1.5346,-7.6778 1.2027,-10.5146 2.7373,-2.8372 7.0452,-3.5092 10.5264,-1.6421"
+      android:strokeLineJoin="round"
+      android:strokeWidth="3.1750555"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

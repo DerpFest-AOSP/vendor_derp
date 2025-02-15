@@ -1,9 +1,24 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M22 162l-5.553 -2.272A6 6 0 0 0 22 168zm148 0v6a6.002 6.002 0 0 0 5.553 -8.272zM22 30v-6a6 6 0 0 0 -5.553 8.272zm81 0l5.553 2.272A6 6 0 0 0 103 24zm39 132l-5.553 2.272A6 6 0 0 0 142 168zm-27 0v6a6.002 6.002 0 0 0 5.553 -8.272zM95.5 48.333l5.553 2.272zm27.5 -1.222l5.553 -2.272a6 6 0 0 0 -11.106 0zM59.636 136l-5.553 -2.272A6 6 0 0 0 59.636 142zM109 81.333l-5.553 -2.272a6 6 0 0 0 0 4.544zM49 96l5.553 2.272zM32.636 56l-5.553 2.272A6 6 0 0 0 32.636 62zm32.728 0l5.553 2.272A6 6 0 0 0 65.364 50zm39 80l5.553 -2.272a6 6 0 0 0 -5.553 -3.728zm-3.311 -85.395l7.5 -18.333 -11.106 -4.544 -7.5 18.334zm74.5 109.123l-47 -114.889 -11.106 4.544 47 114.889zM65.19 138.272l35.863 -87.667 -11.106 -4.543 -35.864 87.666zm49.363 -54.667l14 -34.222 -11.106 -4.544 -14 34.222zm33 76.123l-33 -80.667 -11.106 4.544 33 80.667zm-120 4.544l27 -66 -11.106 -4.544 -27 66zM22 36h81V24H22zm0 132h27v-12H22zm27 0h66v-12H49zM38.19 53.728l-10.637 -26 -11.106 4.544 10.636 26zm16.363 44.544l16.364 -40 -11.107 -4.544 -16.363 40zM32.636 62h32.728V50H32.636zm87.917 97.728l-10.636 -26 -11.107 4.544 10.637 26zM104.364 130H59.636v12h44.728zM142 168h28v-12h-28z"
-        android:fillColor="#000000" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="m22,162 l-5.553,-2.272A6,6 0,0 0,22 168zM170,162v6a6.002,6.002 0,0 0,5.553 -8.272zM22,30v-6a6,6 0,0 0,-5.553 8.272zM103,30 L108.553,32.272A6,6 0,0 0,103 24zM142,162 L136.447,164.272A6,6 0,0 0,142 168zM115,162v6a6.002,6.002 0,0 0,5.553 -8.272zM95.5,48.333l5.553,2.272zM123,47.111 L128.553,44.839a6,6 0,0 0,-11.106 0zM59.636,136l-5.553,-2.272A6,6 0,0 0,59.636 142zM109,81.333l-5.553,-2.272a6,6 0,0 0,0 4.544zM49,96l5.553,2.272zM32.636,56l-5.553,2.272A6,6 0,0 0,32.636 62zM65.364,56 L70.917,58.272A6,6 0,0 0,65.364 50zM104.364,136 L109.917,133.728a6,6 0,0 0,-5.553 -3.728zM101.053,50.605 L108.553,32.272 97.447,27.728 89.947,46.062zM175.553,159.728 L128.553,44.839 117.447,49.383 164.447,164.272zM65.19,138.272l35.863,-87.667 -11.106,-4.543 -35.864,87.666zM114.553,83.605 L128.553,49.383 117.447,44.839 103.447,79.061zM147.553,159.728 L114.553,79.061 103.447,83.605 136.447,164.272zM27.553,164.272 L54.553,98.272 43.447,93.728 16.447,159.728zM22,36h81L103,24L22,24zM22,168h27v-12L22,156zM49,168h66v-12L49,156zM38.19,53.728l-10.637,-26 -11.106,4.544 10.636,26zM54.553,98.272 L70.917,58.272 59.81,53.728 43.447,93.728zM32.636,62h32.728L65.364,50L32.636,50zM120.553,159.728 L109.917,133.728 98.81,138.272 109.447,164.272zM104.364,130L59.636,130v12h44.728zM142,168h28v-12h-28z"/>
 </vector>

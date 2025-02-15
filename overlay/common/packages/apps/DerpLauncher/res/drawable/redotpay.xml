@@ -1,32 +1,42 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M58.868866 133.14052l-0.09291 31.32926"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M133.13099 95.999991c0 20.899829 -16.62415 37.140529 -37.131064 37.140529H58.868866V95.999991c0 -20.512134 16.624141 -37.140511 37.13106 -37.140511 20.506914 -0.000001 37.131064 16.628377 37.131064 37.140511z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round"
-        android:strokeMiterLimit="7.55883" />
-    <group
-        android:scaleX="1.059886"
-        android:scaleY="1.060156"
-        android:translateX="-6.418651"
-        android:translateY="-3.644237">
-        <path
-            android:pathData="M166.45124 94.020901C166.45125 132.53543 135.83532 163.77418 96 163.77418H33.880557a6 6 44.535015 0 1 -5.99921 -5.90262L26.821772 92.59657C26.196668 54.087111 56.330056 24.206221 94.8446 24.206221c38.51455 0 71.60664 31.300152 71.60664 69.81468z"
-            android:strokeColor="#000000"
-            android:strokeWidth="11.3205"
-            android:strokeLineCap="round"
-            android:strokeLineJoin="round"
-            android:strokeMiterLimit="7.55883" />
-    </group>
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="m58.869,133.14 l-0.093,31.33"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M133.131,96c0,20.9 -16.624,37.14 -37.131,37.14H58.869V96c0,-20.512 16.624,-37.14 37.13,-37.14 20.508,0 37.132,16.628 37.132,37.14"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M170.001,96.032c0,40.832 -32.45,73.95 -74.67,73.95L29.49,169.983a6.361,6.359 90,0 1,-6.358 -6.257l-1.123,-69.202c-0.661,-40.827 31.277,-72.504 72.098,-72.504s75.894,33.183 75.894,74.014"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12.000013"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

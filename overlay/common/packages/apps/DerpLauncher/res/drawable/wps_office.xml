@@ -1,9 +1,24 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M22 58v-6a6 6 0 0 0 -5.272 8.865zm50 92l-5.272 2.865a6 6 0 0 0 10.544 0zm-2 -92l5.272 -2.865A6 6 0 0 0 70 52zm9.946 30.865a6 6 0 0 0 10.543 -5.73zm47.326 -28a6 6 0 0 0 -10.544 -5.73zM170 58l5.272 2.865A6 6 0 0 0 170 52zm-50 92l-5.272 2.865a6 6 0 0 0 10.544 0zm22 -98a6 6 0 1 0 0 12zm-29.772 71.135a6 6 0 1 0 -10.543 5.73zm-95.5 -62.27l50 92 10.544 -5.73 -50 -92zM22 64h48V52H22zm42.728 -3.135l15.218 28 10.543 -5.73 -15.217 -28zm52 -5.73l-50 92 10.544 5.73 50 -92zm48 0l-50 92 10.544 5.73 50 -92zM170 52h-28v12h28zm-68.315 76.865l13.043 24 10.544 -5.73 -13.044 -24z"
-        android:fillColor="#000000" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M22,58v-6a6,6 0,0 0,-5.272 8.865zM72,150 L66.728,152.865a6,6 0,0 0,10.544 0zM70,58 L75.272,55.135A6,6 0,0 0,70 52zM79.946,88.865a6,6 0,0 0,10.543 -5.73zM127.272,60.865a6,6 0,0 0,-10.544 -5.73zM170,58l5.272,2.865A6,6 0,0 0,170 52zM120,150 L114.728,152.865a6,6 0,0 0,10.544 0zM142,52a6,6 0,1 0,0 12zM112.228,123.135a6,6 0,1 0,-10.543 5.73zM16.728,60.865 L66.728,152.865 77.272,147.135 27.272,55.135zM22,64h48L70,52L22,52zM64.728,60.865 L79.946,88.865 90.489,83.135 75.272,55.135zM116.728,55.135 L66.728,147.135 77.272,152.865 127.272,60.865zM164.728,55.135 L114.728,147.135 125.272,152.865 175.272,60.865zM170,52h-28v12h28zM101.685,128.865 L114.728,152.865 125.272,147.135 112.228,123.135z"/>
 </vector>

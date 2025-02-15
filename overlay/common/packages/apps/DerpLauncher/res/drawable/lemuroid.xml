@@ -1,27 +1,46 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M63 68c6.665 0.1 13.023 2.777 17.7 7.455C85.379 80.132 88 86.435 88 93s-2.622 12.868 -7.3 17.545C76.024 115.223 69.666 117.9 63 118c-6.665 -0.1 -13.023 -2.777 -17.7 -7.455C40.622 105.868 38 99.565 38 93s2.622 -12.868 7.3 -17.545C49.977 70.777 56.335 68.1 63 68Zm66 0c6.665 0.1 13.023 2.777 17.701 7.455C151.378 80.132 154 86.435 154 93s-2.622 12.868 -7.299 17.545S135.665 117.9 129 118c-6.665 -0.1 -13.023 -2.777 -17.7 -7.455 -4.678 -4.677 -7.3 -10.98 -7.3 -17.545s2.622 -12.868 7.3 -17.545C115.977 70.777 122.335 68.1 129 68ZM63 83v20M53 93h19.998"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M129 80c0.8 0.012 1.563 0.333 2.124 0.895 0.561 0.56 0.876 1.317 0.876 2.105s-0.315 1.544 -0.876 2.105A2.978 2.978 0 0 1 126 83c0 -0.788 0.315 -1.544 0.876 -2.105A3.07 3.07 0 0 1 129 80Zm0 20c0.8 0.012 1.563 0.333 2.124 0.895 0.561 0.561 0.876 1.317 0.876 2.105s-0.315 1.544 -0.876 2.105A2.977 2.977 0 0 1 126 103c0 -0.788 0.315 -1.544 0.876 -2.105A3.07 3.07 0 0 1 129 100Zm-10 -10c0.8 0.012 1.563 0.333 2.124 0.895 0.561 0.56 0.876 1.317 0.876 2.105s-0.315 1.544 -0.876 2.105A2.978 2.978 0 0 1 116 93c0 -0.788 0.315 -1.544 0.876 -2.105A3.07 3.07 0 0 1 119 90Zm20 0c0.8 0.012 1.563 0.333 2.124 0.895 0.561 0.56 0.876 1.317 0.876 2.105s-0.315 1.544 -0.876 2.105A2.978 2.978 0 0 1 136 93c0 -0.788 0.315 -1.544 0.876 -2.105A3.07 3.07 0 0 1 139 90Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
-        android:strokeLineCap="round" />
-    <path
-        android:pathData="M105 130H87l9 8z"
-        android:strokeColor="#000000"
-        android:strokeWidth="8"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M170 96A74 74 0 0 1 22 96A74 74 0 0 1 170 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M63,68c6.665,0.1 13.023,2.777 17.7,7.455C85.379,80.132 88,86.435 88,93s-2.622,12.868 -7.3,17.545C76.024,115.223 69.666,117.9 63,118c-6.665,-0.1 -13.023,-2.777 -17.7,-7.455C40.622,105.868 38,99.565 38,93s2.622,-12.868 7.3,-17.545C49.977,70.777 56.335,68.1 63,68ZM129,68c6.665,0.1 13.023,2.777 17.701,7.455C151.378,80.132 154,86.435 154,93s-2.622,12.868 -7.299,17.545S135.665,117.9 129,118c-6.665,-0.1 -13.023,-2.777 -17.7,-7.455 -4.678,-4.677 -7.3,-10.98 -7.3,-17.545s2.622,-12.868 7.3,-17.545C115.977,70.777 122.335,68.1 129,68ZM63,83v20M53,93h19.998"
+      android:strokeWidth="8"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M129,80c0.8,0.012 1.563,0.333 2.124,0.895 0.561,0.56 0.876,1.317 0.876,2.105s-0.315,1.544 -0.876,2.105A2.978,2.978 0,0 1,126 83c0,-0.788 0.315,-1.544 0.876,-2.105A3.07,3.07 0,0 1,129 80ZM129,100c0.8,0.012 1.563,0.333 2.124,0.895 0.561,0.561 0.876,1.317 0.876,2.105s-0.315,1.544 -0.876,2.105A2.977,2.977 0,0 1,126 103c0,-0.788 0.315,-1.544 0.876,-2.105A3.07,3.07 0,0 1,129 100ZM119,90c0.8,0.012 1.563,0.333 2.124,0.895 0.561,0.56 0.876,1.317 0.876,2.105s-0.315,1.544 -0.876,2.105A2.978,2.978 0,0 1,116 93c0,-0.788 0.315,-1.544 0.876,-2.105A3.07,3.07 0,0 1,119 90ZM139,90c0.8,0.012 1.563,0.333 2.124,0.895 0.561,0.56 0.876,1.317 0.876,2.105s-0.315,1.544 -0.876,2.105A2.978,2.978 0,0 1,136 93c0,-0.788 0.315,-1.544 0.876,-2.105A3.07,3.07 0,0 1,139 90Z"
+      android:strokeWidth="6"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M105,130H87l9,8z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="8"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M96,96m-74,0a74,74 0,1 1,148 0a74,74 0,1 1,-148 0"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

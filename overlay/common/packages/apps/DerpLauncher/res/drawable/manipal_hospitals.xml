@@ -1,11 +1,26 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M54 100a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm56 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-56 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm140 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm-28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10ZM82 44a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 56a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm28 0a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 -28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 -84a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Zm0 28a5 5 0 1 0 0 -10 5 5 0 0 0 0 10Z"
-        android:fillColor="#000000"
-        android:strokeColor="#000000"
-        android:strokeWidth="10" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:fillColor="#FF000000"
+      android:pathData="M54,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM110,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM26,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM166,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM138,100a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,44a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,72a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,128a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM82,156a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM110,156a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM110,128a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM110,44a5,5 0,1 0,0 -10,5 5,0 0,0 0,10ZM110,72a5,5 0,1 0,0 -10,5 5,0 0,0 0,10Z"
+      android:strokeWidth="10"
+      android:strokeColor="#000"/>
 </vector>

@@ -1,12 +1,28 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M110.87 37.295a39.335 39.335 0 0 1 24.855 -4.957 39.38 39.38 0 0 1 22.729 11.238 39.563 39.563 0 0 1 11.209 22.787 39.61 39.61 0 0 1 -4.944 24.92l-15.768 27.38a39.456 39.456 0 0 1 -19.054 16.753 39.326 39.326 0 0 1 -25.288 1.661 39.411 39.411 0 0 1 -21.071 -14.115 39.587 39.587 0 0 1 -8.146 -24.06m41.216 -5.805c0 -8.7 -2.863 -17.157 -8.146 -24.059a39.412 39.412 0 0 0 -21.071 -14.115 39.326 39.326 0 0 0 -25.288 1.661 39.452 39.452 0 0 0 -19.054 16.753l-15.768 27.381a39.605 39.605 0 0 0 -4.944 24.919 39.556 39.556 0 0 0 11.209 22.787 39.34 39.34 0 0 0 47.584 6.281"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M110.87,37.295a39.34,39.34 0,0 1,24.855 -4.957,39.38 39.38,0 0,1 22.729,11.238 39.56,39.56 0,0 1,11.209 22.787,39.6 39.6,0 0,1 -4.944,24.92l-15.768,27.38a39.46,39.46 0,0 1,-19.054 16.753,39.33 39.33,0 0,1 -25.288,1.661 39.4,39.4 0,0 1,-21.071 -14.115,39.6 39.6,0 0,1 -8.146,-24.06m41.216,-5.805c0,-8.7 -2.863,-17.157 -8.146,-24.059a39.4,39.4 0,0 0,-21.071 -14.115,39.33 39.33,0 0,0 -25.288,1.661 39.45,39.45 0,0 0,-19.054 16.753l-15.768,27.381a39.6,39.6 0,0 0,-4.944 24.919,39.56 39.56,0 0,0 11.209,22.787 39.34,39.34 0,0 0,47.584 6.281"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

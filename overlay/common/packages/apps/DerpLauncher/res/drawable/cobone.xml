@@ -1,24 +1,28 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <group
-        android:scaleX="0.9993838"
-        android:scaleY="0.9993919"
-        android:translateX="0.05915191"
-        android:translateY="0.05835064">
-        <group
-            android:scaleX="6.110577"
-            android:scaleY="6.050909"
-            android:translateX="-490.6252"
-            android:translateY="1813.539">
-            <path
-                android:pathData="M104.81535 -286.91659c-0.0163 -0.63476 -0.0325 -1.26951 -0.33867 -2.35961 -0.30615 -1.0901 -0.90025 -2.63057 -2.04822 -3.89553 -1.14798 -1.26496 -2.833608 -2.23743 -4.511756 -2.66919 -1.678147 -0.43175 -3.336572 -0.31794 -4.980483 0.50402 -1.643912 0.82195 -3.271485 2.35187 -4.492198 4.19923 -1.220712 1.84735 -2.034498 4.01202 -2.465813 5.87564 -0.431315 1.86362 -0.480143 3.42609 -0.195305 5.11068 0.284837 1.68459 0.903313 3.49119 1.692712 4.82583 0.789398 1.33465 1.749664 2.19726 2.929691 2.80762 1.180027 0.61035 2.57974 0.96842 4.459646 0.89517 1.879906 -0.0733 4.239883 -0.57779 6.241856 -1.16374 2.00197 -0.58594 3.64582 -1.25324 5.2897 -1.92056 -0.87891 -2.60417 -1.75781 -5.20833 -2.63672 -7.8125 -1.10677 0.56966 -2.21355 1.13932 -3.40985 1.57878 -1.196299 0.43945 -2.48208 0.74869 -3.645828 0.84635 -1.163748 0.0976 -2.205393 -0.0163 -2.783195 -0.32553 -0.577802 -0.30925 -0.691732 -0.81379 -0.634764 -2.03451 0.05697 -1.22073 0.284822 -3.1575 0.765625 -4.34568 0.480804 -1.18817 1.214507 -1.62761 1.816727 -1.64389 0.60222 -0.0163 1.072909 0.39062 1.362715 1.10165 0.289807 0.71102 0.398707 1.72615 0.507607 2.74128z"
-                android:strokeColor="#000000"
-                android:strokeWidth="1.97468"
-                android:strokeLineCap="round"
-                android:strokeLineJoin="round" />
-        </group>
-    </group>
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M149.821,77.441c-0.098,-3.834 -0.195,-7.68 -2.064,-14.271s-5.496,-15.904 -12.513,-23.554c-7.011,-7.65 -17.301,-13.528 -27.548,-16.14s-20.378,-1.923 -30.412,3.048c-10.046,4.971 -19.981,14.223 -27.438,25.398 -7.45,11.169 -12.421,24.255 -15.059,35.527 -2.632,11.272 -2.931,20.718 -1.191,30.901s5.514,21.117 10.339,29.184c4.818,8.073 10.687,13.292 17.893,16.981s15.749,5.86 27.23,5.412 25.893,-3.495 38.119,-7.033 22.265,-7.583 32.305,-11.617q-8.061,-23.62 -16.104,-47.247c-6.76,3.447 -13.52,6.894 -20.824,9.555 -7.304,2.655 -15.157,4.523 -22.265,5.116s-13.466,-0.103 -16.995,-1.971c-3.53,-1.875 -4.226,-4.922 -3.878,-12.3 0.348,-7.384 1.74,-19.097 4.678,-26.281 2.931,-7.184 7.414,-9.845 11.096,-9.942 3.676,-0.097 6.547,2.358 8.317,6.664 1.771,4.294 2.437,10.438 3.102,16.569z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12.000026"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

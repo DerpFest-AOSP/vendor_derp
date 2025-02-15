@@ -1,11 +1,27 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M43.5 66.242l105 -40v0m-37.283 111.39h39.8M111.217 116h39.8m-39.8 -21.633h39.8M90.217 116a24.617 24.828 0 0 1 -49.234 0 24.617 24.828 0 0 1 49.234 0zM40.659 66.242h110.682A18.62 18.62 0 0 1 170 84.902v62.196a18.62 18.62 0 0 1 -18.66 18.66H40.66A18.62 18.62 0 0 1 22 147.098V84.902a18.62 18.62 0 0 1 18.66 -18.66z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="m43.5,66.242 l105,-40v0m-37.283,111.39h39.8M111.217,116h39.8m-39.8,-21.633h39.8M90.217,116a24.617,24.828 0,0 1,-49.234 0,24.617 24.828,0 0,1 49.234,0zM40.659,66.242h110.682A18.62,18.62 0,0 1,170 84.902v62.196a18.62,18.62 0,0 1,-18.66 18.66H40.66A18.62,18.62 0,0 1,22 147.098V84.902a18.62,18.62 0,0 1,18.66 -18.66z"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

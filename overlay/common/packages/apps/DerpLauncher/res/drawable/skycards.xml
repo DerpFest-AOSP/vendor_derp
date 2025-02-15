@@ -1,0 +1,35 @@
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="192dp"
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M56.656,67.035c-11.32,0.202 -22.18,0.263 -33.59,0 -3.867,9.707 3.819,21.79 9.212,25.816 -3.895,16.202 7.225,25.568 18.154,30.557M135.344,67.035c11.32,0.202 22.18,0.263 33.59,0 3.867,9.707 -3.819,21.79 -9.212,25.816 3.895,16.202 -7.225,25.568 -18.154,30.557"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M96,100c-3.966,0 -7.843,-1.093 -11.14,-3.142s-5.868,-4.962 -7.386,-8.37a17.44,17.44 0,0 1,-1.141 -10.773c0.773,-3.617 2.683,-6.94 5.488,-9.548 2.804,-2.608 6.377,-4.383 10.267,-5.103s7.922,-0.35 11.586,1.06c3.664,1.412 6.796,3.802 9,6.87 2.202,3.065 3.379,6.67 3.379,10.359M96,100c3.966,0 7.843,1.093 11.14,3.142s5.868,4.962 7.386,8.37a17.44,17.44 0,0 1,1.141 10.773c-0.773,3.617 -2.683,6.94 -5.488,9.548 -2.804,2.608 -6.377,4.383 -10.267,5.103s-7.922,0.35 -11.586,-1.06c-3.664,-1.412 -6.796,-3.802 -9,-6.87 -2.202,-3.065 -3.379,-6.67 -3.379,-10.359"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
+</vector>

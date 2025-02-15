@@ -1,12 +1,28 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M111 155.46A14.53 14.53 0 0 1 96.45 170h-0.9A14.53 14.53 0 0 1 81 155.46h0m60.06 -72.86c0 -22 -20.15 -40.18 -45.06 -40.18S50.94 60.56 50.94 82.6l-0.44 44.84q-7.57 7.45 -14.88 15.09v7.11h120.76v-7.11q-7.31 -7.64 -14.88 -15.09 -0.21 -22.44 -0.44 -44.84m-34.18 -42.32V30a11.4 11.4 0 0 0 -21.76 0v10.28"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineCap="round"
-        android:strokeLineJoin="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M111,155.46A14.53,14.53 0,0 1,96.45 170h-0.9A14.53,14.53 0,0 1,81 155.46h0m60.06,-72.86c0,-22 -20.15,-40.18 -45.06,-40.18S50.94,60.56 50.94,82.6l-0.44,44.84q-7.57,7.45 -14.88,15.09v7.11h120.76v-7.11q-7.31,-7.64 -14.88,-15.09 -0.21,-22.44 -0.44,-44.84m-34.18,-42.32V30a11.4,11.4 0,0 0,-21.76 0v10.28"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"
+      android:strokeLineCap="round"/>
 </vector>

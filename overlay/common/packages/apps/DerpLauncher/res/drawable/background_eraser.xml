@@ -1,16 +1,33 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="192"
-    android:viewportHeight="192"
+<!--
+Copyright (C) 2024 Lawnchair Launcher
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="192dp"
-    android:height="192dp">
-    <path
-        android:pathData="M99 159h-6v6h6zm0 -132h-6v6h6zm44 44h-6v6h6zm-33 33h-6v6h6zm-11 11h-6v6h6zm44 -22h-6v6h6zm-44 44h-6v6h6zm22 -44h-6v6h6zM33 71h-6v6h6zm121 11h-6v6h6zm-44 44h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM44 60h-6v6h6zm121 11h-6v6h6zm-55 77h-6v6h6zM99 71h-6v6h6zM44 82h-6v6h6zm121 11h-6v6h6zm-99 11h-6v6h6zm55 11h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM55 49h-6v6h6zm77 55h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM66 38h-6v6h6zm22 66h-6v6h6zM77 27h-6v6h6zm66 88h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM77 49h-6v6h6zm44 88h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM55 71h-6v6h6zm66 88h-6v6h6zm-11 -77h-6v6h6zM99 93h-6v6h6zm33 55h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM66 82h-6v6h6zm66 44h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM66 60h-6v6h6zm77 77h-6v6h6zm-55 11h-6v6h6zm44 -88h-6v6h6zM77 71h-6v6h6zm55 11h-6v6h6zm22 -22h-6v6h6zM33 93h-6v6h6zm121 11h-6v6h6zM88 38h-6v6h6zm-55 77h-6v6h6zm121 11h-6v6h6zm-11 -77h-6v6h6zM88 60h-6v6h6zm-44 44h-6v6h6zm121 11h-6v6h6zM88 82h-6v6h6zM55 93h-6v6h6zm22 0h-6v6h6zm-22 22h-6v6h6zm-11 11h-6v6h6z"
-        android:strokeColor="#000000"
-        android:strokeWidth="6"
-        android:strokeLineJoin="round" />
-    <path
-        android:pathData="M170 96A74 74 0 0 1 22 96A74 74 0 0 1 170 96Z"
-        android:strokeColor="#000000"
-        android:strokeWidth="12"
-        android:strokeLineJoin="round" />
+    android:height="192dp"
+    android:viewportWidth="192"
+    android:viewportHeight="192">
+  <path
+      android:pathData="M99,159h-6v6h6zM99,27h-6v6h6zM143,71h-6v6h6zM110,104h-6v6h6zM99,115h-6v6h6zM143,93h-6v6h6zM99,137h-6v6h6zM121,93h-6v6h6zM33,71h-6v6h6zM154,82h-6v6h6zM110,126h-6v6h6zM55,137h-6v6h6zM99,49h-6v6h6zM44,60h-6v6h6zM165,71h-6v6h6zM110,148h-6v6h6zM99,71h-6v6h6zM44,82h-6v6h6zM165,93h-6v6h6zM66,104h-6v6h6zM121,115h-6v6h6zM66,126h-6v6h6zM110,38h-6v6h6zM55,49h-6v6h6zM132,104h-6v6h6zM77,115h-6v6h6zM121,27h-6v6h6zM66,38h-6v6h6zM88,104h-6v6h6zM77,27h-6v6h6zM143,115h-6v6h6zM88,126h-6v6h6zM132,38h-6v6h6zM77,49h-6v6h6zM121,137h-6v6h6zM66,148h-6v6h6zM110,60h-6v6h6zM55,71h-6v6h6zM121,159h-6v6h6zM110,82h-6v6h6zM99,93h-6v6h6zM132,148h-6v6h6zM77,159h-6v6h6zM121,71h-6v6h6zM66,82h-6v6h6zM132,126h-6v6h6zM77,137h-6v6h6zM121,49h-6v6h6zM66,60h-6v6h6zM143,137h-6v6h6zM88,148h-6v6h6zM132,60h-6v6h6zM77,71h-6v6h6zM132,82h-6v6h6zM154,60h-6v6h6zM33,93h-6v6h6zM154,104h-6v6h6zM88,38h-6v6h6zM33,115h-6v6h6zM154,126h-6v6h6zM143,49h-6v6h6zM88,60h-6v6h6zM44,104h-6v6h6zM165,115h-6v6h6zM88,82h-6v6h6zM55,93h-6v6h6zM77,93h-6v6h6zM55,115h-6v6h6zM44,126h-6v6h6z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="6"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
+  <path
+      android:pathData="M96,96m-74,0a74,74 0,1 1,148 0a74,74 0,1 1,-148 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="12"
+      android:fillColor="#00000000"
+      android:strokeColor="#000"/>
 </vector>
