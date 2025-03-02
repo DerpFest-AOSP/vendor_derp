@@ -11,20 +11,26 @@ if [[ -f $file_path ]]; then
     file_name=$(basename "$file_path")
     device_name=$(echo "$file_name" | cut -d'-' -f5)
     buildprop=${OUT_DIR:-out}/target/product/$device_name/system/build.prop
-    if [[ $file_name == *"Official"* ]]; then # only generate for official builds
-        file_size=$(stat -c %s "$file_path")
-        version=$(basename "$file_path" | cut -d'-' -f2)
-        sha256=$(cut -d' ' -f1 "$file_path".sha256sum)
-        datetime=$(grep -w ro\\.build\\.date\\.utc "$buildprop" | cut -d= -f2)
-        link=https://sourceforge.net/projects/derpfest/files/$device_name/$file_name/download
-        cat >"$file_path".json <<JSON
+    file_size=$(stat -c %s "$file_path")
+    version=$(basename "$file_path" | cut -d'-' -f2)
+    sha256=$(cut -d' ' -f1 "$file_path".sha256sum)
+    datetime=$(grep -w ro\\.build\\.date\\.utc "$buildprop" | cut -d= -f2)
+    link=https://sourceforge.net/projects/derpfest/files/$device_name/$file_name/download
+    
+    if [[ $file_name == *"Official"* ]]; then
+        romtype="Official"
+    else
+        romtype="Community"
+    fi
+    
+    cat >"$file_path".json <<JSON
 {
   "response": [
     {
       "datetime": $datetime,
       "filename": "$file_name",
       "id": "$sha256",
-      "romtype": "Official",
+      "romtype": "$romtype",
       "size": $file_size,
       "url": "$link",
       "version": "$version"
@@ -32,9 +38,6 @@ if [[ -f $file_path ]]; then
   ]
 }
 JSON
-        mv "$file_path".json "${OUT_DIR:-out}"/target/product/"$device_name"/"$device_name".json
-        echo -e "${GREEN}Done generating ${YELLOW}$device_name.json${NC}"
-    else
-        echo -e "${YELLOW}Skipped generating json for a non-official build${NC}"
-    fi
+    mv "$file_path".json "${OUT_DIR:-out}"/target/product/"$device_name"/"$device_name".json
+    echo -e "${GREEN}Done generating ${YELLOW}$device_name.json${NC}"
 fi
