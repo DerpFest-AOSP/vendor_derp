@@ -1,0 +1,15 @@
+//
+// Copyright (C) 2025 DerpFest AOSP
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_prebuilt_binary {
+    name: "DerpFestRemovePackages",
+    overrides: [
+        "UdfpsAnimations",
+    ],
+    strip: {
+        none: true,
+    },
+    srcs: ["DerpFestRemovePackages"],
+}
