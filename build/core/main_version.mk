@@ -1,5 +1,5 @@
 # Custom security patch
-CUSTOM_SECURITY_PATCH := 2025-11-05
+CUSTOM_SECURITY_PATCH := 2026-03-01
 
 # DerpFest specific props
 ADDITIONAL_SYSTEM_PROPERTIES += \
